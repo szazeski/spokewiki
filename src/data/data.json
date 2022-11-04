@@ -1,0 +1,46 @@
+{
+  "title": "",
+  "articles": [
+    {
+      "title": "Reedy Creek Improvement District",
+      "tags": [
+        "disney",
+        "florida"
+      ],
+      "stub": "reedy-creek",
+      "shortDescription": "find out why Disney has its own governmental district near Orlando called Reedy Creek Improvement District",
+      "duration-min": 16,
+      "url-audio": "s3://sz-polly-output/reed-creak-improvement-district-279ee608-f7dc-496e-9fbf-5cf811236094.mp3",
+      "url-wikipedia": "https://en.wikipedia.org/wiki/Reedy_Creek_Improvement_District",
+      "date-recorded": "October 17, 2022",
+      "image": ""
+    },
+    {
+      "title": "Candace Owens",
+      "tags": [
+        "republican",
+        "florida"
+      ],
+      "stub": "candance-owens",
+      "short-description": "",
+      "duration-min": 16,
+      "url-audio": "https://",
+      "url-wikipedia": "https://en.wikipedia.org/wiki/Candace_Owens",
+      "image": "",
+      "date-recorded": "October 17, 2022"
+    },
+    {
+      "title": "Crowd Crush",
+      "tags": [
+        "public",
+        "accident"
+      ],
+      "stub": "",
+      "short-description": "",
+      "duration-min": 16,
+      "url-audio": "https://",
+      "url-wikipedia": "",
+      "image": ""
+    }
+  ]
+}

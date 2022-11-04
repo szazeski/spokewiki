@@ -1,12 +1,17 @@
-import { h } from 'preact';
+import {h} from 'preact';
 
 import style from './style.css';
 
-const spokeArticle = () => (
-    <div class={style.header}>
-        <p>spokearticle</p>
+const SpokeArticle = ({data}) => {
 
-    </div>
-);
+    return (
+        <div class={style.spokeArticle}>
+            <a href="./article/{data.slug}">
+                <p>{data.title}</p>
+                <p>{data.shortDescription}</p>
+            </a>
+        </div>
+    );
+}
 
-export default spokeArticle;
+export default SpokeArticle;

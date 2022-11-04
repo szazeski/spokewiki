@@ -1,16 +1,19 @@
-import { h } from 'preact';
-import { Link } from 'preact-router/match';
+import {h} from 'preact';
+import {Link} from 'preact-router/match';
 import style from './style.css';
 
 const Header = () => (
-	<header class={style.header}>
-		<h1>spokewiki</h1>
-		<nav>
-			<Link activeClassName={style.active} href="/">Home</Link>
-			<Link activeClassName={style.active} href="/profile">Me</Link>
-			<Link activeClassName={style.active} href="/profile/john">John</Link>
-		</nav>
-	</header>
+    <header class={style.header}>
+        <a href="/">
+            <img class={style.logo} src="/assets/logoline.svg" alt="spokewiki - hear more than headlines"/>
+        </a>
+        <nav>
+            <Link activeClassName={style.active} href="/">Home</Link>
+            <Link activeClassName={style.active} href="/profile">New</Link>
+            <Link activeClassName={style.active} href="/profile">Queue</Link>
+            <Link activeClassName={style.active} href="/profile">History</Link>
+        </nav>
+    </header>
 );
 
 export default Header;

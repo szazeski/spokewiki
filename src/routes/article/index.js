@@ -1,11 +1,19 @@
-import { h } from 'preact';
+import {h} from 'preact';
 import style from './style.css';
+import SpokeArticle from "../../components/spokeArticle";
 
-const Article = () => (
-	<div class={style.article}>
-		<h1>Home</h1>
-		<p>This is the Article component.</p>
-	</div>
-);
+const Article = ({stub}) => {
+
+
+    return (
+        <div class={style.article}>
+
+            <h1>{stub}</h1>
+            <p>short-description</p>
+            <SpokeArticle id="3"/>
+
+        </div>
+    );
+}
 
 export default Article;

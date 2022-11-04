@@ -1,16 +1,34 @@
-import { h } from 'preact';
-import spokeArticle from '../../components/spokeArticle';
+import {h} from 'preact';
 
 import style from './style.css';
+import SpokeArticle from "../../components/spokeArticle";
+import data from "../../data/data.json"
 
-const Home = () => (
-	<div class={style.home}>
+const Home = () => {
 
-		<spokeArticle id="1" />
+    let searchFilter = "";
 
-		<spokeArticle id="2" />
+    const listOfArticles = data.articles.map((item) =>
+        <SpokeArticle data={item}/>
+    );
 
-	</div>
-);
+    function search(input) {
+        searchFilter = input;
+    }
+
+    return (
+        <div class={style.home}>
+
+            <div class={style.searchbox}>
+                <label>search
+                    <input name="search" onChange={search(this)}/>
+                </label>
+            </div>
+
+            {listOfArticles}
+
+        </div>
+    );
+}
 
 export default Home;
