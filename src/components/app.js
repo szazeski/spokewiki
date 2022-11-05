@@ -7,6 +7,7 @@ import Header from './header';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
 import Article from "../routes/article";
+import ReactAudioPlayer from "react-audio-player";
 
 const App = () => (
     <div id="app">
@@ -17,6 +18,11 @@ const App = () => (
             <Profile path="/profile/" user="me"/>
             <Profile path="/profile/:user"/>
         </Router>
+        <ReactAudioPlayer
+            src="my_audio_file.ogg"
+            autoPlay
+            controls
+        />
     </div>
 )
 

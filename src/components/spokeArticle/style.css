@@ -1,3 +1,19 @@
 .spokeArticle {
-    border: 1px red dashed;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    display: flex;
+}
+
+.spokeArticle .box {
+    flex-grow: 1;
+}
+
+.spokeArticle:hover {
+    background: rgba(0, 0, 0, .05)
+}
+
+.spokeArticle a {
+    color: black;
+    text-decoration: none;
 }

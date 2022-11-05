@@ -12,16 +12,17 @@ const Home = () => {
         <SpokeArticle data={item}/>
     );
 
-    function search(input) {
-        searchFilter = input;
+    function search(event) {
+        console.log(event);
+        //searchFilter = input;
     }
 
     return (
         <div class={style.home}>
 
             <div class={style.searchbox}>
-                <label>search
-                    <input name="search" onChange={search(this)}/>
+                <label> search for articles about
+                    <input name="search" onChange={search}/>
                 </label>
             </div>
 

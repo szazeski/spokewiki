@@ -7,8 +7,16 @@ const SpokeArticle = ({data}) => {
     return (
         <div class={style.spokeArticle}>
             <a href="./article/{data.slug}">
-                <p>{data.title}</p>
-                <p>{data.shortDescription}</p>
+                <div>
+                    <h2>{data.title}</h2>
+                    <p>{data.shortDescription}</p>
+                </div>
+
+                <div class={style.box}>
+                    <div>3 min</div>
+                    <div>play now</div>
+                    <div>queue</div>
+                </div>
             </a>
         </div>
     );

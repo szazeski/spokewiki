@@ -1,12 +1,13 @@
 .home {
     padding: 56px 20px;
+    padding-top: 200px;
     min-height: 100%;
     width: 100%;
 }
 
 .searchbox {
     text-align: center;
-    padding: 1rem;
+    padding: 4rem 0;
 }
 
 .searchbox label {
