@@ -4,17 +4,15 @@ import style from './style.css';
 import SpokeArticle from "../../components/spokeArticle";
 import data from "../../data/data.json"
 
-const Home = () => {
-
-    let searchFilter = "";
+const Home = ({onPlaying}) => {
 
     const listOfArticles = data.articles.map((item) =>
-        <SpokeArticle data={item}/>
+        <SpokeArticle data={item} onPlaying={onPlaying}/>
     );
 
     function search(event) {
         console.log(event);
-        //searchFilter = input;
+        //this.searchFilter = search.value();
     }
 
     return (
@@ -22,7 +20,7 @@ const Home = () => {
 
             <div class={style.searchbox}>
                 <label> search for articles about
-                    <input name="search" onChange={search}/>
+                    <input name="search" onChange={search} disabled={true}/>
                 </label>
             </div>
 

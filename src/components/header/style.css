@@ -3,7 +3,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    padding: 0;
+    padding: 0 10px;
     background: #3e474d;
     z-index: 50;
 }
@@ -38,7 +38,15 @@
 .logo {
     width: 100%;
     max-height: 90px;
-    margin: 25px;
+    margin-top: 25px;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+
+.logo:hover, .logo:focus, .logo:active {
+    transform: scale(1.05);
 }
 
 svg {

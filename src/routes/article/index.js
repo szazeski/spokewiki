@@ -1,6 +1,5 @@
 import {h} from 'preact';
 import style from './style.css';
-import SpokeArticle from "../../components/spokeArticle";
 
 const Article = ({stub}) => {
 
@@ -9,8 +8,7 @@ const Article = ({stub}) => {
         <div class={style.article}>
 
             <h1>{stub}</h1>
-            <p>short-description</p>
-            <SpokeArticle id="3"/>
+            <p>short-description pending...</p>
 
         </div>
     );

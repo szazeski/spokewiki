@@ -2,32 +2,21 @@
   "title": "",
   "articles": [
     {
-      "title": "Reedy Creek Improvement District",
+      "title": "Halloween",
       "tags": [
-        "disney",
-        "florida"
+        "holiday",
+        "fall"
       ],
-      "stub": "reedy-creek",
-      "shortDescription": "find out why Disney has its own governmental district near Orlando called Reedy Creek Improvement District",
-      "durationMin": 16,
-      "urlAudio": "https://media.spokewiki.com/reed-creak-improvement-district-279ee608-f7dc-496e-9fbf-5cf811236094.mp3",
-      "urlWikipedia": "https://en.wikipedia.org/wiki/Reedy_Creek_Improvement_District",
-      "dateRecorded": "October 17, 2022",
-      "image": ""
-    },
-    {
-      "title": "Candace Owens",
-      "tags": [
-        "republican",
-        "florida"
-      ],
-      "stub": "candace-owens",
-      "short-description": "find out how Candance came into ",
-      "durationMin": 6,
-      "urlAudio": "https://media.spokewiki.com/candide-owen-readbysalli.f2145943-a3cd-4d76-8f33-ee3277d67bb0.mp3",
-      "urlWikipedia": "https://en.wikipedia.org/wiki/Candace_Owens",
+      "stub": "halloween",
+      "shortDescription": "Every year at the end of October, people around the world celebrate this after harvest festival but how did it come about?",
+      "durationMin": 49,
+      "filesize": 17,
+      "pollyVoice": "Salli",
+      "urlAudio": "https://media.spokewiki.com/halloween.9d5a3cae-ecaf-412e-97f2-5c29832e8d90.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/halloween",
+      "wikipediaId": 13855,
       "image": "",
-      "dateRecorded": "October 17, 2022"
+      "dateRecorded": "November 5, 2022"
     },
     {
       "title": "Crowd Crush",
@@ -36,11 +25,64 @@
         "accident"
       ],
       "stub": "crowd-crush",
-      "short-description": "",
-      "duration-min": 16,
+      "shortDescription": "Crowd crushes are catastrophic incidents that can occur when a gathering of people becomes dangerously overcrowded.",
+      "durationMin": 14,
       "filesize": 5,
+      "pollyVoice": "Salli",
       "urlAudio": "https://media.spokewiki.com/crowd-crush.7fd4b3b3-99f0-4f1b-871c-204e19e0f4ff.mp3",
       "urlWikipedia": "https://en.wikipedia.org/wiki/Crowd_collapses_and_crushes",
+      "wikipediaId": 0,
+      "image": "",
+      "dateRecorded": "November 4, 2022"
+    },
+    {
+      "title": "Candace Owens",
+      "tags": [
+        "republican",
+        "conservative",
+        "blexit"
+      ],
+      "stub": "candace-owens",
+      "shortDescription": "Appearing in lots of recent news, find out how Candace Owen got her start with 'no interest in politics whatsoever prior to 2015', and her path to where is she is now.",
+      "durationMin": 29,
+      "filesize": 10,
+      "urlAudio": "https://media.spokewiki.com/candace_owens.f2145943-a3cd-4d76-8f33-ee3277d67bb0.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Candace_Owens",
+      "wikipediaId": 55832489,
+      "image": "",
+      "dateRecorded": "October 17, 2022"
+    },
+    {
+      "title": "Reedy Creek Improvement District",
+      "tags": [
+        "disney",
+        "florida"
+      ],
+      "stub": "reedy-creek",
+      "shortDescription": "Find out why in 1967, Disney got its own governmental district near Orlando, Florida called Reedy Creek Improvement District",
+      "durationMin": 16,
+      "filesize": 5,
+      "urlAudio": "https://media.spokewiki.com/reed-creak-improvement-district-279ee608-f7dc-496e-9fbf-5cf811236094.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Reedy_Creek_Improvement_District",
+      "wikipediaId": 0,
+      "dateRecorded": "October 17, 2022",
+      "image": ""
+    },
+    {
+      "title": "2022 Russia Invasion of Ukraine",
+      "tags": [
+        "russia",
+        "ukraine",
+        "war"
+      ],
+      "stub": "russia-invasion-of-ukraine",
+      "shortDescription": "",
+      "durationMin": 86,
+      "filesize": 30,
+      "urlAudio": "https://media.spokewiki.com/2022-russian-invasion-of-ukraine.9051d3b0-cfb2-4d26-9722-347e82958c60.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine",
+      "wikipediaId": 70149799,
+      "dateRecorded": "October 17, 2022",
       "image": ""
     }
   ]

@@ -5,7 +5,7 @@
 }
 
 .spokeArticle h2 {
-    margin: 0;
+    margin: 2px 0;
     padding: 0;
 }
 
@@ -14,21 +14,49 @@
     padding: 0;
 }
 
-.spokeArticle .box {
-
-}
-
-.box a {
-    color: blue;
-    display: inline-block;
-    padding: 2px 3px;
+.spokeArticle a {
+    color: #222;
+    text-decoration: none;
 }
 
 .spokeArticle:hover {
     background: rgba(0, 0, 0, .05)
 }
 
-.spokeArticle a {
-    color: black;
-    text-decoration: none;
+.listened {
+    opacity: 40%;
+    border-left: solid 2px green;
+    padding-left: 1rem;
+    margin: 0 -0.5rem;
+    color: green;
 }
+
+.listened a {
+    color: green;
+}
+
+.listened .box a {
+    background: green;
+}
+
+.box {
+    margin-top: 1.5rem;
+}
+
+.box a {
+    display: inline-block;
+    padding: 7px 8px;
+    margin: 4px;
+    background: #666666;
+    color: white !important;
+    border-radius: 4px;
+    font-size: 85%;
+    letter-spacing: -1px;
+}
+
+.box a:hover {
+    background: #444444;
+}
+
+
+
