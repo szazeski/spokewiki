@@ -2,11 +2,26 @@
     margin: 0.5rem;
     padding: 0.5rem;
     background: white;
-    display: flex;
+}
+
+.spokeArticle h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.spokeArticle p {
+    margin: 0;
+    padding: 0;
 }
 
 .spokeArticle .box {
-    flex-grow: 1;
+
+}
+
+.box a {
+    color: blue;
+    display: inline-block;
+    padding: 2px 3px;
 }
 
 .spokeArticle:hover {

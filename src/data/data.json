@@ -9,8 +9,8 @@
       ],
       "stub": "reedy-creek",
       "shortDescription": "find out why Disney has its own governmental district near Orlando called Reedy Creek Improvement District",
-      "duration-min": 16,
-      "urlAudio": "s3://sz-polly-output/reed-creak-improvement-district-279ee608-f7dc-496e-9fbf-5cf811236094.mp3",
+      "durationMin": 16,
+      "urlAudio": "https://media.spokewiki.com/reed-creak-improvement-district-279ee608-f7dc-496e-9fbf-5cf811236094.mp3",
       "urlWikipedia": "https://en.wikipedia.org/wiki/Reedy_Creek_Improvement_District",
       "dateRecorded": "October 17, 2022",
       "image": ""
@@ -23,8 +23,8 @@
       ],
       "stub": "candace-owens",
       "short-description": "find out how Candance came into ",
-      "duration-min": 16,
-      "urlAudio": "https://",
+      "durationMin": 6,
+      "urlAudio": "https://media.spokewiki.com/candide-owen-readbysalli.f2145943-a3cd-4d76-8f33-ee3277d67bb0.mp3",
       "urlWikipedia": "https://en.wikipedia.org/wiki/Candace_Owens",
       "image": "",
       "dateRecorded": "October 17, 2022"
@@ -38,8 +38,9 @@
       "stub": "crowd-crush",
       "short-description": "",
       "duration-min": 16,
-      "url-audio": "https://",
-      "url-wikipedia": "",
+      "filesize": 5,
+      "urlAudio": "https://media.spokewiki.com/crowd-crush.7fd4b3b3-99f0-4f1b-871c-204e19e0f4ff.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Crowd_collapses_and_crushes",
       "image": ""
     }
   ]
