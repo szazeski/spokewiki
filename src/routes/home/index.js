@@ -3,6 +3,7 @@ import {h} from 'preact';
 import style from './style.css';
 import SpokeArticle from "../../components/spokeArticle";
 import data from "../../data/data.json"
+import About from "../../components/about";
 
 const Home = ({onPlaying}) => {
 
@@ -25,6 +26,8 @@ const Home = ({onPlaying}) => {
             </div>
 
             {listOfArticles}
+
+            <About/>
 
         </div>
     );

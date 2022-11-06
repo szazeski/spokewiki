@@ -6,7 +6,7 @@
 
 .searchbox {
     text-align: center;
-    padding: 4rem 0;
+    padding-bottom: 1rem;
 }
 
 .searchbox label {
@@ -20,5 +20,6 @@
     padding: 4px 7px;
     margin: 0 auto;
     display: block;
-
+    width: 100%;
+    max-width: 300px;
 }

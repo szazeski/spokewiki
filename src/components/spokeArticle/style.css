@@ -4,6 +4,10 @@
     background: white;
 }
 
+.darkmode .spokeArticle {
+    background: #333333 !important;
+}
+
 .spokeArticle h2 {
     margin: 2px 0;
     padding: 0;
