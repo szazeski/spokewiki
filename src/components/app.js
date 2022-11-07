@@ -14,10 +14,12 @@ const App = () => {
 
     ReactGA.initialize('G-LFSKX925XP');
 
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add("darkmode");
-    } else {
-        document.body.classList.remove("darkmode");
+    if (typeof window !== "undefined") {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add("darkmode");
+        } else {
+            document.body.classList.remove("darkmode");
+        }
     }
 
     const [playing, setPlaying] = useState({urlAudio: "", title: ""});
