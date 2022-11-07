@@ -2,6 +2,23 @@
   "title": "",
   "articles": [
     {
+      "title": "Powerball Lottery",
+      "tags": [
+        "lottery",
+        "usa"
+      ],
+      "stub": "powerball",
+      "shortDescription": "Every couple months Powerball makes the news for a large jackpot, hear how this lottery got started in 1992",
+      "durationMin": 29,
+      "filesize": 10,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/powerball-lottery.a0f78fb9-eebf-465d-9b20-97654f09f866.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Powerball",
+      "wikipediaId": 530094,
+      "image": "",
+      "dateRecorded": "November 6, 2022"
+    },
+    {
       "title": "Halloween",
       "tags": [
         "holiday",
