@@ -8,6 +8,7 @@ import Article from "../routes/article";
 import SpokeAudioPlayer from "./spokeAudioPlayer";
 import {useState} from "preact/hooks";
 import ReactGA from "react-ga";
+import Settings from "../routes/settings";
 
 
 const App = () => {
@@ -28,13 +29,10 @@ const App = () => {
         <div id="app">
             <Header/>
             <Router>
-                <Home
-                    path="/"
-                    onPlaying={setPlaying}
-                />
-                <Article path="/article/:stub"/>
+                <Home path="/" onPlaying={setPlaying}/>
+                <Article path="/article/:stub" onPlaying={setPlaying}/>
+                <Settings path={"/settings"}/>
                 <Profile path="/profile/" user="me"/>
-                <Profile path="/profile/:user"/>
             </Router>
             <SpokeAudioPlayer
                 src={playing.urlAudio}
