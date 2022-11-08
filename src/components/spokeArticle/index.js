@@ -7,6 +7,7 @@ const SpokeArticle = ({data, onPlaying}) => {
     function play() {
         console.log("play" + data.stub);
         console.log("url:" + data.urlAudio);
+        document.title = data.title;
         onPlaying(data);
         ReactGA.event({category: 'Play', action: data.stub});
     }
