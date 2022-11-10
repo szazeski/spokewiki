@@ -2,7 +2,24 @@
   "title": "",
   "articles": [
     {
-      "title": "Rishi Sunak (Prime Minister of the United Kingdom)",
+      "title": "John Fetterman",
+      "tags": [
+        "Pennsylvania",
+        "Democrat"
+      ],
+      "stub": "john_fetterman",
+      "shortDescription": "In November 2022, John (D) ran against Dr. Oz (R) for senator seat in Pennsylvania",
+      "durationMin": 34,
+      "filesize": 12,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/john-fetterman.1098be88-59ee-4174-9ac8-1179b7a81474.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/john_fetterman",
+      "wikipediaId": 5303368,
+      "image": "",
+      "dateRecorded": "November 9, 2022"
+    },
+    {
+      "title": "Rishi Sunak",
       "tags": [
         "UK",
         "Prime Minister"

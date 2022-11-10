@@ -24,3 +24,8 @@ html, body {
     bottom: 0;
     width: 100%;
 }
+
+:root {
+    --primary: #FC5A5E;
+    --header-height: 180px;
+}

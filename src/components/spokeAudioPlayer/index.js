@@ -46,6 +46,7 @@ const SpokePlayer = ({src, title}) => {
                     <button onClick={() => setSpeed(1.5)}>1.5x</button>,
                 ]
             }
+            customVolumeControls={[]}
         />
     )
 }

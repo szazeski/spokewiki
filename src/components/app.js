@@ -7,13 +7,10 @@ import Profile from '../routes/profile';
 import Article from "../routes/article";
 import SpokeAudioPlayer from "./spokeAudioPlayer";
 import {useState} from "preact/hooks";
-import ReactGA from "react-ga";
 import Settings from "../routes/settings";
 
 
 const App = () => {
-
-    ReactGA.initialize('G-LFSKX925XP');
 
     if (typeof window !== "undefined") {
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {

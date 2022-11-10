@@ -1,6 +1,4 @@
 import style from './style.css';
-import ReactGA from "react-ga";
-
 
 const SpokeArticle = ({data, onPlaying}) => {
 
@@ -9,7 +7,7 @@ const SpokeArticle = ({data, onPlaying}) => {
         console.log("url:" + data.urlAudio);
         document.title = data.title;
         onPlaying(data);
-        ReactGA.event({category: 'Play', action: data.stub});
+        // ReactGA.event({category: 'Play', action: data.stub});
     }
 
     function queue() {

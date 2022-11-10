@@ -19,12 +19,6 @@ const Home = ({onPlaying}) => {
     return (
         <div class={style.home}>
 
-            <div class={style.searchbox}>
-                <label> search for articles about
-                    <input name="search" onChange={search} disabled={true}/>
-                </label>
-            </div>
-
             {listOfArticles}
 
             <About/>

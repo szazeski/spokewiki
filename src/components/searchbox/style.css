@@ -1,0 +1,19 @@
+.searchbox {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.searchbox label {
+    display: block;
+    letter-spacing: 1px;
+    opacity: 75%;
+}
+
+.searchbox input {
+    font-size: 2rem;
+    padding: 4px 7px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+}
