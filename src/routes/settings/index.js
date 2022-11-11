@@ -7,6 +7,10 @@ const Settings = () => {
         <div class={style.settings}>
             <h1>Settings</h1>
             <p>coming soon...</p>
+
+            <p>App Color:</p>
+            <p>Default Speed: 1x</p>
+            <p>Never show stories about:</p>
         </div>
     );
 }

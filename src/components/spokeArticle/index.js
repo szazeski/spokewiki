@@ -1,17 +1,28 @@
 import style from './style.css';
 
-const SpokeArticle = ({data, onPlaying}) => {
+const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
+
+    let listened = false;
+    if (typeof window !== "undefined") {
+        let status = localStorage.getItem(data.urlAudio)
+        if (status != null) {
+            listened = true;
+        }
+    }
+
+    if (showNewOnly && listened) {
+        return
+    }
 
     function play() {
         console.log("play" + data.stub);
         console.log("url:" + data.urlAudio);
         document.title = data.title;
         onPlaying(data);
-        // ReactGA.event({category: 'Play', action: data.stub});
     }
 
     function queue() {
-        console.log("queue" + data.stub);
+        onQueue(data);
     }
 
     function togglePlayed() {
@@ -27,11 +38,8 @@ const SpokeArticle = ({data, onPlaying}) => {
     }
 
     function getListenStatus() {
-        if (typeof window !== "undefined") {
-            let status = localStorage.getItem(data.urlAudio)
-            if (status !== null) {
-                return style.listened;
-            }
+        if (listened) {
+            return style.listened;
         }
         return "";
     }

@@ -1,0 +1,16 @@
+.SpokeAudioPlayer {
+    background: --var(primaryColor);
+    border: dashed 2px red;
+}
+
+.SpokeAudioPlayerSpeed {
+    border: 0;
+    margin: 1px;
+    background-color: white;
+    padding: 6px 5px;
+    border-radius: 2px;
+}
+
+.SpokeAudioPlayerSpeed:hover {
+    background-color: rgba(255, 255, 255, .8);
+}

@@ -5,10 +5,15 @@ import SpokeArticle from "../../components/spokeArticle";
 import data from "../../data/data.json"
 import About from "../../components/about";
 
-const Home = ({onPlaying}) => {
+const Home = ({onPlaying, onQueue, showOnlyNew}) => {
 
     const listOfArticles = data.articles.map((item) =>
-        <SpokeArticle data={item} onPlaying={onPlaying}/>
+        <SpokeArticle
+            data={item}
+            onPlaying={onPlaying}
+            onQueue={onQueue}
+            showNewOnly={showOnlyNew}
+        />
     );
 
     function search(event) {

@@ -1,11 +1,7 @@
 .spokeArticle {
     margin: 0;
     padding: 0.75rem;
-    background: white;
-}
-
-.darkmode .spokeArticle {
-    background: #333333 !important;
+    background: var(--primary-inverse);
 }
 
 .spokeArticle h2 {
@@ -51,15 +47,15 @@
     display: inline-block;
     padding: 7px 8px;
     margin: 4px;
-    background: #666666;
-    color: white !important;
+    background: var(--primary);
+    color: white;
     border-radius: 4px;
     font-size: 85%;
     letter-spacing: -1px;
 }
 
 .box a:hover {
-    background: #444444;
+    background: rgba(0, 0, 0, .4);
 }
 
 

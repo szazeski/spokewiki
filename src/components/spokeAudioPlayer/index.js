@@ -1,7 +1,7 @@
 import H5AudioPlayer from "react-h5-audio-player";
+import style from "./style.css";
 
-const SpokePlayer = ({src, title}) => {
-
+const SpokePlayer = ({src, title, onStop}) => {
 
     let playbackSpeed = 1;
     if (typeof window !== 'undefined') {
@@ -15,6 +15,7 @@ const SpokePlayer = ({src, title}) => {
     function onEnd() {
         console.log("end - marked finished")
         localStorage.setItem(src, new Date().toISOString());
+        onStop();
     }
 
     function onPause() {
@@ -41,12 +42,13 @@ const SpokePlayer = ({src, title}) => {
             onEnded={onEnd}
             customAdditionalControls={
                 [
-                    <button onClick={() => setSpeed(1)}>1x</button>,
-                    <button onClick={() => setSpeed(1.2)}>1.2x</button>,
-                    <button onClick={() => setSpeed(1.5)}>1.5x</button>,
+                    <button class={style.SpokeAudioPlayerSpeed} onClick={() => setSpeed(1)}>1x</button>,
+                    <button class={style.SpokeAudioPlayerSpeed} onClick={() => setSpeed(1.2)}>1.2x</button>,
+                    <button class={style.SpokeAudioPlayerSpeed} onClick={() => setSpeed(1.5)}>1.5x</button>,
                 ]
             }
             customVolumeControls={[]}
+            style={style.SpokeAudioPlayer}
         />
     )
 }

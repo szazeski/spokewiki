@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     padding: 0 10px;
-    background: #3e474d;
+    background: var(--primary);
     z-index: 50;
 }
 
@@ -47,8 +47,4 @@
 
 .logo:hover, .logo:focus, .logo:active {
     transform: scale(1.05);
-}
-
-svg {
-    fill: white;
 }

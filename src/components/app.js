@@ -21,12 +21,20 @@ const App = () => {
     }
 
     const [playing, setPlaying] = useState({urlAudio: "", title: ""});
+    const [queue, setQueue] = useState({queue: []});
+
+    function onStop() {
+        if (queue.length > 0) {
+            console.log("queuing next track");
+        }
+    }
 
     return (
         <div id="app">
             <Header/>
             <Router>
-                <Home path="/" onPlaying={setPlaying}/>
+                <Home path="/" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={false}/>
+                <Home path="/new" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={true}/>
                 <Article path="/article/:stub" onPlaying={setPlaying}/>
                 <Settings path={"/settings"}/>
                 <Profile path="/profile/" user="me"/>
@@ -34,6 +42,7 @@ const App = () => {
             <SpokeAudioPlayer
                 src={playing.urlAudio}
                 title={playing.title}
+                onStop={onStop}
             />
         </div>
     );

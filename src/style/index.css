@@ -26,6 +26,29 @@ html, body {
 }
 
 :root {
-    --primary: #FC5A5E;
+    --primary: #57129d;
+    --primary-inverse: rgba(255, 255, 255, .75);
     --header-height: 180px;
+}
+
+.rhap_container {
+    background-color: var(--primary) !important;
+    color: white;
+}
+
+.rhap_progress-indicator {
+    background-color: white !important;
+}
+
+.rhap_main-controls-button {
+    color: white !important;
+}
+
+.rhap_main-controls-button:hover {
+    color: rgba(255, 255, 255, .9) !important;
+}
+
+.rhap_time {
+    color: white !important;
+    font-weight: bold;
 }
