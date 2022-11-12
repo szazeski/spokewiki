@@ -2,13 +2,30 @@
   "title": "",
   "articles": [
     {
+      "title": "Binance (crypto exchange)",
+      "tags": [
+        "crypto",
+        "exchange"
+      ],
+      "stub": "binance",
+      "shortDescription": "Binance came into the news to buy out FTX crypto exchange, hear how they got started.",
+      "durationMin": 12,
+      "filesize": 5,
+      "pollyVoice": "Sally",
+      "urlAudio": "https://media.spokewiki.com/binance.ccc13b11-751f-4a9a-afef-b62230786fab.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/binance",
+      "wikipediaId": 56180153,
+      "image": "",
+      "dateRecorded": "November 12, 2022"
+    },
+    {
       "title": "John Fetterman",
       "tags": [
         "Pennsylvania",
         "Democrat"
       ],
       "stub": "john_fetterman",
-      "shortDescription": "In November 2022, John (D) ran against Dr. Oz (R) for senator seat in Pennsylvania",
+      "shortDescription": "In November 2022, John Fetterman ran against Dr. Oz for senator seat in Pennsylvania",
       "durationMin": 34,
       "filesize": 12,
       "pollyVoice": "Matthew",
@@ -127,7 +144,7 @@
         "war"
       ],
       "stub": "russia-invasion-of-ukraine",
-      "shortDescription": "",
+      "shortDescription": "On February 2022, Russia invaded Ukraine in a major escalation of the Russo-Ukrainian War, which began in 2014.",
       "durationMin": 86,
       "filesize": 30,
       "urlAudio": "https://media.spokewiki.com/2022-russian-invasion-of-ukraine.9051d3b0-cfb2-4d26-9722-347e82958c60.mp3",

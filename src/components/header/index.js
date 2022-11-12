@@ -7,6 +7,7 @@ const Header = () => (
         <a href="/">
             <img class={style.logo} src="/assets/logoline.svg" alt="spokewiki - hear more than headlines"/>
         </a>
+        <span class={style.flexgrow}></span>
         <nav>
             <Link activeClassName={style.active} href="/">Home</Link>
             <Link activeClassName={style.active} href="/new">New</Link>
