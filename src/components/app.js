@@ -8,6 +8,7 @@ import Article from "../routes/article";
 import SpokeAudioPlayer from "./spokeAudioPlayer";
 import {useState} from "preact/hooks";
 import Settings from "../routes/settings";
+import Queue from "../routes/queue";
 
 
 const App = () => {
@@ -33,9 +34,10 @@ const App = () => {
         <div id="app">
             <Header/>
             <Router>
-                <Home path="/" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={false}/>
-                <Home path="/new" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={true}/>
+                <Home path="/" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={true}/>
+                <Home path="/all" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={false}/>
                 <Article path="/article/:stub" onPlaying={setPlaying}/>
+                <Queue path="/queue"/>
                 <Settings path={"/settings"}/>
                 <Profile path="/profile/" user="me"/>
             </Router>

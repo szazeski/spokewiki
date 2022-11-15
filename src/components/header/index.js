@@ -9,8 +9,8 @@ const Header = () => (
         </a>
         <span class={style.flexgrow}></span>
         <nav>
-            <Link activeClassName={style.active} href="/">Home</Link>
-            <Link activeClassName={style.active} href="/new">New</Link>
+            <Link activeClassName={style.active} href="/">New</Link>
+            <Link activeClassName={style.active} href="/all">All</Link>
             <Link activeClassName={style.active} href="/queue">Queue</Link>
             <Link activeClassName={style.active} href="/settings">Settings</Link>
         </nav>
