@@ -2,6 +2,23 @@
   "title": "",
   "articles": [
     {
+      "title": "Kari Lake",
+      "tags": [
+        "Politics",
+        "Arizona"
+      ],
+      "stub": "kari_lake",
+      "shortDescription": "The 2022 Arizona Governor race placed Kari Lake in national news with slow midterm results.",
+      "durationMin": 13,
+      "filesize": 5,
+      "pollyVoice": "Matthew",
+      "urlAudio": "kari-lake.ac9adc0a-8868-4e8c-badf-93e1f734becf.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/kari_lake",
+      "wikipediaId": 9527789,
+      "image": "",
+      "dateRecorded": "November 15, 2022"
+    },
+    {
       "title": "Binance (crypto exchange)",
       "tags": [
         "crypto",
@@ -22,7 +39,7 @@
       "title": "John Fetterman",
       "tags": [
         "Pennsylvania",
-        "Democrat"
+        "Politics"
       ],
       "stub": "john_fetterman",
       "shortDescription": "In November 2022, John Fetterman ran against Dr. Oz for senator seat in Pennsylvania",
@@ -56,7 +73,7 @@
       "title": "Powerball Lottery",
       "tags": [
         "lottery",
-        "usa"
+        "USA"
       ],
       "stub": "powerball",
       "shortDescription": "Every couple months Powerball makes the news for a large jackpot, hear how this lottery got started in 1992",
@@ -114,7 +131,7 @@
       "shortDescription": "Appearing in lots of recent news, find out how Candace Owen got her start with 'no interest in politics whatsoever prior to 2015', and her path to where is she is now.",
       "durationMin": 29,
       "filesize": 10,
-      "urlAudio": "https://media.spokewiki.com/candace_owens.f2145943-a3cd-4d76-8f33-ee3277d67bb0.mp3",
+      "urlAudio": "https://media.spokewiki.com/candace-owens.f2145943-a3cd-4d76-8f33-ee3277d67bb0.mp3",
       "urlWikipedia": "https://en.wikipedia.org/wiki/Candace_Owens",
       "wikipediaId": 55832489,
       "image": "",

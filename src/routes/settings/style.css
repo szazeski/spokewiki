@@ -1,5 +1,14 @@
 .settings {
-    padding: 200px 20px;
+    padding: var(--header-height) 20px;
     min-height: 100%;
     width: 100%;
+    text-align: center;
+}
+
+.topic {
+    background-color: var(--primary);
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: white;
+    margin-right: 5px;
 }

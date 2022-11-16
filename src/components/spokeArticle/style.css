@@ -19,6 +19,12 @@
     text-decoration: none;
 }
 
+.spokeArticle a img {
+    padding-right: 5px;
+    height: 18px;
+    margin-bottom: -15%;
+}
+
 .spokeArticle:hover {
     background: rgba(0, 0, 0, .05)
 }
@@ -45,7 +51,7 @@
 
 .box a {
     display: inline-block;
-    padding: 7px 12px;
+    padding: 9px 12px;
     margin-top: 6px;
     margin-right: 8px;
     background: var(--primary);

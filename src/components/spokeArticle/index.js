@@ -1,4 +1,5 @@
 import style from './style.css';
+import playsvg from '../../assets/icons/play.svg';
 
 const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
 
@@ -53,7 +54,7 @@ const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
                 <div class={style.box}>
                     <div>{data.durationMin} min ({data.filesize}mb) - recorded {data.dateRecorded}</div>
                     <div>
-                        <a href="#playnow" onClick={play}>play now</a>
+                        <a href="#playnow" onClick={play}><img src={playsvg}/>play</a>
                         <a href="#queue" onClick={queue}>queue</a>
                         <a href={data.urlAudio} target="_blank">mp3</a>
                         <a href={data.urlWikipedia} target="_blank">wikipedia</a>
