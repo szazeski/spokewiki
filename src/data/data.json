@@ -1,6 +1,40 @@
 {
-  "title": "",
+  "title": "spokewiki",
   "articles": [
+    {
+      "title": "Brittany Griner",
+      "tags": [
+        "WNBA",
+        "Sports"
+      ],
+      "stub": "brittany_griner",
+      "shortDescription": "In February 2022, Brittany Griner, a WNBA basketball player, was arrested and charged in Russia.",
+      "durationMin": 27,
+      "filesize": 10,
+      "pollyVoice": "Joanna",
+      "urlAudio": "https://media.spokewiki.com/brittany-griner.940986d6-8ef7-40f8-9fa3-9c68d53b6064.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Brittney_Griner",
+      "wikipediaId": 18554187,
+      "image": "",
+      "dateRecorded": "November 17, 2022"
+    },
+    {
+      "title": "Artemis 1",
+      "tags": [
+        "NASA",
+        "Space"
+      ],
+      "stub": "artemis_1",
+      "shortDescription": "On Nov 16, 2022, NASA launched the Artemis 1 mission to deploy ten cubesat around the moon.",
+      "durationMin": 21,
+      "filesize": 7,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/artemis-1.cc80b166-e633-40ed-911f-17acf5ea36ca.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/artemis_1",
+      "wikipediaId": 36641570,
+      "image": "",
+      "dateRecorded": "November 16, 2022"
+    },
     {
       "title": "Kari Lake",
       "tags": [

@@ -12,3 +12,26 @@
     color: white;
     margin-right: 5px;
 }
+
+.theme span {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: solid 1px white;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.themePurple {
+    background-color: var(--primary);
+}
+
+.themeGrey {
+    background-color: #333333;
+}
+
+.themeBlue {
+    background-color: #0072ff;
+}
