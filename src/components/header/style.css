@@ -14,6 +14,10 @@
     .header {
         flex-direction: row;
     }
+
+    .logo {
+        margin: 20px 3px !important;
+    }
 }
 
 .flexgrow {
@@ -53,7 +57,7 @@
 .logo {
     width: 100%;
     max-height: 90px;
-    margin: 20px 0;
+    margin: 3px;
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.2s;

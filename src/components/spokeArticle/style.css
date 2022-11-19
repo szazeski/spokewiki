@@ -31,19 +31,19 @@
 }
 
 .listened {
-    opacity: 40%;
-    border-left: solid 2px green;
+    opacity: 50%;
+    border-left: solid 6px var(--text);
     padding-left: 1rem;
     margin: 0 -0.5rem;
-    color: green;
+    color: var(--text);
 }
 
 .listened a {
-    color: green;
+    color: var(--text);
 }
 
 .listened .box a {
-    background: green;
+    background: var(--primary);
 }
 
 .box {

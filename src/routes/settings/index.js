@@ -35,7 +35,7 @@ const Settings = () => {
                 <span style="background-color:#57129d" onClick={setThemeColor}>Purple</span>
                 <span style="background-color:#333" onClick={setThemeColor}>Grey</span>
                 <span style="background-color:#0072ff" onClick={setThemeColor}>Blue</span>
-                <span style="background-color:#e63946" onClick={setThemeColor}>Red</span>
+                <span style="background-color:#c1121f" onClick={setThemeColor}>Red</span>
 
             </div>
             <div>Light/Dark Mode</div>
