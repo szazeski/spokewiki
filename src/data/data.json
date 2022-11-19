@@ -2,6 +2,22 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Ticketmaster",
+      "tags": [
+        "Business"
+      ],
+      "stub": "ticketmaster",
+      "shortDescription": "In November 2022, After issues with the release of a new Taylor Swift concert, Ticketmaster is being investigated by the Department of Justice.",
+      "durationMin": 18,
+      "filesize": 6,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/ticketmaster.f365ab0c-18f4-43dc-8154-48df4585b2ff.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/ticketmaster",
+      "wikipediaId": 545768,
+      "image": "",
+      "dateRecorded": "November 19, 2022"
+    },
+    {
       "title": "Brittany Griner",
       "tags": [
         "WNBA",
