@@ -36,7 +36,10 @@ export function setLight() {
 
 export function loadColors() {
     let root = document.documentElement;
-    root.style.setProperty('--primary', getValue("primary", "grey"));
+    let primaryColor = getValue("primary", "rgb(87, 18, 157)"); // default: Purple
+    root.style.setProperty('--primary', primaryColor);
+    let metaThemeColor = document.querySelector("meta[name=theme-color]");
+    metaThemeColor.setAttribute("content", primaryColor);
     root.style.setProperty('--primary-inverse', getValue("primary-inverse", "rgba(255,255,255,.9"));
     root.style.setProperty('--text', getValue("text", "black"));
 }
