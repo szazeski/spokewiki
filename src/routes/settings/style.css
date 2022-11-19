@@ -1,37 +1,32 @@
 .settings {
+    background-color: var(--primary-inverse);
     padding: var(--header-height) 20px;
     min-height: 100%;
     width: 100%;
     text-align: center;
+    color: var(--text);
 }
 
 .topic {
     background-color: var(--primary);
     padding: 3px 10px;
     border-radius: 4px;
-    color: white;
+    color: var(--text);
     margin-right: 5px;
 }
 
-.theme span {
+.lightdark {
+    background-color: var(--primary);
+    display: inline-block;
+}
+
+.theme span, .lightdark span {
     display: inline-block;
     height: 50px;
     width: 50px;
     margin: 10px;
-    border: solid 1px white;
-    color: white;
+    color: var(--text);
     font-weight: bold;
     font-size: 11px;
-}
-
-.themePurple {
-    background-color: var(--primary);
-}
-
-.themeGrey {
-    background-color: #333333;
-}
-
-.themeBlue {
-    background-color: #0072ff;
+    box-shadow: 0 0 5px black;
 }

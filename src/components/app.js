@@ -9,16 +9,23 @@ import SpokeAudioPlayer from "./spokeAudioPlayer";
 import {useState} from "preact/hooks";
 import Settings from "../routes/settings";
 import Queue from "../routes/queue";
+import {getValue, loadColors, setDark, setLight} from "./storage";
 
 
 const App = () => {
 
     if (typeof window !== "undefined") {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.classList.add("darkmode");
-        } else {
-            document.body.classList.remove("darkmode");
+        let autoMode = getValue("autoMode", false);
+        if (autoMode) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                console.log("auto mode enabled, setting to dark");
+                setDark()
+            } else {
+                console.log("auto mode enabled, setting to light");
+                setLight()
+            }
         }
+        loadColors();
     }
 
     const [playing, setPlaying] = useState({urlAudio: "", title: ""});

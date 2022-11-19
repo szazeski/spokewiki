@@ -1,12 +1,10 @@
 import H5AudioPlayer, {RHAP_UI} from "react-h5-audio-player";
 import style from "./style.css";
+import {getValue} from "../storage";
 
 const SpokePlayer = ({src, title, onStop}) => {
 
-    let playbackSpeed = 1;
-    if (typeof window !== 'undefined') {
-        playbackSpeed = localStorage.getItem("playbackSpeed") || 1;
-    }
+    let playbackSpeed = getValue("playbackSpeed", 1);
 
     function onStart() {
         setSpeed(playbackSpeed);

@@ -4,6 +4,7 @@ import style from './style.css';
 import SpokeArticle from "../../components/spokeArticle";
 import data from "../../data/data.json"
 import About from "../../components/about";
+import {loadColors} from "../../components/storage";
 
 const Home = ({onPlaying, onQueue, showOnlyNew}) => {
 
@@ -15,12 +16,7 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
             showNewOnly={showOnlyNew}
         />
     );
-
-    function search(event) {
-        console.log(event);
-        //this.searchFilter = search.value();
-    }
-
+    
     return (
         <div class={style.home}>
 
