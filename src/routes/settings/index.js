@@ -1,6 +1,8 @@
 import {h} from 'preact';
 import style from './style.css';
 import {getValue, setDark, setLight, setPrimaryColor, setValue} from "../../components/storage";
+import {useMatomo} from "@datapunt/matomo-tracker-react";
+import {useEffect} from "preact/hooks";
 
 const Settings = () => {
 
@@ -26,6 +28,11 @@ const Settings = () => {
     function getSpeed() {
         return getValue("playbackSpeed", "1.0");
     }
+
+    const {trackPageView} = useMatomo()
+    useEffect(() => {
+        trackPageView()
+    }, [])
 
     return (
         <div class={style.settings}>

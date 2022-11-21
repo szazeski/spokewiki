@@ -27,6 +27,7 @@
     "sirv-cli": "1.0.3"
   },
   "dependencies": {
+    "@datapunt/matomo-tracker-react": "^0.5.1",
     "@fontsource/pt-sans": "^4.5.11",
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",

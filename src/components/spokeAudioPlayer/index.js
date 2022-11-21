@@ -1,19 +1,23 @@
 import H5AudioPlayer, {RHAP_UI} from "react-h5-audio-player";
 import style from "./style.css";
 import {getValue} from "../storage";
+import {useMatomo} from "@datapunt/matomo-tracker-react";
 
 const SpokePlayer = ({src, title, onStop}) => {
 
+    const {trackEvent} = useMatomo()
     let playbackSpeed = getValue("playbackSpeed", 1);
 
     function onStart() {
         setSpeed(playbackSpeed);
+        trackEvent({category: 'Audio', action: 'Start', name: title})
     }
 
     function onEnd() {
         console.log("end - marked finished")
         localStorage.setItem(src, new Date().toISOString());
         onStop();
+        trackEvent({category: 'Audio', action: 'Finished', name: title})
     }
 
     function onPause() {
@@ -27,6 +31,7 @@ const SpokePlayer = ({src, title, onStop}) => {
         if (player != null) {
             player[0].playbackRate = speed;
         }
+        trackEvent({category: 'Audio', action: 'Speed', name: speed})
     }
 
     return (

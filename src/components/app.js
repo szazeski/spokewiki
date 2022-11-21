@@ -10,6 +10,7 @@ import {useState} from "preact/hooks";
 import Settings from "../routes/settings";
 import Queue from "../routes/queue";
 import {getValue, loadColors, setDark, setLight} from "./storage";
+import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
 
 
 const App = () => {
@@ -37,22 +38,40 @@ const App = () => {
         }
     }
 
+    const instance = createInstance({
+        urlBase: 'https://stats.spokewiki.com',
+        siteId: 6,
+        heartBeat: { // optional, enabled by default
+            active: true, // optional, default value: true
+            seconds: 10 // optional, default value: `15
+        },
+        linkTracking: false, // optional, default value: true
+        configurations: { // optional, default value: {}
+            // any valid matomo configuration, all below are optional
+            //disableCookies: true,
+            //setSecureCookie: true,
+            setRequestMethod: 'POST'
+        }
+    })
+
     return (
         <div id="app">
-            <Header/>
-            <Router>
-                <Home path="/" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={true}/>
-                <Home path="/all" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={false}/>
-                <Article path="/article/:stub" onPlaying={setPlaying}/>
-                <Queue path="/queue"/>
-                <Settings path={"/settings"}/>
-                <Profile path="/profile/" user="me"/>
-            </Router>
-            <SpokeAudioPlayer
-                src={playing.urlAudio}
-                title={playing.title}
-                onStop={onStop}
-            />
+            <MatomoProvider value={instance}>
+                <Header/>
+                <Router>
+                    <Home path="/" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={true}/>
+                    <Home path="/all" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={false}/>
+                    <Article path="/article/:stub" onPlaying={setPlaying}/>
+                    <Queue path="/queue"/>
+                    <Settings path={"/settings"}/>
+                    <Profile path="/profile/" user="me"/>
+                </Router>
+                <SpokeAudioPlayer
+                    src={playing.urlAudio}
+                    title={playing.title}
+                    onStop={onStop}
+                />
+            </MatomoProvider>
         </div>
     );
 }
