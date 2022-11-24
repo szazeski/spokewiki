@@ -41,5 +41,4 @@ export function loadColors() {
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
     metaThemeColor.setAttribute("content", primaryColor);
     root.style.setProperty('--primary-inverse', getValue("primary-inverse", "rgba(255,255,255,.9"));
-    root.style.setProperty('--text', getValue("text", "black"));
 }

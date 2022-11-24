@@ -18,6 +18,7 @@
 .lightdark {
     background-color: var(--primary);
     display: inline-block;
+    padding: 10px 20px;
 }
 
 .theme span, .lightdark span {
@@ -25,8 +26,35 @@
     height: 50px;
     width: 50px;
     margin: 10px;
-    color: var(--text);
+    color: white;
     font-weight: bold;
     font-size: 11px;
-    box-shadow: 0 0 5px black;
+    border: solid 1px white;
+    border-radius: 4px;
+}
+
+.theme span:hover {
+    opacity: .8;
+}
+
+.category {
+    font-weight: bold;
+    padding: 20px 0 7px 0;
+    border-bottom: solid 1px rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
+}
+
+.speed button {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    background-color: var(--primary);
+    border-radius: 3px;
+}
+
+.speed button:hover {
+    opacity: .8;
 }

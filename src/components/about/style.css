@@ -5,3 +5,11 @@
     margin: 0 auto;
     color: var(--text);
 }
+
+.About a {
+    color: var(--text);
+}
+
+.About a:hover {
+    text-decoration: none;
+}

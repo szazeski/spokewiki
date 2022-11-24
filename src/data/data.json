@@ -2,6 +2,23 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Railway Labor Act",
+      "tags": [
+        "Strike",
+        "Union"
+      ],
+      "stub": "railway_labor_act",
+      "shortDescription": "In November 2022, the railroad unions are rejecting labor deals but find out why Congress can override it.",
+      "durationMin": 10,
+      "filesize": 4,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/railway-labor-act.d44c0295-6c5c-4c7c-beb5-0d559c1f355c.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/railway_labor_act",
+      "wikipediaId": 55739,
+      "image": "",
+      "dateRecorded": "November 23, 2022"
+    },
+    {
       "title": "Ticketmaster",
       "tags": [
         "Business"

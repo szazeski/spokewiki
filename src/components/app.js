@@ -16,8 +16,8 @@ import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
 const App = () => {
 
     if (typeof window !== "undefined") {
-        let autoMode = getValue("autoMode", false);
-        if (autoMode) {
+        let autoMode = getValue("autoMode", "false");
+        if (autoMode === "true") {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 console.log("auto mode enabled, setting to dark");
                 setDark()
