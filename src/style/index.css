@@ -19,10 +19,7 @@ html, body {
 }
 
 :root {
-    --primary: #57129d;
-    --primary-inverse: rgba(255, 255, 255, .75);
     --header-height: 140px;
-    --text: white;
 }
 
 .rhap_container {

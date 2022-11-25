@@ -27,11 +27,13 @@ export function setInverseColor(rgb, textColor) {
 }
 
 export function setDark() {
-    setInverseColor("rgba(255,255,255,.1)", "rgba(255,255,255,.9)")
+    setValue("theme", "dark");
+    setInverseColor("rgba(255,255,255,.15)", "rgba(255,255,255,.85)");
 }
 
 export function setLight() {
-    setInverseColor("rgba(255,255,255,.9)", "rgba(0,0,0,.9)")
+    setValue("theme", "light");
+    setInverseColor("rgba(255,255,255,.85)", "rgba(0,0,0,.85)");
 }
 
 export function loadColors() {
@@ -40,5 +42,9 @@ export function loadColors() {
     root.style.setProperty('--primary', primaryColor);
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
     metaThemeColor.setAttribute("content", primaryColor);
-    root.style.setProperty('--primary-inverse', getValue("primary-inverse", "rgba(255,255,255,.9"));
+    if (getValue("theme", "light") == "light") {
+        setLight();
+    } else {
+        setDark();
+    }
 }
