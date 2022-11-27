@@ -18,7 +18,8 @@
 .lightdark {
     background-color: var(--primary);
     display: inline-block;
-    padding: 10px 20px;
+    padding: 25px 0;
+    border-radius: 4px;
 }
 
 .theme span, .lightdark span {
@@ -39,9 +40,12 @@
 
 .category {
     font-weight: bold;
-    padding: 20px 0 7px 0;
-    border-bottom: solid 1px rgba(0, 0, 0, .1);
+    padding: 25px 0 4px 0;
     margin-bottom: 10px;
+}
+
+.speed {
+    font-size: 1.3rem;
 }
 
 .speed button {

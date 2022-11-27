@@ -5,12 +5,14 @@ import SpokeArticle from "../../components/spokeArticle";
 
 const Article = ({stub, onPlaying}) => {
 
-    console.log("Article", stub);
     const article = data.articles.filter(a => a.stub == stub).shift();
 
     return (
         <div class={style.article}>
-            <SpokeArticle data={article} onPlaying={onPlaying}/>
+            <SpokeArticle
+                data={article}
+                onPlaying={onPlaying}
+            />
         </div>
     );
 }

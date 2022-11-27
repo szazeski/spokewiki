@@ -17,6 +17,7 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
         />
     );
     const {trackPageView} = useMatomo()
+
     useEffect(() => {
         trackPageView()
     }, [])
@@ -24,9 +25,13 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
     return (
         <div class={style.home}>
 
-            {listOfArticles}
+            <div class={style.leftSidebar}></div>
 
-            <About/>
+            <div>
+                {listOfArticles}
+
+                <About/>
+            </div>
 
         </div>
     );

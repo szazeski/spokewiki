@@ -42,9 +42,25 @@ export function loadColors() {
     root.style.setProperty('--primary', primaryColor);
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
     metaThemeColor.setAttribute("content", primaryColor);
-    if (getValue("theme", "light") == "light") {
+    if (getValue("theme", "light") === "light") {
         setLight();
     } else {
         setDark();
     }
+}
+
+export function cacheAsset(url) {
+    caches.open("offline-mp3").then((cache) => {
+        cache.add(url).then((response) => {
+            console.log(response);
+        });
+    });
+}
+
+export function removeCacheAsset(url) {
+    caches.open("offline-mp3").then((cache) => {
+        cache.delete(url).then((response) => {
+            console.log(response);
+        });
+    });
 }

@@ -9,67 +9,118 @@ import SpokeAudioPlayer from "./spokeAudioPlayer";
 import {useState} from "preact/hooks";
 import Settings from "../routes/settings";
 import Queue from "../routes/queue";
-import {getValue, loadColors, setDark, setLight} from "./storage";
+import {cacheAsset, getValue, loadColors, removeCacheAsset, setDark, setLight} from "./storage";
 import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
 
 
-const App = () => {
-
+function loadLightDarkMode() {
     if (typeof window !== "undefined") {
         let autoMode = getValue("autoMode", "false");
         if (autoMode === "true") {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 console.log("auto mode enabled, setting to dark");
-                setDark()
+                setDark();
             } else {
                 console.log("auto mode enabled, setting to light");
-                setLight()
+                setLight();
             }
         }
         loadColors();
     }
+}
 
-    const [playing, setPlaying] = useState({urlAudio: "", title: ""});
-    const [queue, setQueue] = useState({queue: []});
-
-    function onStop() {
-        if (queue.length > 0) {
-            console.log("queuing next track");
-        }
-    }
-
+function setupMatomoAnalytics() {
     const instance = createInstance({
         urlBase: 'https://stats.spokewiki.com',
         siteId: 6,
-        heartBeat: { // optional, enabled by default
-            active: true, // optional, default value: true
-            seconds: 10 // optional, default value: `15
-        },
-        linkTracking: false, // optional, default value: true
-        configurations: { // optional, default value: {}
-            // any valid matomo configuration, all below are optional
+        configurations: {
             //disableCookies: true,
             //setSecureCookie: true,
             setRequestMethod: 'POST'
         }
     })
+    return instance;
+}
+
+const App = () => {
+
+    loadLightDarkMode();
+    const instance = setupMatomoAnalytics();
+
+    const [playing, setPlaying] = useState({urlAudio: "", title: ""});
+    const [queue, setQueue] = useState([]);
+    const [playbackSpeed, setPlaybackSpeed] = useState(getValue("playbackSpeed", 10));
+
+    function onStop() {
+        if (queue.length > 0) {
+            console.log("queuing next track");
+        }
+        removeCacheAsset(playing.urlAudio);
+    }
+
+    function setSpeed(speed) {
+        setPlaybackSpeed(speed);
+        localStorage.setItem("playbackSpeed", speed);
+    }
+
+    function AddQueue(data, front = false) {
+        if (front) {
+            console.log("Add Front Queue: ", data.title);
+            setQueue(queue.unshift({title: data.title, urlAudio: data.urlAudio}));
+        } else {
+            console.log("Add Back Queue: ", data.title);
+            setQueue(queue.push({title: data.title, urlAudio: data.urlAudio}));
+        }
+        cacheAsset(data.urlAudio);
+        localStorage.setItem("queue", queue);
+    }
+
+    function PlayNext() {
+        let stub = queue.pop();
+
+
+    }
+
 
     return (
         <div id="app">
             <MatomoProvider value={instance}>
                 <Header/>
                 <Router>
-                    <Home path="/" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={true}/>
-                    <Home path="/all" onPlaying={setPlaying} onQueue={setQueue} showOnlyNew={false}/>
-                    <Article path="/article/:stub" onPlaying={setPlaying}/>
-                    <Queue path="/queue"/>
-                    <Settings path={"/settings"}/>
-                    <Profile path="/profile/" user="me"/>
+                    <Home
+                        path="/"
+                        onPlaying={setPlaying}
+                        onQueue={AddQueue}
+                        showOnlyNew={true}
+                    />
+                    <Home
+                        path="/all"
+                        onPlaying={setPlaying}
+                        onQueue={AddQueue}
+                        showOnlyNew={false}
+                    />
+                    <Article
+                        path="/article/:stub"
+                        onPlaying={setPlaying}
+                    />
+                    <Queue
+                        path="/queue"
+                    />
+                    <Settings
+                        path={"/settings"}
+                        playbackSpeed={playbackSpeed}
+                        onPlaybackSpeedChange={setSpeed}
+                    />
+                    <Profile
+                        path="/profile/" user="me"
+                    />
                 </Router>
                 <SpokeAudioPlayer
                     src={playing.urlAudio}
                     title={playing.title}
                     onStop={onStop}
+                    playbackSpeed={playbackSpeed}
+                    onPlaybackSpeedChange={setSpeed}
                 />
             </MatomoProvider>
         </div>

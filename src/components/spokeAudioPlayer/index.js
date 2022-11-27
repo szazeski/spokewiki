@@ -1,15 +1,18 @@
 import H5AudioPlayer, {RHAP_UI} from "react-h5-audio-player";
 import style from "./style.css";
-import {getValue} from "../storage";
 import {useMatomo} from "@datapunt/matomo-tracker-react";
+import {useEffect} from "preact/hooks";
 
-const SpokePlayer = ({src, title, onStop}) => {
+const SpokePlayer = ({src, title, playbackSpeed, onStop, onPlaybackSpeedChange}) => {
 
-    const {trackEvent} = useMatomo()
-    let playbackSpeed = getValue("playbackSpeed", 1);
+    const {trackEvent} = useMatomo();
+
+    useEffect(() => {
+        setPlayerSpeed();
+    }, [playbackSpeed]);
 
     function onStart() {
-        setSpeed(playbackSpeed);
+        setPlayerSpeed();
         trackEvent({category: 'Audio', action: 'Start', name: title})
     }
 
@@ -17,21 +20,21 @@ const SpokePlayer = ({src, title, onStop}) => {
         console.log("end - marked finished")
         localStorage.setItem(src, new Date().toISOString());
         onStop();
-        trackEvent({category: 'Audio', action: 'Finished', name: title})
+        trackEvent({category: 'Audio', action: 'Finished', name: title});
     }
 
     function onPause() {
-        console.log("pause - save time position")
+        console.log("pause - save time position");
     }
 
-    function setSpeed(speed) {
-        playbackSpeed = speed;
-        localStorage.setItem("playbackSpeed", speed);
+    function setPlayerSpeed() {
         const player = document.getElementsByTagName("audio");
-        if (player != null) {
-            player[0].playbackRate = speed;
+        const newSpeed = playbackSpeed / 10;
+        if (player != null && player[0].playbackRate !== newSpeed) {
+            console.log("speed", newSpeed);
+            player[0].playbackRate = newSpeed;
+            trackEvent({category: 'Audio', action: 'Speed', name: newSpeed});
         }
-        trackEvent({category: 'Audio', action: 'Speed', name: speed})
     }
 
     return (
@@ -46,9 +49,13 @@ const SpokePlayer = ({src, title, onStop}) => {
             onEnded={onEnd}
             customAdditionalControls={
                 [
-                    <button class={style.SpokeAudioPlayerSpeed} onClick={() => setSpeed(1)}>1.0x</button>,
-                    <button class={style.SpokeAudioPlayerSpeed} onClick={() => setSpeed(1.2)}>1.2x</button>,
-                    <button class={style.SpokeAudioPlayerSpeed} onClick={() => setSpeed(1.5)}>1.5x</button>,
+                    <button class={style.SpokeAudioPlayerSpeed}
+                            onClick={() => onPlaybackSpeedChange(10)}>1.0x</button>,
+                    <button class={style.SpokeAudioPlayerSpeed}
+                            onClick={() => onPlaybackSpeedChange(12)}>1.2x</button>,
+                    <button class={style.SpokeAudioPlayerSpeed}
+                            onClick={() => onPlaybackSpeedChange(15)}>1.5x</button>,
+                    <span> {playbackSpeed / 10}x</span>
                 ]
             }
             customVolumeControls={[]}

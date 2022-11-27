@@ -1,4 +1,5 @@
 .article {
+    background-color: var(--primary-inverse);
     padding: var(--header-height) 20px;
     min-height: 100%;
     width: 100%;

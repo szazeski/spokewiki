@@ -1,55 +1,53 @@
 import {h} from 'preact';
 import style from './style.css';
-import {getValue, setDark, setLight, setPrimaryColor, setValue} from "../../components/storage";
+import {setDark, setLight, setPrimaryColor, setValue} from "../../components/storage";
 import {useMatomo} from "@datapunt/matomo-tracker-react";
-import {useEffect, useState} from "preact/hooks";
+import {useEffect} from "preact/hooks";
 
-const Settings = () => {
+const Settings = (props) => {
 
-    let PlaySpeed = parseFloat(getSpeed());
-    const [PlaybackSpeed, setPlaybackSpeed] = useState(PlaySpeed.toFixed(1));
+    const {trackEvent} = useMatomo();
 
     function setThemeColor(obj) {
         let rgb = obj.target.style.backgroundColor;
         setPrimaryColor(rgb);
+        trackEvent({category: 'Settings', action: 'Primary Color', name: rgb});
     }
 
     function clickLight() {
         setValue("autoMode", false);
         setLight();
+        trackEvent({category: 'Settings', action: 'Light/Dark', name: "Light"});
     }
 
     function clickDark() {
         setValue("autoMode", false);
         setDark();
+        trackEvent({category: 'Settings', action: 'Light/Dark', name: "Dark"});
     }
 
     function clickAuto() {
         setValue("autoMode", true);
-    }
-
-    function getSpeed() {
-        return getValue("playbackSpeed", "1.0");
+        trackEvent({category: 'Settings', action: 'Light/Dark', name: "Auto"});
     }
 
     function changeSpeed(delta) {
-        PlaySpeed = PlaySpeed + delta;
-        if (PlaySpeed < 0.5) {
-            PlaySpeed = 0.5;
+        let newSpeed = parseInt(props.playbackSpeed, 10) + delta;
+        if (newSpeed < 5) {
+            newSpeed = 5;
         }
-        if (PlaySpeed > 2) {
-            PlaySpeed = 2.0;
+        if (newSpeed > 20) {
+            newSpeed = 20;
         }
-        setPlaybackSpeed(PlaySpeed.toFixed(1));
-        setValue("playbackSpeed", PlaybackSpeed);
+        props.onPlaybackSpeedChange(newSpeed);
     }
 
     function increaseSpeed() {
-        changeSpeed(0.1)
+        changeSpeed(1)
     }
 
     function decreaseSpeed() {
-        changeSpeed(-0.1)
+        changeSpeed(-1)
     }
 
     const {trackPageView} = useMatomo()
@@ -70,8 +68,12 @@ const Settings = () => {
 
             <div className={style.category}>Light/Dark Mode</div>
             <div className={style.lightdark}>
-                <span style="background-color:rgba(255,255,255,.9); color:black;" onClick={clickLight}>Light</span>
-                <span style="background-color:rgba(255,255,255,.1)" onClick={clickDark}>Dark</span>
+                <span
+                    style="background-color:rgba(255,255,255,.9); color:black;"
+                    onClick={clickLight}>Light</span>
+                <span
+                    style="background-color:rgba(255,255,255,.1)"
+                    onClick={clickDark}>Dark</span>
                 <span
                     style="background:linear-gradient(180deg, rgba(255,255,255,0.1) 49%, rgba(255,255,255,0.9) 51%);)"
                     onClick={clickAuto}>Auto</span>
@@ -80,9 +82,13 @@ const Settings = () => {
             <div className={style.category}>Default Speed</div>
             <div className={style.speed}>
                 <button onClick={decreaseSpeed}>-</button>
-                {PlaybackSpeed}x
+                {props.playbackSpeed / 10}x
                 <button onClick={increaseSpeed}>+</button>
             </div>
+
+            <div className={style.category}>Analytics</div>
+            <p>We use matomo analytics to record which articles are started, finished, what color users pick and default
+                speed. This info is not shared with any 3rd party and used only by developers to improve this app.</p>
 
         </div>
     );

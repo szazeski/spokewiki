@@ -1,5 +1,5 @@
 .spokeArticle {
-    margin: 0;
+    margin: 0 0 1px 0;
     padding: 0.75rem;
     background: var(--primary-inverse);
     color: var(--text);
@@ -18,12 +18,6 @@
 .spokeArticle a {
     color: var(--text);
     text-decoration: none;
-}
-
-.spokeArticle a img {
-    padding-right: 5px;
-    height: 18px;
-    margin-bottom: -15%;
 }
 
 .spokeArticle:hover {
@@ -52,13 +46,11 @@
 
 .box a {
     display: inline-block;
-    padding: 9px 12px;
     margin-top: 6px;
     margin-right: 8px;
     background: var(--primary);
     color: white;
     border-radius: 4px;
-    font-size: 85%;
     letter-spacing: -1px;
 }
 
@@ -66,5 +58,24 @@
     background: rgba(0, 0, 0, .4);
 }
 
+.flex {
+    display: flex;
+    max-width: 750px;
+}
 
+.flex a {
+    flex-grow: 1;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
 
+.flex a img {
+    height: 25px;
+    margin: 13px 5px -8px 0;
+}
+
+.play {
+    background-image: url('/assets/icons/play.svg');
+    background-position: center;
+}

@@ -35,7 +35,7 @@ const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
     }
 
     function getUrl() {
-        return "/article/" + data.stub;
+        return `/article/${data.stub}`;
     }
 
     function getListenStatus() {
@@ -52,9 +52,10 @@ const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
                 <p>{data.shortDescription}</p>
 
                 <div class={style.box}>
-                    <div>{data.durationMin} min ({data.filesize}mb) - recorded {data.dateRecorded}</div>
-                    <div>
-                        <a href="#playnow" onClick={play}><img src={playsvg}/>play</a>
+                    <div>{data.durationMin} min ({data.filesize}mb) - recorded <strong>{data.dateRecorded}</strong>
+                    </div>
+                    <div class={style.flex}>
+                        <a href="#play" onClick={play} style={style.play}><img src={playsvg} alt=""/>PLAY</a>
                         <a href="#queue" onClick={queue}>queue</a>
                         <a href={data.urlAudio} target="_blank">mp3</a>
                         <a href={data.urlWikipedia} target="_blank">wikipedia</a>
