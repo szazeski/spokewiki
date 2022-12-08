@@ -2,13 +2,30 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Victor Bout",
+      "tags": [
+        "Russia",
+        "Prisoner"
+      ],
+      "stub": "victor_bout",
+      "shortDescription": "In Dec 2022, a Russian Arms Dealer that was arrested in 2008 is in the prisoner exchange for Brittney Griner.",
+      "durationMin": 16,
+      "filesize": 5,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/viktor-bout.8ceb792c-df8c-4ef8-b728-0bf7949e83e0.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Victor_Bout",
+      "wikipediaId": 1422034,
+      "image": "",
+      "dateRecorded": "Dec 8, 2022"
+    },
+    {
       "title": "Railway Labor Act",
       "tags": [
         "Strike",
         "Union"
       ],
       "stub": "railway_labor_act",
-      "shortDescription": "In November 2022, the railroad unions are rejecting labor deals but find out why Congress can override it.",
+      "shortDescription": "In Nov 2022, the railroad unions are rejecting labor deals but find out why Congress can force them not to strike.",
       "durationMin": 10,
       "filesize": 4,
       "pollyVoice": "Matthew",
@@ -24,7 +41,7 @@
         "Business"
       ],
       "stub": "ticketmaster",
-      "shortDescription": "In November 2022, After issues with the release of a new Taylor Swift concert, Ticketmaster is being investigated by the Department of Justice.",
+      "shortDescription": "In Nov 2022, after issues with the release of a new Taylor Swift concert, Ticketmaster is being investigated by the Department of Justice.",
       "durationMin": 18,
       "filesize": 6,
       "pollyVoice": "Matthew",
@@ -41,7 +58,7 @@
         "Sports"
       ],
       "stub": "brittany_griner",
-      "shortDescription": "In February 2022, Brittany Griner, a WNBA basketball player, was arrested and charged in Russia.",
+      "shortDescription": "In Feb 2022, Brittany Griner, a WNBA basketball player, was arrested and charged in Russia.",
       "durationMin": 27,
       "filesize": 10,
       "pollyVoice": "Joanna",
@@ -109,7 +126,7 @@
         "Politics"
       ],
       "stub": "john_fetterman",
-      "shortDescription": "In November 2022, John Fetterman ran against Dr. Oz for senator seat in Pennsylvania",
+      "shortDescription": "In Nov 2022, John Fetterman ran against Dr. Oz for senator seat in Pennsylvania",
       "durationMin": 34,
       "filesize": 12,
       "pollyVoice": "Matthew",
@@ -143,7 +160,7 @@
         "USA"
       ],
       "stub": "powerball",
-      "shortDescription": "Every couple months Powerball makes the news for a large jackpot, hear how this lottery got started in 1992",
+      "shortDescription": "Every couple months Powerball makes the news for an even larger jackpot, hear how this lottery got started in 1992",
       "durationMin": 29,
       "filesize": 10,
       "pollyVoice": "Matthew",
