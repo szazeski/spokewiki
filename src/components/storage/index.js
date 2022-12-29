@@ -5,6 +5,14 @@ export function getValue(key, defaultValue) {
     return defaultValue
 }
 
+export function getBool(key) {
+    if (typeof window !== 'undefined') {
+        let value = localStorage.getItem(key).toLowerCase()
+        return value === "true"
+    }
+    return false
+}
+
 export function setValue(key, value) {
     if (typeof window !== 'undefined') {
         localStorage.setItem(key, value);
@@ -36,9 +44,11 @@ export function setLight() {
     setInverseColor("rgba(255,255,255,.85)", "rgba(0,0,0,.85)");
 }
 
+const DEFAULT_PRIMARY_COLOR = "rgb(87, 18, 157)"; // Purple
+
 export function loadColors() {
     let root = document.documentElement;
-    let primaryColor = getValue("primary", "rgb(87, 18, 157)"); // default: Purple
+    let primaryColor = getValue("primary", DEFAULT_PRIMARY_COLOR);
     root.style.setProperty('--primary', primaryColor);
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
     metaThemeColor.setAttribute("content", primaryColor);
@@ -49,8 +59,10 @@ export function loadColors() {
     }
 }
 
+const CACHE_NAME = "offline-mp3"
+
 export function cacheAsset(url) {
-    caches.open("offline-mp3").then((cache) => {
+    caches.open(CACHE_NAME).then((cache) => {
         cache.add(url).then((response) => {
             console.log(response);
         });
@@ -58,9 +70,17 @@ export function cacheAsset(url) {
 }
 
 export function removeCacheAsset(url) {
-    caches.open("offline-mp3").then((cache) => {
+    caches.open(CACHE_NAME).then((cache) => {
         cache.delete(url).then((response) => {
             console.log(response);
+        });
+    });
+}
+
+export function listCacheAsset() {
+    caches.open(CACHE_NAME).then((cache) => {
+        cache.keys().then((keys) => {
+            console.log(keys)
         });
     });
 }

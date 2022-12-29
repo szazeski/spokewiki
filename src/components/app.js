@@ -9,7 +9,7 @@ import SpokeAudioPlayer from "./spokeAudioPlayer";
 import {useState} from "preact/hooks";
 import Settings from "../routes/settings";
 import Queue from "../routes/queue";
-import {cacheAsset, getValue, loadColors, removeCacheAsset, setDark, setLight} from "./storage";
+import {cacheAsset, getBool, getValue, loadColors, removeCacheAsset, setDark, setLight} from "./storage";
 import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
 
 
@@ -46,7 +46,6 @@ const App = () => {
 
     loadLightDarkMode();
     const instance = setupMatomoAnalytics();
-
     const [playing, setPlaying] = useState({urlAudio: "", title: ""});
     const [queue, setQueue] = useState([]);
     const [playbackSpeed, setPlaybackSpeed] = useState(getValue("playbackSpeed", 10));
@@ -55,7 +54,9 @@ const App = () => {
         if (queue.length > 0) {
             console.log("queuing next track");
         }
-        removeCacheAsset(playing.urlAudio);
+        if (getBool("removeFromCacheAfterPlay")) {
+            removeCacheAsset(playing.urlAudio);
+        }
     }
 
     function setSpeed(speed) {
@@ -77,8 +78,6 @@ const App = () => {
 
     function PlayNext() {
         let stub = queue.pop();
-
-
     }
 
 

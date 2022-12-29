@@ -39,10 +39,11 @@
     margin-top: auto;
     min-width: 50px;
     text-align: center;
-    background: rgba(255, 255, 255, 0);
     text-decoration: none;
-    color: #FFF;
+    color: white;
     will-change: background-color;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 

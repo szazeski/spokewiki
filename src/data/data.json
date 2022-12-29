@@ -2,13 +2,87 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "George Santos",
+      "subdomain": "www",
+      "tags": [
+        "New York",
+        "United States"
+      ],
+      "stub": "george-santos",
+      "shortDescription": "In Dec 2022, George Santos was elected to New York's 3rd district in the House of Congress and then admitted his resume was false. ",
+      "durationMin": 22,
+      "filesize": 8,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/george-santos.b31707ba-62db-45ae-9afb-b34a972247bc.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/George_Santos",
+      "wikipediaId": 65761767,
+      "image": "",
+      "dateRecorded": "Dec 28, 2022"
+    },
+    {
+      "title": "United States Constitution",
+      "subdomain": "unabridged",
+      "tags": [
+        "Government",
+        "United States",
+        "Unabridged"
+      ],
+      "stub": "us-constitution",
+      "shortDescription": "Written in 1787, hear the original unabridged document creating the 3 branches of government before the 27 amendments.",
+      "durationMin": 25,
+      "filesize": 9,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/constitution.ee8e20a3-e39c-4431-8d44-d8ac7c808a4d.mp3",
+      "urlWikipedia": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "wikipediaId": 0,
+      "image": "",
+      "dateRecorded": "Dec 27, 2022"
+    },
+    {
+      "title": "TikTok",
+      "subdomain": "www",
+      "tags": [
+        "Social Network",
+        "China"
+      ],
+      "stub": "tiktok",
+      "shortDescription": "Created in 2016 by ByteDance, TikTok is a popular short video social networking app that has been getting in recent news by countries banning its use.",
+      "durationMin": 57,
+      "filesize": 20,
+      "pollyVoice": "Salli",
+      "urlAudio": "https://media.spokewiki.com/tiktok.a856e5ca-6e4b-43a6-9054-ca15c9eee94d.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/TikTok",
+      "wikipediaId": 56822861,
+      "image": "",
+      "dateRecorded": "Dec 14, 2022"
+    },
+    {
+      "title": "Samuel Bankman-Fried",
+      "subdomain": "www",
+      "tags": [
+        "Crypto",
+        "FTX"
+      ],
+      "stub": "samuel_bankman_fried",
+      "shortDescription": "In Nov 2022, this 30 year old billionaire ran a crypto exchange for 3 years called FTX, which suddenly collapses due to a solvency issue.",
+      "durationMin": 14,
+      "filesize": 5,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/samuel-bankman-fried.a2775ac9-5362-49b9-bbde-cee9808c899a.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Samuel_Bankman-Fied",
+      "wikipediaId": 67428121,
+      "image": "",
+      "dateRecorded": "Dec 12, 2022"
+    },
+    {
       "title": "Victor Bout",
+      "subdomain": "www",
       "tags": [
         "Russia",
         "Prisoner"
       ],
       "stub": "victor_bout",
-      "shortDescription": "In Dec 2022, a Russian Arms Dealer that was arrested in 2008 is in the prisoner exchange for Brittney Griner.",
+      "shortDescription": "In Dec 2022, a Russian Arms Dealer that was arrested in 2008 is in the prisoner exchange to release Brittney Griner.",
       "durationMin": 16,
       "filesize": 5,
       "pollyVoice": "Matthew",
@@ -58,7 +132,7 @@
         "Sports"
       ],
       "stub": "brittany_griner",
-      "shortDescription": "In Feb 2022, Brittany Griner, a WNBA basketball player, was arrested and charged in Russia.",
+      "shortDescription": "In Feb 2022, Brittany Griner, a Olympic gold medalist and WNBA basketball player, was arrested and charged in Russia for possession of less than 1 gram of cannabis oil.",
       "durationMin": 27,
       "filesize": 10,
       "pollyVoice": "Joanna",

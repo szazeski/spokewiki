@@ -16,6 +16,8 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
             showNewOnly={showOnlyNew}
         />
     );
+
+    const listOfCategories = data.articles.map((item) => item.category);
     const {trackPageView} = useMatomo()
 
     useEffect(() => {
@@ -25,11 +27,10 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
     return (
         <div class={style.home}>
 
-            <div class={style.leftSidebar}></div>
+            <div class={style.leftSidebar}>{listOfCategories}</div>
 
             <div>
                 {listOfArticles}
-
                 <About/>
             </div>
 

@@ -1,4 +1,3 @@
-import {h} from 'preact';
 import style from './style.css';
 import {setDark, setLight, setPrimaryColor, setValue} from "../../components/storage";
 import {useMatomo} from "@datapunt/matomo-tracker-react";
@@ -7,6 +6,8 @@ import {useEffect} from "preact/hooks";
 const Settings = (props) => {
 
     const {trackEvent} = useMatomo();
+    const MAX_SPEED = 25;
+    const MIN_SPEED = 5;
 
     function setThemeColor(obj) {
         let rgb = obj.target.style.backgroundColor;
@@ -33,11 +34,11 @@ const Settings = (props) => {
 
     function changeSpeed(delta) {
         let newSpeed = parseInt(props.playbackSpeed, 10) + delta;
-        if (newSpeed < 5) {
-            newSpeed = 5;
+        if (newSpeed < MIN_SPEED) {
+            newSpeed = MIN_SPEED;
         }
-        if (newSpeed > 20) {
-            newSpeed = 20;
+        if (newSpeed > MAX_SPEED) {
+            newSpeed = MAX_SPEED;
         }
         props.onPlaybackSpeedChange(newSpeed);
     }
@@ -52,8 +53,8 @@ const Settings = (props) => {
 
     const {trackPageView} = useMatomo()
     useEffect(() => {
-        trackPageView()
-    }, [])
+        trackPageView();
+    }, []);
 
     return (
         <div class={style.settings}>
