@@ -1,6 +1,11 @@
 .article {
     background-color: var(--primary-inverse);
-    padding: var(--header-height) 20px;
     min-height: 100%;
     width: 100%;
+}
+
+.spacer {
+    padding-top: var(--header-height);
+    height: 1px;
+    margin-bottom: 20px;
 }

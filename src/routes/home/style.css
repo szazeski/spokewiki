@@ -1,13 +1,25 @@
 .home {
     background-color: var(--primary-inverse);
-    padding: var(--header-height) 0;
     min-height: 100%;
     width: 100%;
     display: flex;
 }
 
+.spacer {
+    height: 1px;
+    margin-top: var(--header-height);
+}
+
+.leftSidebar {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--header-height) 5px 0 5px;
+    color: var(--text);
+    display: none;
+}
+
 @media only screen and (min-width: 700px) {
     .leftSidebar {
-        width: 270px;
+        width: 300px;
+        display: inherit;
     }
 }

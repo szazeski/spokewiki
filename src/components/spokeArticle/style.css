@@ -1,8 +1,11 @@
 .spokeArticle {
-    margin: 0 0 1px 0;
+    margin: 0 auto 1px auto;
     padding: 0.75rem;
     background: var(--primary-inverse);
     color: var(--text);
+    max-width: 700px;
+    opacity: .9;
+    border-radius: 7px;
 }
 
 .spokeArticle h2 {
@@ -21,7 +24,7 @@
 }
 
 .spokeArticle:hover {
-    background: rgba(0, 0, 0, .05)
+    opacity: 1;
 }
 
 .listened {
@@ -46,36 +49,43 @@
 
 .box a {
     display: inline-block;
-    margin-top: 6px;
+    margin-bottom: 0.5rem;
     margin-right: 8px;
     background: var(--primary);
+    opacity: .9;
     color: white;
     border-radius: 4px;
     letter-spacing: -1px;
+    border: solid 1px rgba(0, 0, 0, .2);
 }
 
 .box a:hover {
-    background: rgba(0, 0, 0, .4);
+    opacity: 1;
 }
 
 .flex {
     display: flex;
-    max-width: 750px;
+    max-width: 700px;
 }
 
 .flex a {
     flex-grow: 1;
-    height: 50px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .flex a img {
     height: 25px;
-    margin: 13px 5px -8px 0;
+    margin: 0.75rem auto -0.5rem auto;
+    display: block;
 }
 
-.play {
-    background-image: url('/assets/icons/play.svg');
-    background-position: center;
+@media only screen and (max-width: 700px) {
+    .box a {
+        opacity: 1;
+    }
+
+    .spokeArticle {
+        opacity: 1;
+    }
 }

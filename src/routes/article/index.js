@@ -9,6 +9,7 @@ const Article = ({stub, onPlaying}) => {
 
     return (
         <div class={style.article}>
+            <div class={style.spacer}/>
             <SpokeArticle
                 data={article}
                 onPlaying={onPlaying}

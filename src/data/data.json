@@ -2,8 +2,26 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Andrew Tate",
+      "subdomain": "general",
+      "tags": [
+        "Kickboxing",
+        "United States"
+      ],
+      "stub": "andrew-tate",
+      "shortDescription": "In Dec 2022, Andrew Tate was arrested in Romania, find out about his background as a kickboxer turned social media personality.",
+      "durationMin": 9,
+      "filesize": 3,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/andrew-tate.f9060d26-db2d-4d76-818e-472a3749c2a3.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Andrew_Tate",
+      "wikipediaId": 44554748,
+      "image": "",
+      "dateRecorded": "Dec 30, 2022"
+    },
+    {
       "title": "George Santos",
-      "subdomain": "www",
+      "subdomain": "general",
       "tags": [
         "New York",
         "United States"
@@ -40,7 +58,7 @@
     },
     {
       "title": "TikTok",
-      "subdomain": "www",
+      "subdomain": "general",
       "tags": [
         "Social Network",
         "China"
@@ -58,7 +76,7 @@
     },
     {
       "title": "Samuel Bankman-Fried",
-      "subdomain": "www",
+      "subdomain": "general",
       "tags": [
         "Crypto",
         "FTX"
@@ -76,7 +94,7 @@
     },
     {
       "title": "Victor Bout",
-      "subdomain": "www",
+      "subdomain": "general",
       "tags": [
         "Russia",
         "Prisoner"

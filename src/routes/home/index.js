@@ -1,4 +1,3 @@
-import {h} from 'preact';
 import style from './style.css';
 import SpokeArticle from "../../components/spokeArticle";
 import data from "../../data/data.json"
@@ -17,7 +16,9 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
         />
     );
 
-    const listOfCategories = data.articles.map((item) => item.category);
+    const listOfCategories = data.articles.map((item) => {
+        return item.tags.join(" ");
+    });
     const {trackPageView} = useMatomo()
 
     useEffect(() => {
@@ -27,9 +28,12 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
     return (
         <div class={style.home}>
 
-            <div class={style.leftSidebar}>{listOfCategories}</div>
+            <div class={style.leftSidebar}>
+                <div>Tags</div>
+            </div>
 
             <div>
+                <div className={style.spacer}></div>
                 {listOfArticles}
                 <About/>
             </div>

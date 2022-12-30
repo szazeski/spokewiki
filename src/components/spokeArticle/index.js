@@ -1,5 +1,9 @@
 import style from './style.css';
 import playsvg from '../../assets/icons/play.svg';
+import queuesvg from "../../assets/icons/queue.svg";
+import downloadsvg from "../../assets/icons/download.svg";
+import linksvg from "../../assets/icons/link.svg";
+import archivesvg from "../../assets/icons/archive.svg";
 
 const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
 
@@ -52,14 +56,16 @@ const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
                 <p>{data.shortDescription}</p>
 
                 <div class={style.box}>
-                    <div>{data.durationMin} min ({data.filesize}mb) - recorded <strong>{data.dateRecorded}</strong>
-                    </div>
+
                     <div class={style.flex}>
-                        <a href="#play" onClick={play} style={style.play}><img src={playsvg} alt=""/>PLAY</a>
-                        <a href="#queue" onClick={queue}>queue</a>
-                        <a href={data.urlAudio} target="_blank">mp3</a>
-                        <a href={data.urlWikipedia} target="_blank">wikipedia</a>
-                        <a href="#mark" onClick={togglePlayed}>archive</a>
+                        <a href="#play" onClick={play}><img src={playsvg} alt=""/>PLAY</a>
+                        <a href="#queue" onClick={queue}><img src={queuesvg} alt=""/>queue</a>
+                        <a href={data.urlAudio} target="_blank"><img src={downloadsvg} alt=""/>mp3</a>
+                        <a href={data.urlWikipedia} target="_blank"><img src={linksvg} alt=""/>wikipedia</a>
+                        <a href="#mark" onClick={togglePlayed}><img src={archivesvg} alt=""/>archive</a>
+                    </div>
+
+                    <div>{data.durationMin} min ({data.filesize}mb) - recorded <strong>{data.dateRecorded}</strong>
                     </div>
                 </div>
             </div>
