@@ -55,7 +55,7 @@ const SpokePlayer = ({src, title, playbackSpeed, onStop, onPlaybackSpeedChange})
                             onClick={() => onPlaybackSpeedChange(12)}>1.2x</button>,
                     <button class={style.SpokeAudioPlayerSpeed}
                             onClick={() => onPlaybackSpeedChange(15)}>1.5x</button>,
-                    <span> {playbackSpeed / 10}x</span>
+                    <span class={style.SpokeAudioCurrentSpeed}> {playbackSpeed / 10}x</span>
                 ]
             }
             customVolumeControls={[]}

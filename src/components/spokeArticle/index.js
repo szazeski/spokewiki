@@ -20,8 +20,7 @@ const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
     }
 
     function play() {
-        console.log("play" + data.stub);
-        console.log("url:" + data.urlAudio);
+        console.log(`play:${data.stub} (${data.urlAudio})`);
         document.title = data.title;
         onPlaying(data);
     }
@@ -49,8 +48,14 @@ const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
         return "";
     }
 
+    function getTagsForClasses() {
+        return data.tags.map(i => i.replaceAll(" ", "-")).join(" ");
+    }
+
+    const classes = `${getTagsForClasses()} SpokeArticle ${style.spokeArticle}`
+
     return (
-        <div class={style.spokeArticle}>
+        <div class={classes}>
             <div class={getListenStatus()}>
                 <a href={getUrl()}><h2>{data.title}</h2></a>
                 <p>{data.shortDescription}</p>

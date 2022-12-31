@@ -1,0 +1,8 @@
+.SpokeTag {
+    padding: 5px;
+    display: inline-block;
+}
+
+.SpokeTag:hover {
+    cursor: pointer;
+}

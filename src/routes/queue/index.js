@@ -1,6 +1,9 @@
 import style from './style.css';
+import data from '../../data/data.json';
+import SpokeArticle from "../../components/spokeArticle";
+import {useState} from "preact/hooks";
 
-const Queue = () => {
+const Queue = ({onPlaying, onQueue}) => {
 
     async function calculate() {
         if (navigator.storage && navigator.storage.estimate) {
@@ -9,45 +12,64 @@ const Queue = () => {
             // quota.quota -> Maximum number of bytes available.
             const percentageUsed = (quota.usage / quota.quota) * 100;
             const mbUsaged = quota.usage / 1024 / 1024;
-            showResult(`You've used ${mbUsaged.toFixed(1)}mb ${percentageUsed.toFixed(3)}% of the available storage.`);
+            showResult(`You've used ${mbUsaged.toFixed(1)}mb ${percentageUsed.toFixed(1)}% of the available storage.`);
         } else {
             showResult("Storage Manager API is not supported")
         }
     }
 
+    const [listOfArticles, setListOfArticles] = useState([]);
+
     function getCachedFiles() {
         caches.open("offline-mp3").then((cache) => {
             cache.keys().then((keys) => {
-                console.log(keys);
-                document.querySelector("#output").innerHTML = keys.length + " files cached";
-                document.querySelector("#files").innerHTML = keys.map(k => k.url).toString();
+                showCount(`${keys.length} file(s) cached`);
+                let results = keys.map(k => {
+                    let entry = data.articles.filter(d => {
+                        return d.urlAudio === k.url;
+                    });
+                    return (
+                        <SpokeArticle
+                            data={entry[0]}
+                            onPlaying={onPlaying}
+                            onQueue={onQueue}
+                            showNewOnly={false}
+                        />
+                    );
+                });
+                // Temp fix to stop infinite cycles
+                if (listOfArticles.length !== results.length) {
+                    setListOfArticles(results);
+                }
             });
         });
     }
 
     function clearCache() {
         caches.delete("offline-mp3");
-        window.location = '/';
+        window.location = '/queue#cleared';
     }
 
     function showResult(text) {
+        document.querySelector("#used").innerHTML = text;
+    }
+
+    function showCount(text) {
         document.querySelector("#output").innerHTML = text;
     }
 
     getCachedFiles();
+    calculate();
 
     return (
         <div class={style.queue}>
 
-            <p>coming soon...</p>
+            <div id="files">{listOfArticles}</div>
 
+            <input className={style.ClearCache} type="button" value="Clear Cache" onClick={clearCache}/>
+            <div id="used">-</div>
             <div id="output">-</div>
-
-            <div id="files">-</div>
-
-
-            <input type="button" value="Clear Cache" onClick={clearCache}/>
-
+            
         </div>
     );
 }

@@ -64,7 +64,7 @@ const CACHE_NAME = "offline-mp3"
 export function cacheAsset(url) {
     caches.open(CACHE_NAME).then((cache) => {
         cache.add(url).then((response) => {
-            console.log(response);
+            console.log("cacheAsset", response);
         });
     });
 }
@@ -72,7 +72,7 @@ export function cacheAsset(url) {
 export function removeCacheAsset(url) {
     caches.open(CACHE_NAME).then((cache) => {
         cache.delete(url).then((response) => {
-            console.log(response);
+            console.log("removeCacheAsset", response);
         });
     });
 }

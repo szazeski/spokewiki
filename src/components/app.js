@@ -104,6 +104,8 @@ const App = () => {
                     />
                     <Queue
                         path="/queue"
+                        onPlaying={setPlaying}
+                        onQueue={AddQueue}
                     />
                     <Settings
                         path={"/settings"}

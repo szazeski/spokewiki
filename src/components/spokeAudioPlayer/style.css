@@ -15,3 +15,8 @@
 .SpokeAudioPlayerSpeed:hover {
     background-color: rgba(255, 255, 255, .5);
 }
+
+.SpokeAudioCurrentSpeed {
+    padding: 0 3px;
+    font-size: 10px;
+}

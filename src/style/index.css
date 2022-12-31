@@ -23,6 +23,9 @@ html, body {
     --primary-inverse: "";
     --text: "";
     --header-height: 140px;
+    --black-10: rgba(0, 0, 0, 0.1);
+    --black-25: rgba(0, 0, 0, 0.25);
+    --white-10: rgba(255, 255, 255, 0.1);
 }
 
 .rhap_container {

@@ -5,7 +5,7 @@
       "title": "Andrew Tate",
       "subdomain": "general",
       "tags": [
-        "Kickboxing",
+        "Politics",
         "United States"
       ],
       "stub": "andrew-tate",
@@ -23,7 +23,7 @@
       "title": "George Santos",
       "subdomain": "general",
       "tags": [
-        "New York",
+        "Politics",
         "United States"
       ],
       "stub": "george-santos",
@@ -41,7 +41,6 @@
       "title": "United States Constitution",
       "subdomain": "unabridged",
       "tags": [
-        "Government",
         "United States",
         "Unabridged"
       ],
@@ -60,8 +59,8 @@
       "title": "TikTok",
       "subdomain": "general",
       "tags": [
-        "Social Network",
-        "China"
+        "China",
+        "Business"
       ],
       "stub": "tiktok",
       "shortDescription": "Created in 2016 by ByteDance, TikTok is a popular short video social networking app that has been getting in recent news by countries banning its use.",
@@ -78,8 +77,7 @@
       "title": "Samuel Bankman-Fried",
       "subdomain": "general",
       "tags": [
-        "Crypto",
-        "FTX"
+        "Crypto"
       ],
       "stub": "samuel_bankman_fried",
       "shortDescription": "In Nov 2022, this 30 year old billionaire ran a crypto exchange for 3 years called FTX, which suddenly collapses due to a solvency issue.",
@@ -96,8 +94,7 @@
       "title": "Victor Bout",
       "subdomain": "general",
       "tags": [
-        "Russia",
-        "Prisoner"
+        "Russia"
       ],
       "stub": "victor_bout",
       "shortDescription": "In Dec 2022, a Russian Arms Dealer that was arrested in 2008 is in the prisoner exchange to release Brittney Griner.",
@@ -113,8 +110,8 @@
     {
       "title": "Railway Labor Act",
       "tags": [
-        "Strike",
-        "Union"
+        "Union",
+        "United States"
       ],
       "stub": "railway_labor_act",
       "shortDescription": "In Nov 2022, the railroad unions are rejecting labor deals but find out why Congress can force them not to strike.",
@@ -146,8 +143,7 @@
     {
       "title": "Brittany Griner",
       "tags": [
-        "WNBA",
-        "Sports"
+        "Russia"
       ],
       "stub": "brittany_griner",
       "shortDescription": "In Feb 2022, Brittany Griner, a Olympic gold medalist and WNBA basketball player, was arrested and charged in Russia for possession of less than 1 gram of cannabis oil.",
@@ -163,7 +159,6 @@
     {
       "title": "Artemis 1",
       "tags": [
-        "NASA",
         "Space"
       ],
       "stub": "artemis_1",
@@ -181,7 +176,7 @@
       "title": "Kari Lake",
       "tags": [
         "Politics",
-        "Arizona"
+        "United States"
       ],
       "stub": "kari_lake",
       "shortDescription": "The 2022 Arizona Governor race placed Kari Lake in national news with slow midterm results.",
@@ -197,8 +192,7 @@
     {
       "title": "Binance (crypto exchange)",
       "tags": [
-        "crypto",
-        "exchange"
+        "Crypto"
       ],
       "stub": "binance",
       "shortDescription": "Binance came into the news to buy out FTX crypto exchange, hear how they got started.",
@@ -214,7 +208,7 @@
     {
       "title": "John Fetterman",
       "tags": [
-        "Pennsylvania",
+        "United States",
         "Politics"
       ],
       "stub": "john_fetterman",
@@ -231,8 +225,7 @@
     {
       "title": "Rishi Sunak",
       "tags": [
-        "UK",
-        "Prime Minister"
+        "United Kingdom"
       ],
       "stub": "rishi-sunak",
       "shortDescription": "On Oct 25, 2022, Rishi was elected the new Prime Minister of the United Kingdom",
@@ -248,8 +241,7 @@
     {
       "title": "Powerball Lottery",
       "tags": [
-        "lottery",
-        "USA"
+        "United States"
       ],
       "stub": "powerball",
       "shortDescription": "Every couple months Powerball makes the news for an even larger jackpot, hear how this lottery got started in 1992",
@@ -265,8 +257,7 @@
     {
       "title": "Halloween",
       "tags": [
-        "holiday",
-        "fall"
+        "Holidays"
       ],
       "stub": "halloween",
       "shortDescription": "Every year at the end of October, people around the world celebrate this after harvest festival but how did it come about?",
@@ -282,8 +273,7 @@
     {
       "title": "Crowd Crush",
       "tags": [
-        "public",
-        "accident"
+        "Accident"
       ],
       "stub": "crowd-crush",
       "shortDescription": "Crowd crushes are catastrophic incidents that can occur when a gathering of people becomes dangerously overcrowded.",
@@ -299,9 +289,8 @@
     {
       "title": "Candace Owens",
       "tags": [
-        "republican",
-        "conservative",
-        "blexit"
+        "United States",
+        "Politics"
       ],
       "stub": "candace-owens",
       "shortDescription": "Appearing in lots of recent news, find out how Candace Owen got her start with 'no interest in politics whatsoever prior to 2015', and her path to where is she is now.",
@@ -316,8 +305,8 @@
     {
       "title": "Reedy Creek Improvement District",
       "tags": [
-        "disney",
-        "florida"
+        "United States",
+        "Politics"
       ],
       "stub": "reedy-creek",
       "shortDescription": "Find out why in 1967, Disney got its own governmental district near Orlando, Florida called Reedy Creek Improvement District",
@@ -332,9 +321,7 @@
     {
       "title": "2022 Russia Invasion of Ukraine",
       "tags": [
-        "russia",
-        "ukraine",
-        "war"
+        "Russia"
       ],
       "stub": "russia-invasion-of-ukraine",
       "shortDescription": "On February 2022, Russia invaded Ukraine in a major escalation of the Russo-Ukrainian War, which began in 2014.",
