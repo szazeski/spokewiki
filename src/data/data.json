@@ -2,6 +2,24 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Southwest Airlines",
+      "subdomain": "general",
+      "tags": [
+        "Business",
+        "United States"
+      ],
+      "stub": "southwest-airlines",
+      "shortDescription": "In Dec 2022, Southwest Airlines made headlines with thousands of cancelled flights during the December holiday rush.",
+      "durationMin": 23,
+      "filesize": 8,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/southwest-airlines.fd53b897-1961-4c1a-a211-119ee30c101a.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Southwest_Airlines",
+      "wikipediaId": 63032,
+      "image": "",
+      "dateRecorded": "Jan 1, 2023"
+    },
+    {
       "title": "Andrew Tate",
       "subdomain": "general",
       "tags": [
