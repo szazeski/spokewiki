@@ -88,8 +88,10 @@ const Settings = (props) => {
             </div>
 
             <div className={style.category}>Analytics</div>
-            <p>We use matomo analytics to record which articles are started, finished, what color users pick and default
-                speed. This info is not shared with any 3rd party and used only by developers to improve this app.</p>
+            <p>We use a self hosted matomo analytics to record which articles are started, finished, what color users
+                pick and default speed. This info is not shared with any 3rd party and used only by developers to
+                improve this app.</p>
+            <p>matomo masks all IPs and honors Do Not Track requests.</p>
 
         </div>
     );
