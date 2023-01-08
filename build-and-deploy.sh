@@ -9,9 +9,19 @@ fi
 echo "- - - - - - - - - - - - - - - "
 echo "building..."
 
+jq . src/data/data.json # checks that data.json is valid json
+if [ $? -ne 0 ]; then
+  echo "data.json is not valid json, stopping build"
+  exit 1
+fi
+
+npm run test
+
 npm run build
 
 cd build
+
+# todo check if the app runs
 
 echo "deploying..."
 

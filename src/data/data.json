@@ -2,6 +2,41 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Kevin McCarthy",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "kevin-mccarthy",
+      "shortDescription": "In Jan 2023, after 15 rounds of voting, Kevin McCarthy of California finally received a majority vote for speaker of the House.",
+      "durationMin": 37,
+      "filesize": 13,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/kevin-mccarthy.80b69f63-86ba-4167-a41e-df307ed61c3d.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Kevin_McCarthy",
+      "wikipediaId": 2337119,
+      "image": "",
+      "dateRecorded": "Jan 8, 2023"
+    },
+    {
+      "title": "Boxing Day (Holiday)",
+      "subdomain": "general",
+      "tags": [
+        "Holiday"
+      ],
+      "stub": "boxing-day",
+      "shortDescription": "On Dec 26, many European and other countries celebrate by giving gifts to the poor.",
+      "durationMin": 16,
+      "filesize": 6,
+      "pollyVoice": "Joanna",
+      "urlAudio": "https://media.spokewiki.com/boxing-day.2158cba6-ab54-45f9-a8aa-0a95c14cd903.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Boxing_Day",
+      "wikipediaId": 4681,
+      "image": "",
+      "dateRecorded": "Jan 7, 2023"
+    },
+    {
       "title": "Southwest Airlines",
       "subdomain": "general",
       "tags": [
