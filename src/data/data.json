@@ -2,6 +2,24 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "2023 Chinese Balloon Incident",
+      "subdomain": "general",
+      "tags": [
+        "United States",
+        "China"
+      ],
+      "stub": "2023-chinese-balloon-incident",
+      "shortDescription": "On Jan 28 to Feb 4, 2023 an unknown balloon floated over the United States and was ultimately shot down after passing over North Carolina.",
+      "durationMin": 25,
+      "filesize": 9,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/2023-chinese-balloon-incident.531075fa-8359-463f-948c-aacb5b0381cc.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/2023_Chinese_balloon_incident",
+      "wikipediaId": 72923242,
+      "image": "",
+      "dateRecorded": "Feb 12, 2023"
+    },
+    {
       "title": "2023 Ohio Derailment",
       "subdomain": "general",
       "tags": [
