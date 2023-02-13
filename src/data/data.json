@@ -2,6 +2,60 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "2023 Ohio Derailment",
+      "subdomain": "general",
+      "tags": [
+        "Accidents",
+        "United States"
+      ],
+      "stub": "2023-ohio-derailment",
+      "shortDescription": "On Feb 3, 2023 a train carrying hazardous chemicals like vinyl chloride derailed in east border of Ohio causing evacuations.",
+      "durationMin": 5,
+      "filesize": 2,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/2023-ohio-derailment.d86d1c36-8072-41ac-8093-daa753d49f3e.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/2023_Ohio_train_derailment",
+      "wikipediaId": 72967774,
+      "image": "",
+      "dateRecorded": "Feb 12, 2023"
+    },
+    {
+      "title": "ChatGPT",
+      "subdomain": "general",
+      "tags": [
+        "Business",
+        "Tech"
+      ],
+      "stub": "chatgpt",
+      "shortDescription": "Launched in Nov 2022, this chatbot has shown impressive answers and confidently incorrect replies to a variety of questions leading to some sites banning its use.",
+      "durationMin": 13,
+      "filesize": 5,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/chatgpt.60ce0556-dc09-428f-8a0f-237133fcd558-fixed.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/ChatGPT",
+      "wikipediaId": 72417803,
+      "image": "",
+      "dateRecorded": "Jan 14, 2023"
+    },
+    {
+      "title": "Jair Bolsonaro",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "Brazil"
+      ],
+      "stub": "jair-bolsonaro",
+      "shortDescription": "In Oct 2022, Jair lost his reelection campaign for president of Brazil, but his supports stormed the capital in Jan 2023.",
+      "durationMin": 37,
+      "filesize": 13,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/jair-bolsonaro.2de4b8af-63d0-41aa-9f91-b3cb9fbdb4f9.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Jair_Bolsonaro",
+      "wikipediaId": 46603496,
+      "image": "",
+      "dateRecorded": "Jan 9, 2023"
+    },
+    {
       "title": "Kevin McCarthy",
       "subdomain": "general",
       "tags": [
@@ -23,7 +77,7 @@
       "title": "Boxing Day (Holiday)",
       "subdomain": "general",
       "tags": [
-        "Holiday"
+        "Holidays"
       ],
       "stub": "boxing-day",
       "shortDescription": "On Dec 26, many European and other countries celebrate by giving gifts to the poor.",
@@ -80,7 +134,7 @@
         "United States"
       ],
       "stub": "george-santos",
-      "shortDescription": "In Dec 2022, George Santos was elected to New York's 3rd district in the House of Congress and then admitted his resume was false. ",
+      "shortDescription": "In Dec 2022, George Santos was elected to New York's 3rd district in the House of Representatives and then admitted his background was false. ",
       "durationMin": 22,
       "filesize": 8,
       "pollyVoice": "Matthew",
@@ -326,7 +380,7 @@
     {
       "title": "Crowd Crush",
       "tags": [
-        "Accident"
+        "Accidents"
       ],
       "stub": "crowd-crush",
       "shortDescription": "Crowd crushes are catastrophic incidents that can occur when a gathering of people becomes dangerously overcrowded.",
