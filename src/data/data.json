@@ -2,10 +2,28 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Times Beach Dioxin Contamination",
+      "subdomain": "general",
+      "tags": [
+        "Accidents",
+        "United States"
+      ],
+      "stub": "times-beach",
+      "shortDescription": "Back in 1980s, a small town by St. Louis, was evacuated after a chemical factory paid a local waste oil company that was unaware of proper handling and used the waste oil to spray on land as dust control.",
+      "durationMin": 20,
+      "filesize": 7,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/times-beach.0a90350d-34fd-4549-944a-d8fd9deca9d1.mp3",
+      "urlWikipedia": "https://en.m.wikipedia.org/wiki/Times_Beach,_Missouri",
+      "wikipediaId": 344858,
+      "image": "",
+      "dateRecorded": "Mar 25, 2023"
+    },
+    {
       "title": "MH370 Disappearance",
       "subdomain": "general",
       "tags": [
-        "Accident"
+        "Accidents"
       ],
       "stub": "mh370",
       "shortDescription": "Malaysia Airlines Flight 370 was an international passenger flight that disappeared on March 8, 2014 while flying from Kuala Lumpur Airport in Malaysia to Beijing and recent Netflix docuseries.",
