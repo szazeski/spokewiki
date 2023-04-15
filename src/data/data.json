@@ -2,6 +2,77 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "2023 Pentagon Document Leak",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "2023_pentagon_document_leak",
+      "shortDescription": "In April 2023, classified documents from the United States began circulating online that is causing diplomatic incidents for a number of countries.",
+      "durationMin": 25,
+      "filesize": 9,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/2023-pentagon-document-leak.ba4f4ca5-daef-4c62-91f3-245a30c1f618.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/2023_Pentagon_document_leaks",
+      "wikipediaId": 73493731,
+      "image": "",
+      "dateRecorded": "Apr 15, 2023"
+    },
+    {
+      "title": "Silicon Valley Bank",
+      "subdomain": "general",
+      "tags": [
+        "Accidents",
+        "United States"
+      ],
+      "stub": "silicon_valley_bank",
+      "shortDescription": "On March 10, 2023, Silicon Valley Bank is the second largest bank collapse in US history but FDIC backed all depositors with full protection to get their money out.",
+      "durationMin": 16,
+      "filesize": 6,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/silicon-valley-bank.32aaad9f-e72d-4ff7-8c0d-08f17e0acf42.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Silicon_Valley_Bank",
+      "wikipediaId": 37645001,
+      "image": "",
+      "dateRecorded": "Mar 31, 2023"
+    },
+    {
+      "title": "Stormy Daniels",
+      "subdomain": "general",
+      "tags": [
+        "United States"
+      ],
+      "stub": "stormy_daniels",
+      "shortDescription": "In 2018 Daniels became involved in a legal dispute with U.S. president Donald Trump. Trump's attorney Michael Cohen paid $130,000 to silence her about an affair she says she had with Trump in 2006.",
+      "durationMin": 12,
+      "filesize": 4,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/stormy-daniels.0ae729d4-6190-493c-8f84-290e187bdc45.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Stormy_Daniels",
+      "wikipediaId": 3258683,
+      "image": "",
+      "dateRecorded": "Apr 5, 2023"
+    },
+    {
+      "title": "Stormy Daniels Donald Trump scandal",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "stormy_daniels_donald_trump_scandal",
+      "shortDescription": "Back in October 2016, Michael Cohen made a $130k payment to Stormy Daniels to not disclose an affair between her and Donald Trump, then multiple lawsuits occurred until 2023 when a Manhattan Grand Jury indicted Trump.",
+      "durationMin": 29,
+      "filesize": 10,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/stormy-daniels-donald-trump-scandal.9fb32bfe-cd92-4870-9ad4-2023508a67a4.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Stormy_Daniels%E2%80%93Donald_Trump_scandal",
+      "wikipediaId": 56345688,
+      "image": "",
+      "dateRecorded": "Mar 31, 2023"
+    },
+    {
       "title": "Times Beach Dioxin Contamination",
       "subdomain": "general",
       "tags": [
