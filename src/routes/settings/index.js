@@ -61,6 +61,7 @@ const Settings = (props) => {
             <div className={style.category}>App Color</div>
             <div class={style.theme}>
                 <span style="background-color:#57129d" onClick={setThemeColor}>Purple</span>
+                <span style="background-color:#000" onClick={setThemeColor}>Black</span>
                 <span style="background-color:#333" onClick={setThemeColor}>Grey</span>
                 <span style="background-color:#0072ff" onClick={setThemeColor}>Blue</span>
                 <span style="background-color:#c1121f" onClick={setThemeColor}>Red</span>
@@ -88,10 +89,10 @@ const Settings = (props) => {
             </div>
 
             <div className={style.category}>Analytics</div>
-            <p>We use a self hosted matomo analytics to record which articles are started, finished, what color users
-                pick and default speed. This info is not shared with any 3rd party and used only by developers to
-                improve this app.</p>
-            <p>matomo masks all IPs and honors Do Not Track requests.</p>
+            <p>Spokewiki use a self hosted matomo analytics to record which articles are started, finished, what color
+                users pick and default speed.</p>
+            <p>This info is not shared with any 3rd party and used only by developers to improve this app.</p>
+            <p>Matomo masks all IPs and honors Do Not Track requests.</p>
 
         </div>
     );

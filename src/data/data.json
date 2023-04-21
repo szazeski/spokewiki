@@ -2,6 +2,78 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Rupert Murdoch",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "rupert_murdoch",
+      "shortDescription": "Rupert Murdoch is an Australian-born American media mogul and billionaire who controls a global media empire that includes The Sun, The Times, The Daily Telegraph, Herald Sun, The Wall Street Journal, New York Post, Fox News and the book publisher HarperCollins.",
+      "durationMin": 47,
+      "filesize": 17,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/rupert-murdoch.2b025a2a-f43a-4854-84aa-431dceedcbdf.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Rupert_Murdoch",
+      "wikipediaId": 26091,
+      "image": "",
+      "dateRecorded": "Apr 21, 2023"
+    },
+    {
+      "title": "Crossfit",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "crossfit",
+      "shortDescription": "Cross Discipline Fitness is a high-intensity interval training (HIIT) workout that combines weightlifting, gymnastics, and cardio that started their first gym in Santa Cruz, California in 2000, and by 2018 has 15,000 gyms in 160 countries.",
+      "durationMin": 19,
+      "filesize": 7,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/crossfit.7afe1481-07ea-4557-ac10-eb1e0919d796.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Crossfit",
+      "wikipediaId": 32191,
+      "image": "",
+      "dateRecorded": "Apr 17, 2023"
+    },
+    {
+      "title": "Patriot Act",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "patriot_act",
+      "shortDescription": "The Patriot Act was enacted in 2001 with the stated goal of tightening national security: expanded surveillance abilities of law enforcement, easier interagency communication and increased penalties for crimes and an expanded list which would qualify for terrorism charges.",
+      "durationMin": 75,
+      "filesize": 26,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/patriot-act.a9b09e1b-3132-48d1-aac5-26093cbd2d87.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Patriot_Act",
+      "wikipediaId": 32191,
+      "image": "",
+      "dateRecorded": "Apr 17, 2023"
+    },
+    {
+      "title": "Resort Fees",
+      "subdomain": "general",
+      "tags": [
+        "Business",
+        "United States"
+      ],
+      "stub": "resort_fees",
+      "shortDescription": "When traveling, ever wonder when and where resort fees came from? Turns out 1997 some US hotels started adding this line item.",
+      "durationMin": 18,
+      "filesize": 7,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/resort-fees.1367b65c-673a-4b1a-a21b-d243450ff34f.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Resort_fee",
+      "wikipediaId": 33219530,
+      "image": "",
+      "dateRecorded": "Apr 16, 2023"
+    },
+    {
       "title": "2023 Pentagon Document Leak",
       "subdomain": "general",
       "tags": [
@@ -24,6 +96,7 @@
       "subdomain": "general",
       "tags": [
         "Accidents",
+        "Business",
         "United States"
       ],
       "stub": "silicon_valley_bank",
