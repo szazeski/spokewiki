@@ -62,14 +62,14 @@ const Queue = ({onPlaying, onQueue}) => {
     calculate();
 
     return (
-        <div class={style.queue}>
+        <div className={style.queue}>
 
             <div id="files">{listOfArticles}</div>
 
             <input className={style.ClearCache} type="button" value="Clear Cache" onClick={clearCache}/>
             <div id="used">-</div>
             <div id="output">-</div>
-            
+
         </div>
     );
 }

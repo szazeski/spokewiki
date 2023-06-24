@@ -1,0 +1,63 @@
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+    <channel>
+        <atom:link href="https://www.spokewiki.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <title>Spokewiki</title>
+        <link>https://www.spokewiki.com/</link>
+        <language>en-us</language>
+        <copyright>Spokewiki</copyright>
+        <description>Listen to popular wikipedia articles</description>
+        <image>
+            <url>https://www.spokewiki.com/assets/og.jpg</url>
+            <title>Spokewiki</title>
+            <link>https://www.spokewiki.com/</link>
+        </image>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:type>episodic</itunes:type>
+        <itunes:subtitle>Listen to popular wikipedia articles</itunes:subtitle>
+        <itunes:author>Spokewiki</itunes:author>
+        <itunes:summary>spokewiki tracks current events and pulls the wikipedia article, does minor editing to improve
+            readability then uses Amazon Polly to voice the article. We try our best to be fair, accurate and open to
+            feedback.
+        </itunes:summary>
+        <content:encoded>
+            <![CDATA[ <p>spokewiki tracks current events and pulls the wikipedia article, does minor editing to improve readability then uses Amazon Polly to voice the article. We try our best to be fair, accurate and open to feedback.</p> ]]>
+        </content:encoded>
+        <itunes:owner>
+            <itunes:name/>
+            <itunes:email>rss@spokewiki.com</itunes:email>
+        </itunes:owner>
+        <itunes:image href=""/>
+        <itunes:category text="Technology"/>
+        <itunes:category text="History"/>
+
+        <item>
+            <title>Silicon Valley Bank</title>
+            <link>https://www.spokewiki.com/article/silicon_valley_bank</link>
+            <description>On March 10, 2023, Silicon Valley Bank is the second largest bank collapse in US history but
+                FDIC backed all depositors with full protection to get their money out.
+            </description>
+            <pubDate>Fri, 31 Mar 2023 07:00:00 -0000</pubDate>
+            <itunes:title>Silicon Valley Bank</itunes:title>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>1</itunes:episode>
+            <itunes:author>Spokewiki</itunes:author>
+            <itunes:summary>On March 10, 2023, Silicon Valley Bank is the second largest bank collapse in US history but
+                FDIC backed all depositors with full protection to get their money out.
+            </itunes:summary>
+            <content:encoded>
+                <![CDATA[ <p>On March 10, 2023, Silicon Valley Bank is the second largest bank collapse in US history but FDIC backed all depositors with full protection to get their money out.</p> ]]>
+            </content:encoded>
+            <itunes:duration>1554</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+            <guid isPermaLink="false">
+                <![CDATA[ 5e298165-7ffa-4ab2-88d9-2fde68b7f7b2 ]]>
+            </guid>
+            <enclosure url="https://media.spokewiki.com/silicon-valley-bank.32aaad9f-e72d-4ff7-8c0d-08f17e0acf42.mp3"
+                       length="0" type="audio/mpeg"/>
+        </item>
+
+    </channel>
+</rss>

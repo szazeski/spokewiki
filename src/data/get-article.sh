@@ -7,16 +7,19 @@ if [ -z "$SLUG" ]; then
 fi
 
 rm output.json
-curl -o output.json "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&titles=${SLUG}&explaintext&format=json"
+#URL="https://en.wikipedia.org/w/api.php?action=query&prop=extracts&titles=${SLUG}&redirects=1&explaintext&format=json&formatversion=2"
+URL="https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=${SLUG}&redirects=1&formatversion=2&explaintext"
+curl -s -o output.json "$URL"
 
 PAGEID=$(jq '..|.pageid? | select( . != null)' output.json)
 if [ -z "$PAGEID" ]; then
   echo "Unable to get pageid"
+  cat output.json
   exit 1
 fi
 echo "PageID is $PAGEID"
 
-TITLE=$(jq ".query.pages.\"${PAGEID}\".title" output.json)
+TITLE=$(jq ".query.pages[0].title" output.json)
 if [ -z "$TITLE" ]; then
   echo "Unable to get page title"
   exit 1
@@ -24,7 +27,9 @@ fi
 echo "Title is $TITLE"
 
 FILENAME="articles/${SLUG}.md"
-jq ".query.pages.\"${PAGEID}\".extract" output.json > "$FILENAME"
+TODAY=$(date +"%B %-d, %Y")
+
+jq ".query.pages[0].extract" output.json > "$FILENAME"
 echo "Thanks for listening to ${TITLE} on spokewiki recorded on ${TODAY}" >> "$FILENAME"
 echo "$PAGEID" >> "$FILENAME"
 

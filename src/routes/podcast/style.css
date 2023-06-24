@@ -1,0 +1,13 @@
+.podcast {
+    background-color: var(--primary-inverse);
+    padding: var(--header-height) 0;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+    color: var(--text);
+}
+
+.spacer {
+    height: 1px;
+    margin-top: var(--header-height);
+}

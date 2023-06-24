@@ -2,6 +2,130 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Clarence Thomas",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "clarence-thomas",
+      "shortDescription": "Clarence Thomas is an American lawyer and jurist who serves on the Supreme Court of the United States since 1991 and is in the news for accepting luxury trips for two decades and failed to report them.",
+      "durationMin": 63,
+      "filesize": 23,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/clarence-thomas.2a96edb3-8a1f-4fd3-b30e-4b0d0d4d085d.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Clarence_Thomas",
+      "wikipediaId": 28291766,
+      "image": "",
+      "dateRecorded": "June 24, 2023"
+    },
+    {
+      "title": "Juneteenth",
+      "subdomain": "general",
+      "tags": [
+        "Holidays",
+        "United States"
+      ],
+      "stub": "juneteenth",
+      "shortDescription": "Juneteenth is a holiday celebrating the emancipation of those who had been enslaved in the United States. Originating in Galveston, Texas, it is now celebrated annually on June 19 throughout the United States, with increasing official recognition.",
+      "durationMin": 25,
+      "filesize": 9,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/juneteeth.85966fcb-7cf5-48d6-b43b-a0f170590f56.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Juneteenth",
+      "wikipediaId": 61542,
+      "image": "",
+      "dateRecorded": "June 17, 2023"
+    },
+    {
+      "title": "Hard Problem of Consciousness",
+      "subdomain": "general",
+      "tags": [
+        "ai"
+      ],
+      "stub": "hard-problem-of-consciousness",
+      "shortDescription": "When looking at new artificial intelligent (AI), lots of people ask if AI is conscious, yet even asking that questions about animals is a difficult to say yes to. ",
+      "durationMin": 37,
+      "filesize": 13,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/hard-problem-of-consciousness.eb420dac-af2f-499f-a80d-f6533abe02f2.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Hard_problem_of_consciousness",
+      "wikipediaId": 634216,
+      "image": "",
+      "dateRecorded": "May 28, 2023"
+    },
+    {
+      "title": "Twelve Step Program",
+      "subdomain": "general",
+      "tags": [
+        "Addiction"
+      ],
+      "stub": "twelve-step-program",
+      "shortDescription": "Developed in 1930 as an international mutual aid program supporting recovery from substance addictions, behavioral addictions and compulsions with the first group started by Alcoholics Anonymous. ",
+      "durationMin": 14,
+      "filesize": 5,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/twelve-step-program.c33e4bbd-f7cb-4b46-acaf-761839a30bd9.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Twelve-step_program",
+      "wikipediaId": 31398,
+      "image": "",
+      "dateRecorded": "May 19, 2023"
+    },
+    {
+      "title": "YouTube",
+      "subdomain": "general",
+      "tags": [
+        "Business",
+        "United States"
+      ],
+      "stub": "youtube",
+      "shortDescription": "launched in 2005, YouTube is now the second most popular site behind Google search, serving more than 2.5 billion monthly users, who collectively watch more than one billion hours of videos each day",
+      "durationMin": 90,
+      "filesize": 31,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/youtube.0bc17238-9366-4a16-889d-05d76e8f531b.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/YouTube",
+      "wikipediaId": 3524766,
+      "image": "",
+      "dateRecorded": "May 13, 2023"
+    },
+    {
+      "title": "Tucker Carlson",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "tucker_carlson",
+      "shortDescription": "Tucker is an American political commentator, writer, and television personality, who hosted many political talk show and was recently let go from the Tucker Carlson Tonight on Fox News.",
+      "durationMin": 74,
+      "filesize": 26,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/tucker-carlson.f3220542-b3ba-44bd-b26e-801b1655b3d8.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Tucker_Carlson",
+      "wikipediaId": 796076,
+      "image": "",
+      "dateRecorded": "May 7, 2023"
+    },
+    {
+      "title": "SpaceX Starship",
+      "subdomain": "general",
+      "tags": [
+        "Space",
+        "United States"
+      ],
+      "stub": "spacex_starship",
+      "shortDescription": "SpaceX Starship is a fully reusable super heavy-lift launch vehicle under development by SpaceX, intended to be capable of carrying both crew and cargo to Earth orbit, the Moon, Mars, and beyond.",
+      "durationMin": 20,
+      "filesize": 13,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/spacex-starship.d887b857-2666-44cb-9159-ae9a4c5ded7d.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/SpaceX_Starship",
+      "wikipediaId": 59118602,
+      "image": "",
+      "dateRecorded": "Apr 27, 2023"
+    },
+    {
       "title": "Rupert Murdoch",
       "subdomain": "general",
       "tags": [
@@ -108,7 +232,8 @@
       "urlWikipedia": "https://en.wikipedia.org/wiki/Silicon_Valley_Bank",
       "wikipediaId": 37645001,
       "image": "",
-      "dateRecorded": "Mar 31, 2023"
+      "dateRecorded": "Mar 31, 2023",
+      "uuid": "5e298165-7ffa-4ab2-88d9-2fde68b7f7b2"
     },
     {
       "title": "Stormy Daniels",

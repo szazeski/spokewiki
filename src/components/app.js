@@ -11,6 +11,7 @@ import Settings from "../routes/settings";
 import Queue from "../routes/queue";
 import {cacheAsset, getBool, getValue, loadColors, removeCacheAsset, setDark, setLight} from "./storage";
 import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
+import Podcast from "../routes/podcast";
 
 
 function loadLightDarkMode() {
@@ -108,9 +109,12 @@ const App = () => {
                         onQueue={AddQueue}
                     />
                     <Settings
-                        path={"/settings"}
+                        path="/settings"
                         playbackSpeed={playbackSpeed}
                         onPlaybackSpeedChange={setSpeed}
+                    />
+                    <Podcast
+                        path="/podcast"
                     />
                     <Profile
                         path="/profile/" user="me"
