@@ -1,0 +1,3 @@
+
+cd ./src/data
+./voice-article.sh $1

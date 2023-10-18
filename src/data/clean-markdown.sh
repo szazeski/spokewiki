@@ -30,4 +30,9 @@ sed -i '' 's/\\u00a0/ /g' "$1"
 # add space after period if followed by a letter
 sed -i '' 's/\.\([a-zA-Z]\)/. \1/g' "$1"
 
+# check if first character is " and remove it
+if [ "$(head -c 1 "$1")" = '"' ]; then
+    sed -i '' '1s/^"//' "$1"
+fi
+
 echo "done"

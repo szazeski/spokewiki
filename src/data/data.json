@@ -2,6 +2,75 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Jim Jordan",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "United States"
+      ],
+      "stub": "jim-jordan",
+      "shortDescription": "Is a Republican politician and U.S. Representative for Ohio's 4th congressional district since 2007. He is a founding member of the Freedom Caucus, and currently attempting to become the Speaker of the House.",
+      "durationMin": 25,
+      "filesize": 9,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/jim_jordan.06a69c70-da8c-41a5-891c-04e88824e088.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Jim_Jordan",
+      "wikipediaId": 1238368,
+      "image": "",
+      "dateRecorded": "Aug 20, 2023"
+    },
+    {
+      "title": "Leprosy",
+      "subdomain": "general",
+      "tags": [
+        "Health"
+      ],
+      "stub": "leprosy",
+      "shortDescription": "Is a chronic infectious disease caused by bacterium that attacks the skin, peripheral nerves, and sometimes the upper respiratory tract and eyes. It is a very slow-growing and is not as contagious as many people think. It is making headlines due to new case uptick in Florida.",
+      "durationMin": 41,
+      "filesize": 14,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/leprosy.34ad4a44-c5a5-48cb-b841-f6cd1de83e40.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Leprosy",
+      "wikipediaId": 44700,
+      "image": "",
+      "dateRecorded": "Aug 20, 2023"
+    },
+    {
+      "title": "Robert Oppenheimer",
+      "subdomain": "general",
+      "tags": [
+        "United States"
+      ],
+      "stub": "robert-oppenheimer",
+      "shortDescription": "Robert Oppenheimer was an American theoretical physicist and director of the Manhattan Project's Los Alamos Laboratory during World War II. He is often called the father of the atomic bomb.",
+      "durationMin": 68,
+      "filesize": 24,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/robert-oppenheimer.51b784fc-1534-4727-b8d2-643d77d1ed41.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/J._Robert_Oppenheimer",
+      "wikipediaId": 39034,
+      "image": "",
+      "dateRecorded": "Aug 4, 2023"
+    },
+    {
+      "title": "Urban Heat Island",
+      "subdomain": "general",
+      "tags": [
+        "Environment"
+      ],
+      "stub": "urban-heat-island",
+      "shortDescription": "Occurs in urban or metropolitan area that are significantly warmer, often at night, than its surrounding rural areas due to structures like asphalt roads that trap and store heat",
+      "durationMin": 25,
+      "filesize": 9,
+      "pollyVoice": "Matthew",
+      "urlAudio": "https://media.spokewiki.com/urban-heat-island.756ebaa6-6de1-4472-88b5-8466ea294f11.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Urban_heat_island",
+      "wikipediaId": 32236,
+      "image": "",
+      "dateRecorded": "July 16, 2023"
+    },
+    {
       "title": "Deepwater Horizon Oil Spill",
       "subdomain": "general",
       "tags": [
