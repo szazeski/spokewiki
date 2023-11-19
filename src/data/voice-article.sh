@@ -23,10 +23,10 @@ lame -V 2 "${outputFilename}" "${mp3Filename}"
 echo "adding metadata..."
 
 title=$(basename "$filename")
-title=${title/_/ /}
 title=${title/-*/}
+title=${title/_/ /}
 title=${title/.md//}
 mp3edit -title="${title}" -artist="spokewiki" "${mp3Filename}"
 
-#echo "removing aiff file..."
-#rm "${outputFilename}"
+echo "removing aiff file..."
+rm "${outputFilename}"

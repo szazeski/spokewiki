@@ -1,20 +1,24 @@
 
 SLUG=$1
+
 if [ -z "$SLUG" ]; then
   echo "enter a wikipedia url or slug (https://en.wikipedia.org/wiki/SLUG)?"
   read -r SLUG
   SLUG=${SLUG/https:\/\/en.wikipedia.org\/wiki\//} # removes url part from slug
 fi
 
-rm output.json
 #URL="https://en.wikipedia.org/w/api.php?action=query&prop=extracts&titles=${SLUG}&redirects=1&explaintext&format=json&formatversion=2"
 URL="https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=${SLUG}&redirects=1&formatversion=2&explaintext"
+echo $URL
+
+rm output.json
 curl -s -o output.json "$URL"
+
 
 PAGEID=$(jq '..|.pageid? | select( . != null)' output.json)
 if [ -z "$PAGEID" ]; then
   echo "Unable to get pageid"
-  cat output.json
+  cat output.json | grep "p>"
   exit 1
 fi
 echo "PageID is $PAGEID"
@@ -35,3 +39,5 @@ echo "Thanks for listening to ${TITLE} on spokewiki recorded on ${TODAY}" >> "$F
 
 echo "cleaning markdown"
 ./clean-markdown.sh "$FILENAME"
+
+echo "Thanks for listening to spoke wiki dot com recording of ${TITLE} from ${TODAY}" >> "$FILENAME"

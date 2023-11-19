@@ -2,6 +2,42 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Barbie (doll)",
+      "subdomain": "general",
+      "tags": [
+        "Business",
+        "United States"
+      ],
+      "stub": "barbie",
+      "shortDescription": "The most popular American doll was created in 1959 by Ruth Handler and hitting the news again as its new movie was released July 2023. ",
+      "durationMin": 33,
+      "filesize": 17,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/barbie-164328-cfea78ca-01e1-444e-b454-e7e3bf50eddc.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Barbie",
+      "wikipediaId": 164328,
+      "image": "",
+      "dateRecorded": "Nov 18, 2023"
+    },
+    {
+      "title": "Diwali (holiday)",
+      "subdomain": "general",
+      "tags": [
+        "Holiday",
+        "India"
+      ],
+      "stub": "diwali",
+      "shortDescription": "also known as Deepavali, is one of the most significant festivals in India, celebrated by Hindus, Jains, and Sikhs. The festival symbolizes the victory of light over darkness, good over evil, and knowledge over ignorance. It is a five-day festival that is typically celebrated in October or November.",
+      "durationMin": 33,
+      "filesize": 17,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/diwali-186177-5231b35e-843e-4cb1-897a-435a4f33b62b.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Diwali",
+      "wikipediaId": 164328,
+      "image": "",
+      "dateRecorded": "Nov 15, 2023"
+    },
+    {
       "title": "Jim Jordan",
       "subdomain": "general",
       "tags": [
