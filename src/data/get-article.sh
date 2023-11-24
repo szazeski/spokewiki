@@ -35,7 +35,6 @@ TODAY=$(date +"%B %-d, %Y")
 FILENAME=$(echo "$FILENAME" | tr '[:upper:]' '[:lower:]')
 
 jq ".query.pages[0].extract" output.json > "$FILENAME"
-echo "Thanks for listening to ${TITLE} on spokewiki recorded on ${TODAY}" >> "$FILENAME"
 
 echo "cleaning markdown"
 ./clean-markdown.sh "$FILENAME"
