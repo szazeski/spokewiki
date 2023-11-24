@@ -2,3 +2,7 @@ node_modules
 /build
 /*.log
 /.idea
+
+*.mp3
+*.m4a
+*.aiff
