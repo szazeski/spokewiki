@@ -6,8 +6,8 @@ import {useEffect} from "preact/hooks";
 const Settings = (props) => {
 
     const {trackEvent} = useMatomo();
-    const MAX_SPEED = 25;
-    const MIN_SPEED = 5;
+    const MAX_SPEED = 25; //  2.5x
+    const MIN_SPEED = 5;  //  0.5x
 
     function setThemeColor(obj) {
         let rgb = obj.target.style.backgroundColor;

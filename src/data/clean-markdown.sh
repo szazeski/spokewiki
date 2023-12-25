@@ -41,7 +41,11 @@ fi
 # remove everything after "See Also"
 sed -i '' '/ See also /,$d' "$1"
 
-# remove "(born )" and "(died )" from names
+# remove "(*born*)" and "(*died*)" from names
+# input "Javier Gerardo Milei (/miˈleɪ/ mee-LAY, Spanish pronunciation: [xaˈβjeɾ xeˈɾaɾ.ðo miˈlej]; born 22 October 1970) is an Argentine politician, economist"
+# output "Javier Gerardo Milei is an Argentine politician, economist"
 
+
+# remove language translations ()
 
 echo "done"

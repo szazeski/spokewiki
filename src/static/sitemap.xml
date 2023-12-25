@@ -3,71 +3,286 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.spokewiki.com/</loc>
-        <lastmod>2018-06-04</lastmod>
+        <lastmod>2023-12-02</lastmod>
     </url>
     <url>
         <loc>https://www.spokewiki.com/all</loc>
         <lastmod>2018-06-04</lastmod>
     </url>
-
     <url>
-        <loc>https://www.spokewiki.com/railway_labor_act</loc>
+        <loc>https://www.spokewiki.com/article/matthew_perry</loc>
+        <lastmod>2023-11-26</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/influenza</loc>
+        <lastmod>2023-11-26</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/bitcoin</loc>
+        <lastmod>2023-11-26</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/opioid-epidemic</loc>
+        <lastmod>2023-11-25</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/common-cold</loc>
+        <lastmod>2023-11-25</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/basketball</loc>
+        <lastmod>2023-11-25</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/paypal</loc>
+        <lastmod>2023-11-25</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/moon</loc>
+        <lastmod>2023-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/xi-jinping</loc>
+        <lastmod>2023-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/costco</loc>
+        <lastmod>2023-11-24</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/black-friday</loc>
+        <lastmod>2023-11-23</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/media-matters-for-america</loc>
+        <lastmod>2023-11-20</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/thanksgiving</loc>
+        <lastmod>2023-11-19</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/cricket-sport</loc>
+        <lastmod>2023-11-19</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/mike-johnson</loc>
+        <lastmod>2023-11-18</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/barbie</loc>
+        <lastmod>2023-11-18</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/diwali</loc>
+        <lastmod>2023-11-15</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/jim-jordan</loc>
+        <lastmod>2023-08-20</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/leprosy</loc>
+        <lastmod>2023-08-20</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/robert-oppenheimer</loc>
+        <lastmod>2023-08-04</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/urban-heat-island</loc>
+        <lastmod>2023-07-16</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/deepwater-horizon-oil-spill</loc>
+        <lastmod>2023-07-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/nine-dash-line</loc>
+        <lastmod>2023-07-09</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/wagner-group</loc>
+        <lastmod>2023-06-24</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/clarence-thomas</loc>
+        <lastmod>2023-06-24</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/juneteenth</loc>
+        <lastmod>2023-06-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/hard-problem-of-consciousness</loc>
+        <lastmod>2023-05-28</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/twelve-step-program</loc>
+        <lastmod>2023-05-19</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/youtube</loc>
+        <lastmod>2023-05-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/tucker_carlson</loc>
+        <lastmod>2023-05-07</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/spacex_starship</loc>
+        <lastmod>2023-04-27</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/rupert_murdoch</loc>
+        <lastmod>2023-04-21</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/crossfit</loc>
+        <lastmod>2023-04-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/patriot_act</loc>
+        <lastmod>2023-04-17</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/resort_fees</loc>
+        <lastmod>2023-04-16</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/2023_pentagon_document_leak</loc>
+        <lastmod>2023-04-15</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/silicon_valley_bank</loc>
+        <lastmod>2023-03-31</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/stormy_daniels</loc>
+        <lastmod>2023-04-05</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/stormy_daniels_donald_trump_scandal</loc>
+        <lastmod>2023-03-31</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/times-beach</loc>
+        <lastmod>2023-03-25</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/mh370</loc>
+        <lastmod>2023-03-22</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/valentines-day</loc>
+        <lastmod>2023-02-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/2023-chinese-balloon-incident</loc>
+        <lastmod>2023-02-12</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/2023-ohio-derailment</loc>
+        <lastmod>2023-02-12</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/chatgpt</loc>
+        <lastmod>2023-01-14</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/jair-bolsonaro</loc>
+        <lastmod>2023-01-09</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/kevin-mccarthy</loc>
+        <lastmod>2023-01-08</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/boxing-day</loc>
+        <lastmod>2023-01-07</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/southwest-airlines</loc>
+        <lastmod>2023-01-01</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/andrew-tate</loc>
+        <lastmod>2022-12-30</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/george-santos</loc>
+        <lastmod>2022-12-28</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/us-constitution</loc>
+        <lastmod>2022-12-27</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/tiktok</loc>
+        <lastmod>2022-12-14</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/samuel_bankman_fried</loc>
+        <lastmod>2022-12-12</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/victor_bout</loc>
+        <lastmod>2022-12-08</lastmod>
+    </url>
+    <url>
+        <loc>https://www.spokewiki.com/article/railway_labor_act</loc>
         <lastmod>2022-11-23</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/ticketmaster</loc>
+        <loc>https://www.spokewiki.com/article/ticketmaster</loc>
         <lastmod>2022-11-19</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/brittany_griner</loc>
+        <loc>https://www.spokewiki.com/article/brittany_griner</loc>
         <lastmod>2022-11-17</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/artemis_1</loc>
+        <loc>https://www.spokewiki.com/article/artemis_1</loc>
         <lastmod>2022-11-16</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/kari_lake</loc>
+        <loc>https://www.spokewiki.com/article/kari_lake</loc>
         <lastmod>2022-11-15</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/binance</loc>
+        <loc>https://www.spokewiki.com/article/binance</loc>
         <lastmod>2022-11-12</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/john_fetterman</loc>
+        <loc>https://www.spokewiki.com/article/john_fetterman</loc>
         <lastmod>2022-11-09</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/rishi-sunak</loc>
+        <loc>https://www.spokewiki.com/article/rishi-sunak</loc>
         <lastmod>2022-11-07</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/powerball</loc>
+        <loc>https://www.spokewiki.com/article/powerball</loc>
         <lastmod>2022-11-06</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/halloween</loc>
+        <loc>https://www.spokewiki.com/article/halloween</loc>
         <lastmod>2022-11-05</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/crowd-crush</loc>
+        <loc>https://www.spokewiki.com/article/crowd-crush</loc>
         <lastmod>2022-11-04</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/candace-owens</loc>
-        <lastmod>2022-10-27</lastmod>
-    </url>
-    <url>
-        <loc>https://www.spokewiki.com/reedy-creek</loc>
+        <loc>https://www.spokewiki.com/article/candace-owens</loc>
         <lastmod>2022-10-17</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/russia-invasion-of-ukraine</loc>
+        <loc>https://www.spokewiki.com/article/reedy-creek</loc>
         <lastmod>2022-10-17</lastmod>
     </url>
     <url>
-        <loc>https://www.spokewiki.com/times-beach</loc>
-        <lastmod>2023-03-25</lastmod>
+        <loc>https://www.spokewiki.com/article/russia-invasion-of-ukraine</loc>
+        <lastmod>2022-10-17</lastmod>
     </url>
 </urlset>

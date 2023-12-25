@@ -5,8 +5,11 @@ import About from "../../components/about";
 import {useEffect} from "preact/hooks";
 import {useMatomo} from "@datapunt/matomo-tracker-react";
 import SpokeTag from "../../components/spokeTag";
+import {setTitleAndOpengraph} from "../../components/toolbox";
 
 const Home = ({onPlaying, onQueue, showOnlyNew}) => {
+
+    setTitleAndOpengraph(`spokewiki`, 'Listen for free to wikipedia articles about the topics in the news to better understand what is going on.');
 
     const listOfArticles = data.articles.map((item) =>
         <SpokeArticle

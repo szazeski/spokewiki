@@ -7,6 +7,17 @@
     color: var(--text);
 }
 
+.podcastLink {
+    background-color: var(--primary-inverse);
+    padding: 10px 3px;
+    text-decoration: none;
+}
+
+.podcastLink a {
+    color: black !important;
+    font-size: 120%;
+}
+
 .spacer {
     height: 1px;
     margin-top: var(--header-height);

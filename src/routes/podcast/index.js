@@ -16,7 +16,9 @@ const Podcast = () => {
 
             <p>Want to access this in your favorite podcast app instead?</p>
 
-            <p><a href="https://www.spokewiki.com/rss.xml">https://www.spokewiki.com/rss.xml</a></p>
+            <div className={style.podcastLink}>
+                <a href="https://www.spokewiki.com/rss.xml">https://www.spokewiki.com/rss.xml</a>
+            </div>
 
         </div>
     );

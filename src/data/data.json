@@ -2,11 +2,184 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Christmas",
+      "subdomain": "general",
+      "tags": [
+        "Holiday"
+      ],
+      "stub": "christmas",
+      "shortDescription": "Celebrated each year on Dec 25, it commemorating the birth of Jesus Christ, observed primarily by Christians around the world.",
+      "durationMin": 49,
+      "filesize": 26,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/christmas-6237-1efc300b-9304-4028-8614-1de06a4e399c.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/christmas",
+      "wikipediaId": 6237,
+      "image": "",
+      "dateRecorded": "December 23, 2023"
+    },
+    {
+      "title": "Matthew Perry",
+      "subdomain": "general",
+      "tags": [
+        "Celebrity"
+      ],
+      "stub": "matthew_perry",
+      "shortDescription": "is a Canadian-American actor, comedian, executive producer, screenwriter, and playwright who gained worldwide recognition for his role as Chandler Bing on the NBC television sitcom Friends, which ran from 1994 to 2004.",
+      "durationMin": 17,
+      "filesize": 9,
+      "pollyVoice": "SV3",
+      "urlAudio": "https://media.spokewiki.com/matthew_perry-233338-8e25ac32-8565-4a4b-8db6-b5589a294cea.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Matthew perry",
+      "wikipediaId": 233338,
+      "image": "",
+      "dateRecorded": "November 26, 2023"
+    },
+    {
+      "title": "Influenza (flu)",
+      "subdomain": "general",
+      "tags": [
+        "Health"
+      ],
+      "stub": "influenza",
+      "shortDescription": "is an infectious disease caused by four different types of virus. Each year, roughly 5-15% of the population will get sick and 650,000 respiratory-related deaths occur globally each year.",
+      "durationMin": 51,
+      "filesize": 27,
+      "pollyVoice": "SV3",
+      "urlAudio": "https://media.spokewiki.com/influenza-19572217-1d816f98-45d4-4793-b7be-958413198310.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Influenza",
+      "wikipediaId": 19572217,
+      "image": "",
+      "dateRecorded": "November 26, 2023"
+    },
+    {
+      "title": "Bitcoin",
+      "subdomain": "general",
+      "tags": [
+        "Crypto"
+      ],
+      "stub": "bitcoin",
+      "shortDescription": "is a cryptocurrency invented in 2008 by an unknown person or group of people using the name Satoshi Nakamoto and started in 2009 and turned viral in 2018 with huge increase in value.",
+      "durationMin": 49,
+      "filesize": 27,
+      "pollyVoice": "SV3",
+      "urlAudio": "https://media.spokewiki.com/bitcoin-28249265-ef255274-f6ee-47ee-afa1-e1423c1217c0.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Bitcoin",
+      "wikipediaId": 28249265,
+      "image": "",
+      "dateRecorded": "November 26, 2023"
+    },
+    {
+      "title": "Opioid Epidemic",
+      "subdomain": "general",
+      "tags": [
+        "Health",
+        "Addiction"
+      ],
+      "stub": "opioid-epidemic",
+      "shortDescription": "is the rapid increase in the use of prescription and non-prescription opioid drugs in the United States and Canada in the 2010s. Opioids are a diverse class of moderately strong painkillers, including oxycodone, hydrocodone, and fentanyl.",
+      "durationMin": 28,
+      "filesize": 16,
+      "pollyVoice": "SV3",
+      "urlAudio": "https://media.spokewiki.com/opioid_epidemic-60367555-3bb0b29b-f0fa-4b62-9524-945aae4342b4.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Opioid_epidemic",
+      "wikipediaId": 60367555,
+      "image": "",
+      "dateRecorded": "November 25, 2023"
+    },
+    {
+      "title": "Common Cold",
+      "subdomain": "general",
+      "tags": [
+        "Health"
+      ],
+      "stub": "common-cold",
+      "shortDescription": "is a viral infectious disease of the upper respiratory tract that primarily affects the nose, throat, sinuses, and larynx that may appear fewer than two days after exposure to the virus and people usually recover in seven to ten days.",
+      "durationMin": 18,
+      "filesize": 10,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/common_cold-92693-62447d45-eb41-4ebc-b09b-058918d1a604.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Common_cold",
+      "wikipediaId": 92693,
+      "image": "",
+      "dateRecorded": "November 25, 2023"
+    },
+    {
+      "title": "Basketball",
+      "subdomain": "general",
+      "tags": [
+        "Sports"
+      ],
+      "stub": "basketball",
+      "shortDescription": "created in 1891, it is a sport in which two teams of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop while preventing the opposing team from shooting through their own hoop.",
+      "durationMin": 45,
+      "filesize": 24,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/basketball-3921-47516d99-dc10-48ef-af1f-2fcb6916ce3f.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Basketball",
+      "wikipediaId": 3921,
+      "image": "",
+      "dateRecorded": "November 25, 2023"
+    },
+    {
+      "title": "Paypal",
+      "subdomain": "general",
+      "tags": [
+        "Business",
+        "USA"
+      ],
+      "stub": "paypal",
+      "shortDescription": "was founded as Confinity in 1998, acquired X.com in 2000, and went public as Paypal in 2002, operating a worldwide online payments system that supports online money transfers and serves as an electronic alternative to traditional paper methods.",
+      "durationMin": 48,
+      "filesize": 25,
+      "pollyVoice": "SV3",
+      "urlAudio": "https://media.spokewiki.com/paypal-195809-44d48023-f008-40b4-84fa-7a887403e8ba.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Paypal",
+      "wikipediaId": 195809,
+      "image": "",
+      "dateRecorded": "Nov 25, 2023"
+    },
+    {
+      "title": "Moon",
+      "subdomain": "general",
+      "tags": [
+        "Space"
+      ],
+      "stub": "moon",
+      "shortDescription": "The Moon is an astronomical body orbiting Earth as its only natural satellite. It is the fifth-largest satellite in the Solar System, and by far the largest among planetary satellites relative to the size of the planet that it orbits.",
+      "durationMin": 49,
+      "filesize": 26,
+      "pollyVoice": "SV3",
+      "urlAudio": "https://media.spokewiki.com/moon-19331-ab6df211-2040-410c-90de-fb8a41c7c8e4.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Moon",
+      "wikipediaId": 19331,
+      "image": "",
+      "dateRecorded": "Nov 24, 2023"
+    },
+    {
+      "title": "Xi Jinping",
+      "subdomain": "general",
+      "tags": [
+        "Politics",
+        "China"
+      ],
+      "stub": "xi-jinping",
+      "shortDescription": "is serving as the President of the People's Republic of China (PRC) since 2013 after rising through the ranks politically in China's coastal provinces including being governor of Fujian, vice president of the PRC and vice chairman of the CMC. ",
+      "durationMin": 53,
+      "filesize": 28,
+      "pollyVoice": "SV3",
+      "urlAudio": "https://media.spokewiki.com/xi_jinping-2017814-c8e46f9f-1d18-437a-9f75-f0ae679dae16.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Xi_Jinping",
+      "wikipediaId": 2017814,
+      "image": "",
+      "dateRecorded": "Nov 24, 2023"
+    },
+    {
       "title": "Costco",
       "subdomain": "general",
       "tags": [
         "Business",
-        "United States"
+        "USA"
       ],
       "stub": "costco",
       "shortDescription": "is a membership-only bulk warehouse club started in 1983 in Settle, Washington, and now has 800 stores worldwide with 250k employees making it the third largest retailer in the world.",
@@ -24,7 +197,7 @@
       "subdomain": "general",
       "tags": [
         "Business",
-        "United States"
+        "USA"
       ],
       "stub": "black-friday",
       "shortDescription": "the day after Thanksgiving, is a shopping holiday in the United States and many other countries. It is a day when retailers offer promotional sales and discounts to kick off the holiday shopping season, sometimes with stores opening as early as midnight.",
@@ -42,7 +215,7 @@
       "subdomain": "general",
       "tags": [
         "Business",
-        "United States"
+        "USA"
       ],
       "stub": "media-matters-for-america",
       "shortDescription": "is a non-profit progressive research and information center started in 2004, dedicated to comprehensively monitoring, analyzing, and correcting conservative misinformation in the US media. Many large advertisers stopped their ads after Media Matters released a report about the social network X that is triggering a lawsuit.",
@@ -56,7 +229,7 @@
       "dateRecorded": "Nov 20, 2023"
     },
     {
-      "title": "Thanksgiving (holiday)",
+      "title": "Thanksgiving",
       "subdomain": "general",
       "tags": [
         "Holidays"
@@ -73,7 +246,7 @@
       "dateRecorded": "Nov 19, 2023"
     },
     {
-      "title": "Cricket (sport)",
+      "title": "Cricket",
       "subdomain": "general",
       "tags": [
         "Sports"
@@ -94,7 +267,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "mike-johnson",
       "shortDescription": "Is a Republican politician and U.S. Representative for Louisiana's 4th congressional district since 2017. On October 25, 2023, following the ousting of Kevin McCarthy, Johnson was elected as the 56th speaker of the House.",
@@ -112,7 +285,7 @@
       "subdomain": "general",
       "tags": [
         "Business",
-        "United States"
+        "USA"
       ],
       "stub": "barbie",
       "shortDescription": "The most popular American doll was created in 1959 by Ruth Handler and hitting the news again as its new movie was released July 2023. ",
@@ -126,7 +299,7 @@
       "dateRecorded": "Nov 18, 2023"
     },
     {
-      "title": "Diwali (holiday)",
+      "title": "Diwali",
       "subdomain": "general",
       "tags": [
         "Holidays",
@@ -148,7 +321,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "jim-jordan",
       "shortDescription": "Is a Republican politician and U.S. Representative for Ohio's 4th congressional district since 2007. He is a founding member of the Freedom Caucus, and currently attempting to become the Speaker of the House.",
@@ -182,7 +355,7 @@
       "title": "Robert Oppenheimer",
       "subdomain": "general",
       "tags": [
-        "United States"
+        "USA"
       ],
       "stub": "robert-oppenheimer",
       "shortDescription": "Robert Oppenheimer was an American theoretical physicist and director of the Manhattan Project's Los Alamos Laboratory during World War II. He is often called the father of the atomic bomb.",
@@ -217,7 +390,7 @@
       "subdomain": "general",
       "tags": [
         "Accidents",
-        "United States"
+        "USA"
       ],
       "stub": "deepwater-horizon-oil-spill",
       "shortDescription": "Occurred on April 20, 2010 in the Gulf of Mexico on the BP-operated Macondo Prospect. It is considered the largest marine oil spill in the history of the petroleum industry.",
@@ -271,7 +444,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "clarence-thomas",
       "shortDescription": "Clarence Thomas is an American lawyer and jurist who serves on the Supreme Court of the United States since 1991 and is in the news for accepting luxury trips for two decades and failed to report them.",
@@ -289,7 +462,7 @@
       "subdomain": "general",
       "tags": [
         "Holidays",
-        "United States"
+        "USA"
       ],
       "stub": "juneteenth",
       "shortDescription": "Juneteenth is a holiday celebrating the emancipation of those who had been enslaved in the United States. Originating in Galveston, Texas, it is now celebrated annually on June 19 throughout the United States, with increasing official recognition.",
@@ -341,7 +514,7 @@
       "subdomain": "general",
       "tags": [
         "Business",
-        "United States"
+        "USA"
       ],
       "stub": "youtube",
       "shortDescription": "launched in 2005, YouTube is now the second most popular site behind Google search, serving more than 2.5 billion monthly users, who collectively watch more than one billion hours of videos each day",
@@ -359,7 +532,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "tucker_carlson",
       "shortDescription": "Tucker is an American political commentator, writer, and television personality, who hosted many political talk show and was recently let go from the Tucker Carlson Tonight on Fox News.",
@@ -377,7 +550,7 @@
       "subdomain": "general",
       "tags": [
         "Space",
-        "United States"
+        "USA"
       ],
       "stub": "spacex_starship",
       "shortDescription": "SpaceX Starship is a fully reusable super heavy-lift launch vehicle under development by SpaceX, intended to be capable of carrying both crew and cargo to Earth orbit, the Moon, Mars, and beyond.",
@@ -395,7 +568,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "rupert_murdoch",
       "shortDescription": "Rupert Murdoch is an Australian-born American media mogul and billionaire who controls a global media empire that includes The Sun, The Times, The Daily Telegraph, Herald Sun, The Wall Street Journal, New York Post, Fox News and the book publisher HarperCollins.",
@@ -413,7 +586,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "crossfit",
       "shortDescription": "Cross Discipline Fitness is a high-intensity interval training (HIIT) workout that combines weightlifting, gymnastics, and cardio that started their first gym in Santa Cruz, California in 2000, and by 2018 has 15,000 gyms in 160 countries.",
@@ -431,7 +604,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "patriot_act",
       "shortDescription": "The Patriot Act was enacted in 2001 with the stated goal of tightening national security: expanded surveillance abilities of law enforcement, easier interagency communication and increased penalties for crimes and an expanded list which would qualify for terrorism charges.",
@@ -449,7 +622,7 @@
       "subdomain": "general",
       "tags": [
         "Business",
-        "United States"
+        "USA"
       ],
       "stub": "resort_fees",
       "shortDescription": "When traveling, ever wonder when and where resort fees came from? Turns out 1997 some US hotels started adding this line item.",
@@ -467,7 +640,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "2023_pentagon_document_leak",
       "shortDescription": "In April 2023, classified documents from the United States began circulating online that is causing diplomatic incidents for a number of countries.",
@@ -486,7 +659,7 @@
       "tags": [
         "Accidents",
         "Business",
-        "United States"
+        "USA"
       ],
       "stub": "silicon_valley_bank",
       "shortDescription": "On March 10, 2023, Silicon Valley Bank is the second largest bank collapse in US history but FDIC backed all depositors with full protection to get their money out.",
@@ -504,7 +677,7 @@
       "title": "Stormy Daniels",
       "subdomain": "general",
       "tags": [
-        "United States"
+        "USA"
       ],
       "stub": "stormy_daniels",
       "shortDescription": "In 2018 Daniels became involved in a legal dispute with U.S. president Donald Trump. Trump's attorney Michael Cohen paid $130,000 to silence her about an affair she says she had with Trump in 2006.",
@@ -522,7 +695,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "stormy_daniels_donald_trump_scandal",
       "shortDescription": "Back in October 2016, Michael Cohen made a $130k payment to Stormy Daniels to not disclose an affair between her and Donald Trump, then multiple lawsuits occurred until 2023 when a Manhattan Grand Jury indicted Trump.",
@@ -540,7 +713,7 @@
       "subdomain": "general",
       "tags": [
         "Accidents",
-        "United States"
+        "USA"
       ],
       "stub": "times-beach",
       "shortDescription": "Back in 1980s, a small town by St. Louis, was evacuated after a chemical factory paid a local waste oil company that was unaware of proper handling and used the waste oil to spray on land as dust control.",
@@ -591,7 +764,7 @@
       "title": "2023 Chinese Balloon Incident",
       "subdomain": "general",
       "tags": [
-        "United States",
+        "USA",
         "China"
       ],
       "stub": "2023-chinese-balloon-incident",
@@ -610,7 +783,7 @@
       "subdomain": "general",
       "tags": [
         "Accidents",
-        "United States"
+        "USA"
       ],
       "stub": "2023-ohio-derailment",
       "shortDescription": "On Feb 3, 2023 a train carrying hazardous chemicals like vinyl chloride derailed in east border of Ohio causing evacuations.",
@@ -627,8 +800,8 @@
       "title": "ChatGPT",
       "subdomain": "general",
       "tags": [
-        "Business",
-        "Tech"
+        "AI",
+        "Business"
       ],
       "stub": "chatgpt",
       "shortDescription": "Launched in Nov 2022, this chatbot has shown impressive answers and confidently incorrect replies to a variety of questions leading to some sites banning its use.",
@@ -664,7 +837,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "kevin-mccarthy",
       "shortDescription": "In Jan 2023, after 15 rounds of voting, Kevin McCarthy of California finally received a majority vote for speaker of the House.",
@@ -678,7 +851,7 @@
       "dateRecorded": "Jan 8, 2023"
     },
     {
-      "title": "Boxing Day (Holiday)",
+      "title": "Boxing Day",
       "subdomain": "general",
       "tags": [
         "Holidays"
@@ -699,7 +872,7 @@
       "subdomain": "general",
       "tags": [
         "Business",
-        "United States"
+        "USA"
       ],
       "stub": "southwest-airlines",
       "shortDescription": "In Dec 2022, Southwest Airlines made headlines with thousands of cancelled flights during the December holiday rush.",
@@ -717,7 +890,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "andrew-tate",
       "shortDescription": "In Dec 2022, Andrew Tate was arrested in Romania, find out about his background as a kickboxer turned social media personality.",
@@ -735,7 +908,7 @@
       "subdomain": "general",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "george-santos",
       "shortDescription": "In Dec 2022, George Santos was elected to New York's 3rd district in the House of Representatives and then admitted his background was false. ",
@@ -752,8 +925,7 @@
       "title": "United States Constitution",
       "subdomain": "unabridged",
       "tags": [
-        "United States",
-        "Unabridged"
+        "USA"
       ],
       "stub": "us-constitution",
       "shortDescription": "Written in 1787, hear the original unabridged document creating the 3 branches of government before the 27 amendments.",
@@ -821,7 +993,7 @@
     {
       "title": "Railway Labor Act",
       "tags": [
-        "United States"
+        "USA"
       ],
       "stub": "railway_labor_act",
       "shortDescription": "In Nov 2022, the railroad unions are rejecting labor deals but find out why Congress can force them not to strike.",
@@ -886,7 +1058,7 @@
       "title": "Kari Lake",
       "tags": [
         "Politics",
-        "United States"
+        "USA"
       ],
       "stub": "kari_lake",
       "shortDescription": "The 2022 Arizona Governor race placed Kari Lake in national news with slow midterm results.",
@@ -918,7 +1090,7 @@
     {
       "title": "John Fetterman",
       "tags": [
-        "United States",
+        "USA",
         "Politics"
       ],
       "stub": "john_fetterman",
@@ -951,7 +1123,7 @@
     {
       "title": "Powerball Lottery",
       "tags": [
-        "United States"
+        "USA"
       ],
       "stub": "powerball",
       "shortDescription": "Every couple months Powerball makes the news for an even larger jackpot, hear how this lottery got started in 1992",
@@ -999,7 +1171,7 @@
     {
       "title": "Candace Owens",
       "tags": [
-        "United States",
+        "USA",
         "Politics"
       ],
       "stub": "candace-owens",
@@ -1015,7 +1187,7 @@
     {
       "title": "Reedy Creek Improvement District",
       "tags": [
-        "United States",
+        "USA",
         "Politics"
       ],
       "stub": "reedy-creek",
