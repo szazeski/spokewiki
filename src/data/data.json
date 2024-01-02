@@ -2,10 +2,61 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Paris Agreement",
+      "subdomain": "general",
+      "tags": [
+        "Environment"
+      ],
+      "stub": "paris_agreement",
+      "shortDescription": "in 2016, an agreement within the United Nations Framework Convention on Climate Change (UNFCCC), dealing with greenhouse-gas-emissions mitigation, adaptation, and finance, was signed and now ratified by 195 countries.",
+      "durationMin": 34,
+      "filesize": 19,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/paris_agreement-30242372-e55b2d5d-9e27-4f07-a2bd-1882ce4e768a.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/paris agreement",
+      "wikipediaId": 30242372,
+      "image": "",
+      "dateRecorded": "January 2, 2024"
+    },
+    {
+      "title": "Down Syndrome",
+      "subdomain": "general",
+      "tags": [
+        "Health"
+      ],
+      "stub": "down_syndrome",
+      "shortDescription": "is a genetic disorder caused by the presence of all or part of a third copy of chromosome 21. It is typically associated with physical growth delays, mild to moderate intellectual disability, and characteristic facial features.",
+      "durationMin": 44,
+      "filesize": 23,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/down_syndrome-8303-c611752c-906c-49cf-a1c0-c5a3377188b6.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/down syndrome",
+      "wikipediaId": 8303,
+      "image": "",
+      "dateRecorded": "January 1, 2024"
+    },
+    {
+      "title": "Trinity Nuclear Test",
+      "subdomain": "general",
+      "tags": [
+        "USA"
+      ],
+      "stub": "trinity_nuclear_test",
+      "shortDescription": "was the code name for the first detonation of a 25 kiloton plutonium nuclear weapon, conducted by the United States Army on July 16, 1945, as part of the Manhattan Project tested in New Mexico. The movie Oppenheimer is based on this event.",
+      "durationMin": 48,
+      "filesize": 25,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/trinity_(nuclear_test)-60033-33cd31b0-6764-43e4-93a7-6254b0c36243.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/trinity (nuclear_test)",
+      "wikipediaId": 60033,
+      "image": "",
+      "dateRecorded": "January 1, 2024"
+    },
+    {
       "title": "Christmas",
       "subdomain": "general",
       "tags": [
-        "Holiday"
+        "Holidays"
       ],
       "stub": "christmas",
       "shortDescription": "Celebrated each year on Dec 25, it commemorating the birth of Jesus Christ, observed primarily by Christians around the world.",
@@ -281,7 +332,7 @@
       "dateRecorded": "Nov 18, 2023"
     },
     {
-      "title": "Barbie (doll)",
+      "title": "Barbie Doll",
       "subdomain": "general",
       "tags": [
         "Business",
@@ -585,8 +636,7 @@
       "title": "Crossfit",
       "subdomain": "general",
       "tags": [
-        "Politics",
-        "USA"
+        "Business"
       ],
       "stub": "crossfit",
       "shortDescription": "Cross Discipline Fitness is a high-intensity interval training (HIIT) workout that combines weightlifting, gymnastics, and cardio that started their first gym in Santa Cruz, California in 2000, and by 2018 has 15,000 gyms in 160 countries.",

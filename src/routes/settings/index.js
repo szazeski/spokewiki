@@ -51,6 +51,18 @@ const Settings = (props) => {
         changeSpeed(-1)
     }
 
+    function toggleAnalytics() {
+        if (localStorage.getItem("analytics") === "true") {
+            localStorage.setItem("analytics", "false");
+        } else {
+            localStorage.setItem("analytics", "true");
+        }
+    }
+
+    function getDisableAnalytics() {
+        return localStorage.getItem("analytics") === "true";
+    }
+
     const {trackPageView} = useMatomo()
     useEffect(() => {
         trackPageView();
@@ -66,6 +78,7 @@ const Settings = (props) => {
                 <span style="background-color:#0072ff" onClick={setThemeColor}>Blue</span>
                 <span style="background-color:#c1121f" onClick={setThemeColor}>Red</span>
                 <span style="background-color:#c44900" onClick={setThemeColor}>Orange</span>
+                <span style="background-color:#00a651" onClick={setThemeColor}>Green</span>
             </div>
 
             <div className={style.category}>Light/Dark Mode</div>
@@ -77,7 +90,7 @@ const Settings = (props) => {
                     style="background-color:rgba(255,255,255,.1)"
                     onClick={clickDark}>Dark</span>
                 <span
-                    style="background:linear-gradient(180deg, rgba(255,255,255,0.1) 49%, rgba(255,255,255,0.9) 51%);)"
+                    style="background:linear-gradient(135deg, rgba(255,255,255,0.1) 49%, rgba(255,255,255,0.9) 51%);); "
                     onClick={clickAuto}>Auto</span>
             </div>
 
@@ -89,10 +102,16 @@ const Settings = (props) => {
             </div>
 
             <div className={style.category}>Analytics</div>
-            <p>Spokewiki use a self hosted matomo analytics to record which articles are started, finished, what color
-                users pick and default speed.</p>
-            <p>This info is not shared with any 3rd party and used only by developers to improve this app.</p>
-            <p>Matomo masks all IPs and honors Do Not Track requests.</p>
+            <div>
+                <label>
+                    <input type="checkbox" checked={getDisableAnalytics} onChange={toggleAnalytics}/>
+                    Disable analytics
+                </label>
+            </div>
+            <p class={style.disclaimer}>Spokewiki use a self-hosted matomo analytics to record which articles are
+                started, finished, what color
+                users pick and default speed. This info is not shared with any 3rd party and used only by developers to
+                improve this app. Matomo masks all IPs and honors Do Not Track requests.</p>
 
         </div>
     );

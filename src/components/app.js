@@ -31,17 +31,19 @@ function loadLightDarkMode() {
 }
 
 function setupMatomoAnalytics() {
+    let disableAnalytics = localStorage.getItem("analytics") === "true";
     const instance = createInstance({
         urlBase: 'https://stats.spokewiki.com',
         siteId: 6,
         configurations: {
-            //disableCookies: true,
+            disableCookies: disableAnalytics,
             //setSecureCookie: true,
             setRequestMethod: 'POST'
         }
     })
     return instance;
 }
+
 
 const App = () => {
 

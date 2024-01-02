@@ -18,15 +18,15 @@
 .lightdark {
     background-color: var(--primary);
     display: inline-block;
-    padding: 25px 0;
-    border-radius: 4px;
+    padding: 15px;
+    border-radius: 22px;
 }
 
 .theme span, .lightdark span {
     display: inline-block;
     height: 50px;
     width: 50px;
-    margin: 10px;
+    margin: 5px;
     color: white;
     font-weight: bold;
     font-size: 11px;
@@ -61,4 +61,12 @@
 
 .speed button:hover {
     opacity: .8;
+}
+
+.disclaimer {
+    padding: 10px;
+    font-size: .9rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }

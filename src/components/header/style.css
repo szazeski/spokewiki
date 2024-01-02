@@ -19,6 +19,15 @@
     .logo {
         margin: 20px 3px !important;
     }
+
+    .stack {
+        margin-left: auto;
+        padding-left: 1rem;
+    }
+}
+
+.stack {
+    margin-top: auto;
 }
 
 .flexgrow {

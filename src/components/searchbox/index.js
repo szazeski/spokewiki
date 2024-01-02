@@ -1,13 +1,21 @@
-import style from "../../routes/home/style.css";
+import style from './style.css';
+import {filterArticlesByTag, filterArticlesByText} from "../toolbox";
 
 
 const Searchbox = () => {
 
+    function search(event) {
+        filterArticlesByText(event.target.value)
+    }
+
+    function clear() {
+        filterArticlesByTag("All")
+    }
+
     return (
         <div className={style.searchbox}>
-            <label> search for articles about
-                <input name="search" onChange={search} disabled={true}/>
-            </label>
+            <button className={style.clear} onClick={clear}>X</button>
+            <input name="search" onChange={search} placeholder="search"/>
         </div>
     )
 

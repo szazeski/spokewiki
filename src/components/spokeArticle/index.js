@@ -4,6 +4,7 @@ import queuesvg from "../../assets/icons/queue.svg";
 import downloadsvg from "../../assets/icons/download.svg";
 import linksvg from "../../assets/icons/link.svg";
 import archivesvg from "../../assets/icons/archive.svg";
+import {filterArticlesByTag} from "../toolbox";
 
 const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
 
@@ -52,11 +53,25 @@ const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
         return data.tags.map(i => i.replaceAll(" ", "-")).join(" ");
     }
 
+    function displayCategoryTags() {
+        if (data.tags.length === 0) {
+            return
+        }
+        return data.tags.map(t => {
+            return <a href={getCategoryLink(t)} class={style.category} onClick={() => filterArticlesByTag(t)}>{t}</a>
+        });
+    }
+
+    function getCategoryLink(t) {
+        return `#/category/${t.replaceAll(" ", "-")}`;
+    }
+
     const classes = `${getTagsForClasses()} SpokeArticle ${style.spokeArticle}`
 
     return (
         <div class={classes}>
             <div class={getListenStatus()}>
+                {displayCategoryTags()}
                 <a href={getUrl()}><h2>{data.title}</h2></a>
                 <p>{data.shortDescription}</p>
 

@@ -47,10 +47,9 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
                 </ul>
             </div>
 
-            <div>
+            <div class={style.articles}>
                 <div className={style.spacer}></div>
                 {listOfArticles}
-                <About/>
             </div>
 
         </div>

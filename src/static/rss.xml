@@ -33,6 +33,60 @@
         <itunes:category text="History"/>
 
         <item>
+            <title>christmas</title>
+            <link>https://www.spokewiki.com/article/christmas</link>
+            <description>Celebrated each year on Dec 25, it commemorating the birth of Jesus Christ, observed primarily by Christians around the world.
+            </description>
+            <pubDate>Thu, 13 Jul 2023 07:00:00 -0000</pubDate>
+            <itunes:title>christmas</itunes:title>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>2</itunes:episode>
+            <itunes:author>Spokewiki</itunes:author>
+            <itunes:summary>Celebrated each year on Dec 25, it commemorating the birth of Jesus Christ, observed primarily by Christians around the world.
+            </itunes:summary>
+            <content:encoded>
+                <![CDATA[ <p>Celebrated each year on Dec 25, it commemorating the birth of Jesus Christ, observed primarily by Christians around the world.</p> ]]>
+            </content:encoded>
+            <itunes:duration>4140</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+            <guid isPermaLink=false>
+                <![CDATA[ 5e298165-7ffa-4ab2-88d9-2fde68b7f7b1 ]]>
+            </guid>
+            <enclosure
+                    url="https://media.spokewiki.com/christmas-6237-1efc300b-9304-4028-8614-1de06a4e399c.mp3"
+                    length="0" type="audio/mpeg"/>
+        </item>
+
+        <item>
+            <title>Deepwater Horizon Oil Spill</title>
+            <link>https://www.spokewiki.com/article/deepwater-horizon-oil-spill</link>
+            <description>Occurred on April 20, 2010 in the Gulf of Mexico on the BP-operated Macondo Prospect. It is
+                considered the largest marine oil spill in the history of the petroleum industry.
+            </description>
+            <pubDate>Thu, 13 Jul 2023 07:00:00 -0000</pubDate>
+            <itunes:title>Deepwater Horizon Oil Spill</itunes:title>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>2</itunes:episode>
+            <itunes:author>Spokewiki</itunes:author>
+            <itunes:summary>Occurred on April 20, 2010 in the Gulf of Mexico on the BP-operated Macondo Prospect. It is
+                considered the largest marine oil spill in the history of the petroleum industry.
+            </itunes:summary>
+            <content:encoded>
+                <![CDATA[ <p>Occurred on April 20, 2010 in the Gulf of Mexico on the BP-operated Macondo Prospect. It is considered the largest marine oil spill in the history of the petroleum industry.</p> ]]>
+            </content:encoded>
+            <itunes:duration>4140</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+            <guid isPermaLink="false">
+                <![CDATA[ 5e298165-7ffa-4ab2-88d9-2fde68b7f7b1 ]]>
+            </guid>
+            <enclosure
+                    url="https://media.spokewiki.com/deepwater-horizon-oil-spill.cd5c331b-7648-4d45-936b-dbeed080c48d.mp3"
+                    length="0" type="audio/mpeg"/>
+        </item>
+
+        <item>
             <title>Silicon Valley Bank</title>
             <link>https://www.spokewiki.com/article/silicon_valley_bank</link>
             <description>On March 10, 2023, Silicon Valley Bank is the second largest bank collapse in US history but
