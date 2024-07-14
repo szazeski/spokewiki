@@ -1,15 +1,16 @@
 .SpokeAudioPlayer {
     background: --var(primaryColor);
-    border: dashed 2px red;
 }
 
 .SpokeAudioPlayerSpeed {
     border: 0;
     margin: 0 2px;
     background-color: rgba(255, 255, 255, .75);
-    padding: 9px;
-    border-radius: 6px;
+    padding: 10px;
+    border-radius: 10px;
     font-size: 12px;
+    transition: background-color .2s;
+    color: black;
 }
 
 .SpokeAudioPlayerSpeed:hover {
@@ -17,6 +18,6 @@
 }
 
 .SpokeAudioCurrentSpeed {
-    padding: 0 3px;
-    font-size: 10px;
+    padding: 0 6px;
+    font-size: 12px;
 }

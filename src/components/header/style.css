@@ -26,6 +26,16 @@
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+    .header {
+        padding: 50px 10px 0; /* fixes iOS header bar running into dynamic island */
+    }
+
+    :root {
+        --header-height: 235px !important;
+    }
+}
+
 .stack {
     margin-top: auto;
 }

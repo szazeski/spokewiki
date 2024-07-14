@@ -5,6 +5,8 @@ import {useState} from "preact/hooks";
 
 const Queue = ({onPlaying, onQueue}) => {
 
+    const CACHE_NAME = "offline-mp3";
+
     async function calculate() {
         if (navigator.storage && navigator.storage.estimate) {
             const quota = await navigator.storage.estimate();
@@ -21,7 +23,11 @@ const Queue = ({onPlaying, onQueue}) => {
     const [listOfArticles, setListOfArticles] = useState([]);
 
     function getCachedFiles() {
-        caches.open("offline-mp3").then((cache) => {
+        if (typeof caches == "undefined") {
+            showError("Cache API is not supported");
+            return;
+        }
+        caches.open(CACHE_NAME).then((cache) => {
             cache.keys().then((keys) => {
                 showCount(`${keys.length} file(s) cached`);
                 let results = keys.map(k => {
@@ -46,8 +52,12 @@ const Queue = ({onPlaying, onQueue}) => {
     }
 
     function clearCache() {
-        caches.delete("offline-mp3");
+        caches.delete(CACHE_NAME);
         window.location = '/queue#cleared';
+    }
+
+    function showError(text) {
+        document.querySelector("#errorbox").innerHTML = text;
     }
 
     function showResult(text) {
@@ -58,18 +68,17 @@ const Queue = ({onPlaying, onQueue}) => {
         document.querySelector("#output").innerHTML = text;
     }
 
-    getCachedFiles();
-    calculate();
+    function preload() {
+        getCachedFiles();
+        calculate();
+    }
 
     return (
         <div className={style.queue}>
-
             <div id="files">{listOfArticles}</div>
-
             <input className={style.ClearCache} type="button" value="Clear Cache" onClick={clearCache}/>
             <div id="used">-</div>
-            <div id="output">-</div>
-
+            <div id="output" onLoad={preload()}>-</div>
         </div>
     );
 }
