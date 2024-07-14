@@ -12,6 +12,7 @@ import Queue from "../routes/queue";
 import {cacheAsset, getBool, getValue, loadColors, removeCacheAsset, setDark, setLight} from "./storage";
 import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
 import Podcast from "../routes/podcast";
+import RequestArticle from "../routes/requests";
 
 
 function loadLightDarkMode() {
@@ -31,7 +32,11 @@ function loadLightDarkMode() {
 }
 
 function setupMatomoAnalytics() {
-    let disableAnalytics = localStorage.getItem("analytics") === "true";
+
+    let disableAnalytics = false
+    if (typeof window !== "undefined") {
+        disableAnalytics = localStorage.getItem("analytics") === "true";
+    }
     const instance = createInstance({
         urlBase: 'https://stats.spokewiki.com',
         siteId: 6,
@@ -120,6 +125,9 @@ const App = () => {
                     />
                     <Profile
                         path="/profile/" user="me"
+                    />
+                    <RequestArticle
+                        path="/request"
                     />
                 </Router>
                 <SpokeAudioPlayer

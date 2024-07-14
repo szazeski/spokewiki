@@ -16,10 +16,11 @@ const Header = () => (
                 <Link activeClassName={style.active} href="/">New</Link>
                 <Link activeClassName={style.active} href="/all">All</Link>
                 <Link activeClassName={style.active} href="/queue">Queue</Link>
-                <Link activeClassName={style.active} href="/podcast">Podcast</Link>
+                <Link activeClassName={style.active} href="/request">Request</Link>
                 <Link activeClassName={style.active} href="/settings">Settings</Link>
             </nav>
         </div>
+        <div id="errorbox" class={style.errorbox}></div>
     </header>
 );
 

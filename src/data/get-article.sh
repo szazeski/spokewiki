@@ -1,6 +1,5 @@
 
 SLUG=$1
-
 if [ -z "$SLUG" ]; then
   echo "enter a wikipedia url or slug (https://en.wikipedia.org/wiki/SLUG)?"
   read -r SLUG

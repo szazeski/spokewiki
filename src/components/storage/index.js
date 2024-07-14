@@ -26,6 +26,10 @@ export function setPrimaryColor(rgb) {
     setValue("primary", rgb);
 }
 
+export function getPrimaryColor() {
+    return getValue("primary", DEFAULT_PRIMARY_COLOR);
+}
+
 export function setInverseColor(rgb, textColor) {
     let root = document.documentElement;
     root.style.setProperty('--primary-inverse', rgb);

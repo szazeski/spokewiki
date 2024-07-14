@@ -78,3 +78,12 @@
 .logo:hover, .logo:focus, .logo:active {
     transform: scale(1.05);
 }
+
+.errorbox {
+    background: red;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    display: none;
+}

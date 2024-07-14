@@ -2,6 +2,162 @@
   "title": "spokewiki",
   "articles": [
     {
+      "title": "Pickleball",
+      "subdomain": "general",
+      "tags": [
+        "Sport"
+      ],
+      "stub": "pickleball",
+      "shortDescription": "is a recently popular sport originally invented in 1965, that combines elements of tennis, badminton, and table tennis. It is played on a court with a net, a perforated plastic ball, and paddles. The game is easy for beginners to learn, but can develop into a quick, fast-paced, competitive game for experienced players.",
+      "durationMin": 29,
+      "filesize": 17,
+      "pollyVoice": "aaron (Enhanced)",
+      "urlAudio": "https://media.spokewiki.com/pickleball-1887827-6330e76c-4281-4bfe-8eac-6dc2ef295092.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/pickleball",
+      "wikipediaId": 1887827,
+      "image": "",
+      "dateRecorded": "July 7, 2024"
+    },
+    {
+      "title": "Project 2025",
+      "subdomain": "general",
+      "tags": [
+        "USA",
+        "Politics"
+      ],
+      "stub": "project_2025",
+      "shortDescription": "is a set of policy proposals by the Heritage Foundation, a conservative think tank. Their goal is to reshape the US federal government and consolidate executive power if a Republican wins the 2024 election.",
+      "durationMin": 52,
+      "filesize": 30,
+      "pollyVoice": "aaron (Enhanced)",
+      "urlAudio": "https://media.spokewiki.com/project_2025-74699486-015d0056-c2d9-43b3-9f0d-410139754a43.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/project 2025",
+      "wikipediaId": 74699486,
+      "image": "",
+      "dateRecorded": "July 7, 2024"
+    },
+    {
+      "title": "Diabetes",
+      "subdomain": "general",
+      "tags": [
+        "Health"
+      ],
+      "stub": "diabetes",
+      "shortDescription": "about 10% of people worldwide have this endocrine disease characterized by sustained high blood sugar levels. Diabetes is due to either the pancreas not producing enough insulin, or the cells of the body becoming unresponsive to the hormone's effects",
+      "durationMin": 39,
+      "filesize": 22,
+      "pollyVoice": "aaron (Enhanced)",
+      "urlAudio": "https://media.spokewiki.com/diabetes-40017873-a3f17e3f-2454-4129-82c3-7e7d1157a11a.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Diabetes",
+      "wikipediaId": 40017873,
+      "image": "",
+      "dateRecorded": "July 1, 2024"
+    },
+    {
+      "title": "Intermittent Fasting",
+      "subdomain": "general",
+      "tags": [
+        "Health"
+      ],
+      "stub": "intermittent_fasting",
+      "shortDescription": "is any number of diets that restrict calories intake according to a schedule, IF became a popular diet in 2017 and while it can reduce the risk of diet-related diseases, it shows insufficient evidence to recommend over other methods of weight loss.",
+      "durationMin": 16,
+      "filesize": 9,
+      "pollyVoice": "aaron (Enhanced)",
+      "urlAudio": "https://media.spokewiki.com/intermittent_fasting-20104879-960aee9d-5fcd-42a4-afc1-fda45ab0a458.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/intermittent fasting",
+      "wikipediaId": 20104879,
+      "image": "",
+      "dateRecorded": "June 30, 2024"
+    },
+    {
+      "title": "Sabrina Carpenter",
+      "subdomain": "general",
+      "tags": [
+        "Celebrity",
+        "USA"
+      ],
+      "stub": "sabrina_carpenter",
+      "shortDescription": "is an American singer and actress who got her start on Disney Channel series Girl Meets World (2014-2017) before launching a successful music career. She has released several albums and singles, and has also appeared in movies. Carpenter is known for her powerful voice, catchy pop songs, and strong social media presence.",
+      "durationMin": 18,
+      "filesize": 10,
+      "pollyVoice": "aaron (Enhanced)",
+      "urlAudio": "https://media.spokewiki.com/sabrina_carpenter-36791152-9e255e6c-042a-4799-9eb9-c357f1312ebf.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/Sabrina Carpenter",
+      "wikipediaId": 36791152,
+      "image": "",
+      "dateRecorded": "June 25, 2024"
+    },
+    {
+      "title": "Pattern Hair Loss",
+      "subdomain": "general",
+      "tags": [
+        "Health"
+      ],
+      "stub": "pattern_hair_loss",
+      "shortDescription": "By the age of 50, pattern hair loss affects about half of males and a quarter of females and it appears to be the result of genetic changes that make the activity of hair follicles become sensitive to the presence of androgenic hormones, cholesterol, and proteins.",
+      "durationMin": 28,
+      "filesize": 15,
+      "pollyVoice": "aaron (Enhanced)",
+      "urlAudio": "https://media.spokewiki.com/pattern_hair_loss-5165199-e0ede06a-7e77-4e4a-bb72-f589591224cb.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/pattern hair_loss",
+      "wikipediaId": 5165199,
+      "image": "",
+      "dateRecorded": "May 14, 2024"
+    },
+    {
+      "title": "Mars",
+      "subdomain": "general",
+      "tags": [
+        "Space"
+      ],
+      "stub": "mars",
+      "shortDescription": "is the fourth planet from the Sun known as The Red Planet due to its iron-oxide and had its first rover landing in 1997 from NASAx.",
+      "durationMin": 48,
+      "filesize": 27,
+      "pollyVoice": "aaron",
+      "urlAudio": "https://media.spokewiki.com/mars-14640471-e13f9678-50cb-4ab2-931a-4bc2a157c4fc.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/mars",
+      "wikipediaId": 14640471,
+      "image": "",
+      "dateRecorded": "January 26, 2024"
+    },
+    {
+      "title": "OpenAI",
+      "subdomain": "general",
+      "tags": [
+        "USA",
+        "Business"
+      ],
+      "stub": "openai",
+      "shortDescription": "is a research lab based in San Francisco, California. Founded in 2015, the company's mission is to ensure that artificial general intelligence benefits all of humanity but more recently, they are making news headlines for their lack of openness.",
+      "durationMin": 41,
+      "filesize": 22,
+      "pollyVoice": "aaron",
+      "urlAudio": "https://media.spokewiki.com/openai-48795986-dd76794d-692b-4f5a-b47a-c330dc882909.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/openai",
+      "wikipediaId": 48795986,
+      "image": "",
+      "dateRecorded": "January 26, 2024"
+    },
+    {
+      "title": "Great Firewall",
+      "subdomain": "general",
+      "tags": [
+        "China"
+      ],
+      "stub": "great_firewall",
+      "shortDescription": "first appeared in 1997, it is a system of censorship that blocks websites and content that the chinese government deems inappropriate or harmful to its citizens. ",
+      "durationMin": 25,
+      "filesize": 13,
+      "pollyVoice": "SV2",
+      "urlAudio": "https://media.spokewiki.com/great_firewall-713549-b3ff884c-2694-4e54-a119-9348f24e3e09.mp3",
+      "urlWikipedia": "https://en.wikipedia.org/wiki/great firewall",
+      "wikipediaId": 713549,
+      "image": "",
+      "dateRecorded": "January 8, 2024"
+    },
+    {
       "title": "Paris Agreement",
       "subdomain": "general",
       "tags": [
@@ -80,7 +236,7 @@
       "durationMin": 17,
       "filesize": 9,
       "pollyVoice": "SV3",
-      "urlAudio": "https://media.spokewiki.com/matthew_perry-233338-8e25ac32-8565-4a4b-8db6-b5589a294cea.mp3",
+      "urlAudio": "https://media.spokewiki.com/matthew_perry-233338-a3986c84-91b0-4021-a1f6-74fac7f2580a.mp3",
       "urlWikipedia": "https://en.wikipedia.org/wiki/Matthew perry",
       "wikipediaId": 233338,
       "image": "",
