@@ -1,4 +1,5 @@
 import style from "./style.css";
+import {h} from 'preact';
 import {filterArticlesByTag} from "../toolbox";
 
 const SpokeTag = ({tag}) => {

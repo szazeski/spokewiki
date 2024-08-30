@@ -12,7 +12,7 @@ const Podcast = () => {
     return (
         <div className={style.podcast}>
 
-            <div className={style.spacer}/>
+            <div className={style.spacer} />
 
             <p>Want to access this in your favorite podcast app instead?</p>
 

@@ -1,5 +1,32 @@
 #!/bin/bash
 
+maxTokens=9000
+
+# voiceText inputText output
+function voiceText {
+  filename=$1
+  aiffFilepath="$filename.aiff"
+  mp3Filepath="$filename.mp3"
+
+  echo "voicing filename to audio file $aiffFilepath..."
+  cat "$filename.md" | say -o "${aiffFilepath}" --progress
+
+  echo "converting aiff to mp3..."
+  lame -V 2 "${aiffFilepath}" "${mp3Filepath}" --nohist
+}
+
+function splitText {
+  filename=$1
+
+
+  wordCount=$(cat "$filename" | wc -w)
+  lineCount=$(cat "$filename" | wc -l)
+  echo " letter count: ${letterCount}"
+  echo " word count: ${wordCount}"
+  echo " line count: ${lineCount}"
+
+}
+
 subdomain=${subdomain-"www"} # to override `export subdomain="your-subdomain"`
 domain=${domain-"spokewiki"} # to override `export domain="your-site-name.com"`
 tld=${tld-"com"} # to override `export tld="your-tld"`
@@ -13,21 +40,15 @@ if [ -z "$filename" ]; then
 fi
 aiffFilepath=${filename//.md/.aiff}
 
-# Estimate voice tokens
-maxTokens=10000
-letterCount=$(cat "$filename" | wc -m)
-wordCount=$(cat "$filename" | wc -w)
-lineCount=$(cat "$filename" | wc -l)
-tokens=$(echo "($letterCount / 4) + ($wordCount / 2)" | bc)
-echo " letter count: ${letterCount}"
-echo " word count: ${wordCount}"
-echo " line count: ${lineCount}"
-echo " estimated voice tokens: $tokens"
 
 if [ -f "$aiffFilepath" ]; then
   echo "audio file $aiffFilepath already exists, skipping voice generation"
 else
-  if [ "$tokens" -gt $maxTokens ]; then
+  letterCount=$(cat "$filename" | wc -m)
+  wordCount=$(cat "$filename" | wc -w)
+  tokens=$(echo "($letterCount / 4) + ($wordCount / 2)" | bc)
+  echo " estimated voice tokens: $tokens"
+  if [ $tokens -gt $maxTokens ]; then
     echo "[WARNING] voice tokens are over ${maxTokens}, splitting file into 2"
 
     split -l $(($lineCount / 2)) "$filename"

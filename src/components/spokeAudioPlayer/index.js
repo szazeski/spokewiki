@@ -1,5 +1,6 @@
-import H5AudioPlayer, {RHAP_UI} from "react-h5-audio-player";
 import style from "./style.css";
+import {h} from 'preact';
+import H5AudioPlayer, {RHAP_UI} from "react-h5-audio-player";
 import {useMatomo} from "@datapunt/matomo-tracker-react";
 import {useEffect} from "preact/hooks";
 

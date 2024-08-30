@@ -7,7 +7,6 @@ if [ -z "$S3PATH" ]; then
 fi
 
 echo "- - - - - - - - - - - - - - - "
-echo "building..."
 
 jq . src/data/data.json # checks that data.json is valid json
 if [ $? -ne 0 ]; then
@@ -15,15 +14,20 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+echo "[1/4] linting..."
+npm run lint || true #for now
+
+echo "[2/4] testing..."
 npm run test
 
+echo '[3/4] building...'
 npm run build
 
 cd build
 
 # todo check if the app runs
 
-echo "deploying..."
+echo "[4/4] deploying..."
 
 aws s3 sync . "$S3PATH"
 

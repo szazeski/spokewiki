@@ -68,15 +68,19 @@ const Settings = (props) => {
     }
 
     function toggleAnalytics() {
-        if (localStorage.getItem("analytics") === "true") {
-            localStorage.setItem("analytics", "false");
-        } else {
-            localStorage.setItem("analytics", "true");
+        if (typeof window !== "undefined") {
+            if (localStorage.getItem("analytics") === "true") {
+                localStorage.setItem("analytics", "false");
+            } else {
+                localStorage.setItem("analytics", "true");
+            }
         }
     }
 
     function getDisableAnalytics() {
-        return localStorage.getItem("analytics") === "true";
+        if (typeof window !== "undefined") {
+            return localStorage.getItem("analytics") === "true";
+        }
     }
 
     const {trackPageView} = useMatomo()
@@ -99,7 +103,7 @@ const Settings = (props) => {
             </div>
 
             <div class={style.customColorPicker}>
-                <HexColorPicker color={getPrimaryColor()} onChange={setColor}/>
+                <HexColorPicker color={getPrimaryColor()} onChange={setColor} />
             </div>
 
             <div className={style.category}>Light/Dark Mode</div>
@@ -125,7 +129,7 @@ const Settings = (props) => {
             <div className={style.category}>Privacy</div>
             <div>
                 <label>
-                    <input type="checkbox" checked={getDisableAnalytics} onChange={toggleAnalytics}/>
+                    <input type="checkbox" checked={getDisableAnalytics} onChange={toggleAnalytics} />
                     Disable analytics
                 </label>
             </div>

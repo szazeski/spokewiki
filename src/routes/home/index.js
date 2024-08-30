@@ -1,17 +1,16 @@
 import style from './style.css';
 import SpokeArticle from "../../components/spokeArticle";
-import data from "../../data/data.json"
-import About from "../../components/about";
 import {useEffect} from "preact/hooks";
 import {useMatomo} from "@datapunt/matomo-tracker-react";
 import SpokeTag from "../../components/spokeTag";
 import {setTitleAndOpengraph} from "../../components/toolbox";
+import {getArticles} from "../../components/storage";
 
 const Home = ({onPlaying, onQueue, showOnlyNew}) => {
 
     setTitleAndOpengraph(`spokewiki`, 'Listen for free to wikipedia articles about the topics in the news to better understand what is going on.');
 
-    const listOfArticles = data.articles.map((item) =>
+    const listOfArticles = getArticles().map((item) =>
         <SpokeArticle
             data={item}
             onPlaying={onPlaying}
@@ -21,14 +20,14 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
     );
 
     function getUniqueTags() {
-        const allTags = data.articles.flatMap((item) => {
+        const allTags = getArticles().flatMap((item) => {
             return item.tags.map(i => i);
         });
         const uniqueTags = allTags.filter((value, index, self) => {
             return self.indexOf(value) == index;
         })
         uniqueTags.sort();
-        return uniqueTags.map(i => <SpokeTag tag={i}/>)
+        return uniqueTags.map(i => <SpokeTag tag={i} />)
     }
 
 
@@ -42,13 +41,13 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
 
             <div class={style.leftSidebar}>
                 <ul>
-                    <SpokeTag tag="All"/>
+                    <SpokeTag tag="All" />
                     {getUniqueTags()}
                 </ul>
             </div>
 
             <div class={style.articles}>
-                <div className={style.spacer}></div>
+                <div className={style.spacer} />
                 {listOfArticles}
             </div>
 

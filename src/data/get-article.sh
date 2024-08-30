@@ -30,12 +30,20 @@ fi
 echo "Title is $TITLE"
 
 FILENAME="articles/${SLUG}-${PAGEID}.md"
+FILENAME_ORIGINAL="articles/${SLUG}-${PAGEID}.original.md"
 TODAY=$(date +"%B %-d, %Y")
 FILENAME=$(echo "$FILENAME" | tr '[:upper:]' '[:lower:]')
 
 jq ".query.pages[0].extract" output.json > "$FILENAME"
+cp "$FILENAME" "$FILENAME_ORIGINAL"
+sed -i '' 's/\\n/\n/g' "$FILENAME_ORIGINAL"
 
 echo "cleaning markdown"
 ./clean-markdown.sh "$FILENAME"
+
+letterCount=$(cat "$FILENAME" | wc -m)
+wordCount=$(cat "$FILENAME" | wc -w)
+tokens=$(echo "($letterCount / 4) + ($wordCount / 2)" | bc)
+echo " estimated voice tokens: $tokens"
 
 echo "Thanks for listening to spoke wiki dot com recording of ${TITLE} from ${TODAY}" >> "$FILENAME"

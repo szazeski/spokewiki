@@ -41,10 +41,14 @@
     "react-h5-audio-player": "^3.8.6"
   },
   "jest": {
+    "verbose": true,
     "preset": "jest-preset-preact",
     "setupFiles": [
       "<rootDir>/tests/__mocks__/browserMocks.js",
       "<rootDir>/tests/__mocks__/setupTests.js"
-    ]
+    ],
+    "transform": {
+      "^.+\\.svg$": "<rootDir>/svgTransformJest.js"
+    }
   }
 }

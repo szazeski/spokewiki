@@ -9,16 +9,17 @@ Hosted on aws s3 + cloudfront - it does not need any other servers.
 
 ## CLI Commands
 
-``` bash
-# install dependencies
-npm install
+### install dependencies
 
-# serve with hot reload at localhost:8080
-npm run dev
+`npm install`
 
-# run tests with jest and enzyme
-npm run test
-```
+### run test suite (jest and enzyme)
+
+`npm run test`
+
+### serve locally with hot reload at localhost:8080
+
+`npm run dev`
 
 ## Adding Content
 
@@ -47,10 +48,24 @@ export AWS_CLOUDFRONT_DISTRIBUTION_ID=A1BCDEFGHI2345
 
 ## Mobile Apps
 
-Spokewiki uses capacitor to build ios and android apps.
+Spokewiki uses capacitor to build **ios** and **android** apps.
 
-You will need a mac with working versions of xcode and cocoapods:
-`npx cap open ios`
+`npm run build` to get the latest PWA build that the apps will pull in.
 
-You will need android studio installed:
-`npx cap run android`
+You will need a mac with working versions of **xcode** and **cocoapods**:
+
+> Mac OS ships with an ancient version of ruby, highly recommend you install `brew install rbenv` then load in a recent version, then run `rbenv global x.x.x` and `rbenv shell init` to then install a recent version of cocoapods with `gem install cocopods`.
+
+`npx cap open ios` will open the project in xcode
+
+`npx cap run ios` will start the simulator immediately
+
+You will need **android studio** installed:
+
+`npx cap open android` will open the project in android studio
+
+`npx cap run androind` will start the simulator immediately
+
+Extras:
+
+If you need to rebuild the app icons or splash screen: `npx capacitor-assets generate`

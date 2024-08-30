@@ -76,7 +76,7 @@ const Queue = ({onPlaying, onQueue}) => {
     return (
         <div className={style.queue}>
             <div id="files">{listOfArticles}</div>
-            <input className={style.ClearCache} type="button" value="Clear Cache" onClick={clearCache}/>
+            <input className={style.ClearCache} type="button" value="Clear Cache" onClick={clearCache} />
             <div id="used">-</div>
             <div id="output" onLoad={preload()}>-</div>
         </div>

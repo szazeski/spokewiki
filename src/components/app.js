@@ -1,18 +1,19 @@
 import {Router} from 'preact-router';
-
-import Header from './header';
-import 'react-h5-audio-player/lib/styles.css';
 import Home from '../routes/home';
-import Profile from '../routes/profile';
 import Article from "../routes/article";
-import SpokeAudioPlayer from "./spokeAudioPlayer";
-import {useState} from "preact/hooks";
-import Settings from "../routes/settings";
-import Queue from "../routes/queue";
-import {cacheAsset, getBool, getValue, loadColors, removeCacheAsset, setDark, setLight} from "./storage";
-import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
+import Profile from '../routes/profile';
 import Podcast from "../routes/podcast";
 import RequestArticle from "../routes/requests";
+import Queue from "../routes/queue";
+import Settings from "../routes/settings";
+
+import SpokeAudioPlayer from "./spokeAudioPlayer";
+import Header from './header';
+import {cacheAsset, getBool, getValue, loadColors, removeCacheAsset, setDark, setLight} from "./storage";
+
+import 'react-h5-audio-player/lib/styles.css';
+import {useState} from "preact/hooks";
+import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
 
 
 function loadLightDarkMode() {
@@ -84,15 +85,10 @@ const App = () => {
         localStorage.setItem("queue", queue);
     }
 
-    function PlayNext() {
-        let stub = queue.pop();
-    }
-
-
     return (
         <div id="app">
             <MatomoProvider value={instance}>
-                <Header/>
+                <Header />
                 <Router>
                     <Home
                         path="/"
