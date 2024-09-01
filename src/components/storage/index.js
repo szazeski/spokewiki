@@ -74,6 +74,14 @@ export function loadColors() {
 
 const DURATION_12_HOURS = 43200000;
 
+export function refreshCache() {
+    if (typeof window !== "undefined") {
+        localStorage.removeItem("lastUpdated");
+        localStorage.removeItem("articles");
+        getArticles();
+    }
+}
+
 export function getArticles() {
     if (typeof window !== "undefined") {
         let shouldFetch = false;

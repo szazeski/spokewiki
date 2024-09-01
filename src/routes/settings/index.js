@@ -3,7 +3,7 @@ import {getPrimaryColor, setDark, setLight, setPrimaryColor, setValue} from "../
 import {useMatomo} from "@datapunt/matomo-tracker-react";
 import {useEffect} from "preact/hooks";
 import {HexColorPicker} from "react-colorful";
-
+import {refreshCache} from "../../components/storage";
 
 const Settings = (props) => {
 
@@ -46,6 +46,11 @@ const Settings = (props) => {
     function clickAuto() {
         setValue("autoMode", true);
         trackEvent({category: 'Settings', action: 'Light/Dark', name: "Auto"});
+    }
+
+    function clickRefreshCache() {
+        console.log("refresh cache");
+        refreshCache();
     }
 
     function changeSpeed(delta) {
@@ -141,6 +146,11 @@ const Settings = (props) => {
             <p>Spokewiki is open source under the MIT license</p>
 
             <a href="https://github.com/szazeski/spokewiki">github</a>
+
+            <p>
+                <a href="#refresh" onClick={() => clickRefreshCache()}>Refresh Cache</a>
+            </p>
+
 
         </div>
     );

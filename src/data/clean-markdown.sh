@@ -10,7 +10,11 @@ fi
 # newlines
 sed -i '' 's/\\n/\n/g' "$1"
 
+# remove everything after "See Also"
+sed -i '' '/ See also /,$d' "$1"
+
 # headers
+sed -i '' 's/ ==/./g' "$1" # converts end of header to a period for a pause
 sed -i '' 's/=//g' "$1"
 
 # quotes
@@ -38,8 +42,7 @@ if [ "$(head -c 1 "$1")" = '"' ]; then
     sed -i '' '1s/^"//' "$1"
 fi
 
-# remove everything after "See Also"
-sed -i '' '/ See also /,$d' "$1"
+
 
 # remove "(*born*)" and "(*died*)" from names
 # input "Javier Gerardo Milei (/miˈleɪ/ mee-LAY, Spanish pronunciation: [xaˈβjeɾ xeˈɾaɾ.ðo miˈlej]; born 22 October 1970) is an Argentine politician, economist"
@@ -47,5 +50,8 @@ sed -i '' '/ See also /,$d' "$1"
 
 
 # remove language translations ()
+
+# remove leading first space
+sed -i '' 's/^ //g' "$1"
 
 echo "done"
