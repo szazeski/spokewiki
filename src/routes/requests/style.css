@@ -56,6 +56,12 @@ li:hover {
     opacity: 1;
 }
 
+li a {
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+}
+
 .noarticles {
     display: none;
     text-align: center;

@@ -19,6 +19,12 @@ const RequestArticle = () => {
     let searching = false;
     let requestQueue = [];
 
+
+    function clearRequestBox() {
+        let textInput = document.getElementById("requestInput");
+        textInput.value = "";
+    }
+
     function searchFor() {
         let textInput = document.getElementById("requestInput");
 
@@ -92,7 +98,10 @@ const RequestArticle = () => {
 
         for (let i = 0; i < requestQueue.length; i++) {
             let li = document.createElement("li");
-            li.innerText = requestQueue[i].title;
+            let a = document.createElement('a');
+            a.href = requestQueue[i].url.replaceAll('en.wikipedia.', 'en.m.wikipedia.');
+            a.text = requestQueue[i].title;
+            li.appendChild(a);
             //let button = document.createElement("button");
             // button.innerText = "Vote";
             // button.onclick = () => {
@@ -115,6 +124,7 @@ const RequestArticle = () => {
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
+                clearRequestBox();
                 loadRequests();
             })
             .catch((error) => {
