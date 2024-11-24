@@ -44,6 +44,8 @@ domain=${domain-"spokewiki"} # to override `export domain="your-site-name"`
 tld=${tld-"com"} # to override `export tld="your-tld"`
 siteUrl="${subdomain}${domain}.${tld}"
 
+STARTTIME=$(date +%s)
+
 filename=$(find ./articles/${1}*.md)
 if [ -z "$filename" ]; then
   echo "no file found for $1"
@@ -51,11 +53,27 @@ if [ -z "$filename" ]; then
 fi
 aiffFilepath=${filename//.md/.aiff}
 
+currentVoiceId=$(defaults read com.apple.speech.voice.prefs SelectedVoiceID)
+currentSiriVoice=$(defaults read com.apple.speech.voice.prefs SelectedVoiceName)
+# Siri (Voice 1) is aaron [] ()
+# Siri (Voice 2) is damon [] (Male)
+# Siri (Voice 3) is simone [] ()
+# Siri (Voice 4) is nora [936563956] (Female)
+# Siri (Voice 5) is quinn [] ()
+
+echo "current voice: $currentSiriVoice ($currentVoiceId)"
+if [ "$currentSiriVoice" != "nora (Enhanced)" ]; then
+  echo "Stopping -- system voice is not set to nora (Enhanced)"
+  exit 1
+fi
+
 if [ -f "$aiffFilepath" ]; then
   echo "audio file $aiffFilepath already exists, skipping voice generation"
 else
   voiceText "$filename"
 fi
+
+# Voice in siri 2 voice
 
 echo "converting aiff to mp3..."
 if [ ! -f "$aiffFilepath" ]; then
@@ -70,11 +88,10 @@ if [ "$DELETE_TEMP_FILES" = true ]; then
 fi
 
 echo "adding metadata..."
-title=$(basename "$filename" | sedplus --titlecase)
-# uppercase first letter of each word
-originalTitle=${title/-*/}
-title=${originalTitle/_/ }
-title=${title/.md//}
+title=$(basename "$filename")
+originalTitle=${title/-*/} # cut off everything after the -
+title=${originalTitle/_/ } # change lodash to spaces
+title=$(echo $title | sedplus --titlecase)
 mp3edit -title="${title}" -artist="${domain}" "${mp3Filepath}"
 
 
@@ -92,18 +109,16 @@ filesizeMB=$(echo "($filesize / 1000000) + 1" | bc)
 durationSec=$(mp3info -p "%S" "${mp3Filepath}")
 durationMin=$(echo "($durationSec / 60) + 1" | bc)
 mp3Filename=$(basename "$mp3Filepath")
-currentSiriVoice=$(defaults read com.apple.speech.voice.prefs SelectedVoiceName)
-
+firstSentence=$(head -n 1 "$filename")
 echo "
   {
         \"title\": \"${title}\",
         \"subdomain\": \"general\",
         \"tags\": [
-          \"tag1\",
-          \"tag2\"
+          \"tag1\"
         ],
         \"stub\": \"${originalTitle}\",
-        \"shortDescription\": \"\",
+        \"shortDescription\": \"${firstSentence\",
         \"durationMin\": $durationMin,
         \"filesize\": $filesizeMB,
         \"pollyVoice\": \"${currentSiriVoice}\",
@@ -140,3 +155,9 @@ echo "<item>
                     url=\"https://media.spokewiki.com/deepwater-horizon-oil-spill.cd5c331b-7648-4d45-936b-dbeed080c48d.mp3\"
                     length=\"0\" type=\"audio/mpeg\"/>
         </item>" > articles/${originalTitle}.xml
+
+
+ENDTIME=$(date +%s)
+TIME_SECONDS=$(($ENDTIME - $STARTTIME))
+TIME_MINUTES=$(($TIME_SECONDS / 60))
+echo " done in $TIME_SECONDS seconds ($TIME_MINUTES minutes)"

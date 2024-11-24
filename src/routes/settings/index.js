@@ -95,33 +95,46 @@ const Settings = (props) => {
 
     return (
         <div class={style.settings}>
-            <div className={style.category}>App Color</div>
-            <div class={style.theme}>
-                <span style="background-color:#57129d" onClick={setThemeColor}>Purple</span>
-                <span style="background-color:#000" onClick={setThemeColor}>Black</span>
-                <span style="background-color:#333" onClick={setThemeColor}>Grey</span>
-                <span style="background-color:#0072ff" onClick={setThemeColor}>Blue</span>
-                <span style="background-color:#c1121f" onClick={setThemeColor}>Red</span>
-                <span
-                    style="background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(232,255,0,1) 37%, rgba(0,255,46,1) 56%, rgba(0,104,255,1) 82%, rgba(68,0,255,1) 100%);"
-                    id="customColor" onClick={toggleColorPicker}>Custom</span>
-            </div>
+            <p>
+                <a href="#refresh" onClick={() => clickRefreshCache()}>Refresh Cache</a>
+            </p>
 
-            <div class={style.customColorPicker}>
-                <HexColorPicker color={getPrimaryColor()} onChange={setColor} />
-            </div>
-
-            <div className={style.category}>Light/Dark Mode</div>
+            <div className={style.category}>Daytime App Color</div>
             <div className={style.lightdark}>
+                <div class={style.theme}>
+                    <span style="background-color:#57129d" onClick={setThemeColor}>Purple</span>
+                    <span style="background-color:#000" onClick={setThemeColor}>Black</span>
+                    <span style="background-color:#333" onClick={setThemeColor}>Grey</span>
+                    <span style="background-color:#0072ff" onClick={setThemeColor}>Blue</span>
+                    <span style="background-color:#c1121f" onClick={setThemeColor}>Red</span>
+                    <span
+                        style="background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(232,255,0,1) 37%, rgba(0,255,46,1) 56%, rgba(0,104,255,1) 82%, rgba(68,0,255,1) 100%);"
+                        id="customColor" onClick={toggleColorPicker}>Custom</span>
+                </div>
+
+                <div class={style.customColorPicker}>
+                    <HexColorPicker color={getPrimaryColor()} onChange={setColor} />
+                </div>
+
+                <br />
+
+                <div>
                 <span
                     style="background-color:rgba(255,255,255,.9); color:black;"
                     onClick={clickLight}>Light</span>
-                <span
-                    style="background-color:rgba(255,255,255,.1)"
-                    onClick={clickDark}>Dark</span>
-                <span
-                    style="background:linear-gradient(135deg, rgba(255,255,255,0.1) 49%, rgba(255,255,255,0.9) 51%););"
-                    onClick={clickAuto}>Auto</span>
+                    <span
+                        style="background-color:rgba(255,255,255,.1)"
+                        onClick={clickDark}>Dark</span>
+                    <span
+                        style="background:linear-gradient(135deg, rgba(255,255,255,0.1) 49%, rgba(255,255,255,0.9) 51%););"
+                        onClick={clickAuto}>Auto</span>
+                </div>
+            </div>
+
+            <div className={style.category}>Night App Color</div>
+
+            <div className={style.lightdark}>
+                coming soon
             </div>
 
             <div className={style.category}>Speech Speed</div>
@@ -143,13 +156,15 @@ const Settings = (props) => {
                 users pick and default speed. This info is not shared with any 3rd party and used only by developers to
                 improve this app. Matomo masks all IPs and honors Do Not Track requests.</p>
 
+            <br />
+            <br />
+
             <p>Spokewiki is open source under the MIT license</p>
 
             <a href="https://github.com/szazeski/spokewiki">github</a>
 
-            <p>
-                <a href="#refresh" onClick={() => clickRefreshCache()}>Refresh Cache</a>
-            </p>
+            <p>If you have any requests, please send them to:</p>
+            <a href="mailto:feedback@spokewiki.com">feedback@spokewiki.com</a>
 
 
         </div>

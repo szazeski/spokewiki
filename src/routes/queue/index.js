@@ -3,6 +3,13 @@ import data from '../../data/data.json';
 import SpokeArticle from "../../components/spokeArticle";
 import {useState} from "preact/hooks";
 
+function updateInnerHTML(selector, text) {
+    let element = document.querySelector(selector);
+    if (element !== null) {
+        element.innerHTML = text;
+    }
+}
+
 const Queue = ({onPlaying, onQueue}) => {
 
     const CACHE_NAME = "offline-mp3";
@@ -57,15 +64,15 @@ const Queue = ({onPlaying, onQueue}) => {
     }
 
     function showError(text) {
-        document.querySelector("#errorbox").innerHTML = text;
+        updateInnerHTML("#errorbox", text);
     }
 
     function showResult(text) {
-        document.querySelector("#used").innerHTML = text;
+        updateInnerHTML("#used", text);
     }
 
     function showCount(text) {
-        document.querySelector("#output").innerHTML = text;
+        updateInnerHTML("#output", text);
     }
 
     function preload() {

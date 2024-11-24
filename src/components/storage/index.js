@@ -72,7 +72,7 @@ export function loadColors() {
     setMetaThemeColor(primaryColor);
 }
 
-const DURATION_12_HOURS = 43200000;
+const DURATION_1_HOUR = 3600000;
 
 export function refreshCache() {
     if (typeof window !== "undefined") {
@@ -86,13 +86,14 @@ export function getArticles() {
     if (typeof window !== "undefined") {
         let shouldFetch = false;
         let articleString = localStorage.getItem("articles");
-        let lastUpdated = localStorage.getItem("lastUpdated");
+        let lastUpdatedString = localStorage.getItem("lastUpdated");
+        let lastUpdated = new Date(lastUpdatedString);
 
         if (articleString === null) {
             shouldFetch = true;
         } else if (lastUpdated === null) {
             shouldFetch = true;
-        } else if (new Date - lastUpdated > DURATION_12_HOURS) {
+        } else if (new Date - lastUpdated > DURATION_1_HOUR) {
             shouldFetch = true;
         } else if (articleString === "undefined") {
             shouldFetch = true;
@@ -103,20 +104,37 @@ export function getArticles() {
         if (shouldFetch) {
             console.log("fetching data.json")
 
-            // attempt to fetch the latest data
+            // TODO check etag in the request
+
             fetch("https://api.spokewiki.com/data.json").then((response) => {
                 // validate response
                 if (!response.ok) {
                     throw new Error("Failed to fetch data.json");
                 }
+                // get etag from response
+                let etag = response.headers.get("etag");
+                localStorage.setItem("articles-future-etag", etag);
+                // "1687a-673ec65e-199bbfabbee2054a;br" hostinger has weird etags....
+
                 return response.json();
 
             }).then((data) => {
 
                 if (data !== undefined) {
-                    articleString = JSON.stringify(data);
-                    localStorage.setItem("articles", articleString);
-                    localStorage.setItem("lastUpdated", new Date());
+
+                    let newEtag = localStorage.getItem("articles-future-etag");
+                    let lastEtag = localStorage.getItem("articles-etag");
+                    localStorage.setItem("lastUpdated", new Date()); // update whenever we check
+
+                    if (newEtag !== lastEtag) {
+                        console.log("etag has changed, updating data.json")
+                        articleString = JSON.stringify(data);
+                        localStorage.setItem("articles", articleString);
+                        localStorage.setItem("articles-etag", newEtag);
+                        localStorage.removeItem("articles-future-etag");
+                    } else {
+                        console.log("etag has not changed, not updating data.json")
+                    }
                 }
 
             }).catch((error) => {
@@ -126,11 +144,17 @@ export function getArticles() {
                 }
                 return data.articles; // fallback to local data
             });
+        } else {
+            console.log("not fetching data.json, time not expired", new Date - lastUpdated, "< 3600000")
         }
 
         if (articleString !== undefined) {
             console.log("Using cached data.json")
             let articleJson = JSON.parse(articleString);
+            if (articleJson == null) {
+                console.log("articleJson is null")
+                return
+            }
             if (Array.isArray(articleJson)) {
                 return articleJson;
             } else if (typeof articleJson.articles !== undefined) {
@@ -146,11 +170,21 @@ export function getArticles() {
 const CACHE_NAME = "offline-mp3"
 
 export function cacheAsset(url) {
-    caches.open(CACHE_NAME).then((cache) => {
-        cache.add(url).then((response) => {
-            console.log("cacheAsset", response);
+    if (typeof caches == "undefined") {
+        console.log("caches is null - unable to save", url);
+        return
+    }
+
+    caches.open(CACHE_NAME)
+        .then((cache) => {
+            if (cache !== null) {
+                cache.add(url).then((response) => {
+                    console.log("cacheAsset", response);
+                });
+            } else {
+                console.log("failed to open cache");
+            }
         });
-    });
 }
 
 export function removeCacheAsset(url) {

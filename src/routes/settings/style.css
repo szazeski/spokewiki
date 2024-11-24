@@ -20,13 +20,14 @@
     display: inline-block;
     padding: 15px;
     border-radius: 22px;
+    margin-top: 3px;
 }
 
 .theme span, .lightdark span {
     display: inline-block;
-    height: 50px;
-    width: 50px;
-    margin: 5px;
+    height: 40px;
+    width: 40px;
+    margin: 2px;
     color: white;
     font-weight: bold;
     font-size: 11px;

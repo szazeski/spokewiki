@@ -35,7 +35,8 @@ TODAY=$(date +"%B %-d, %Y")
 FILENAME=$(echo "$FILENAME" | tr '[:upper:]' '[:lower:]')
 
 jq ".query.pages[0].extract" output.json > "$FILENAME"
-cp "$FILENAME" "$FILENAME_ORIGINAL"
+# saves original file
+#cp "$FILENAME" "$FILENAME_ORIGINAL"
 sed -i '' 's/\\n/\n/g' "$FILENAME_ORIGINAL"
 
 echo "cleaning markdown"

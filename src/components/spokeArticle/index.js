@@ -86,7 +86,10 @@ const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
                         <a href="#mark" onClick={togglePlayed}><img src={archivesvg} alt="" />archive</a>
                     </div>
 
-                    <div>{data.durationMin} min ({data.filesize}mb) - recorded <strong>{data.dateRecorded}</strong>
+                    <div class={style.bottomline}>
+                        <span>{data.durationMin} min</span>
+                        <span>{data.filesize} mb</span>
+                        recorded <strong>{data.dateRecorded}</strong>
                     </div>
                 </div>
             </div>
