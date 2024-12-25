@@ -1,4 +1,5 @@
 import data from '../../data/data.json';
+import {route} from "preact-router";
 
 export function getValue(key, defaultValue) {
     if (typeof window !== 'undefined') {
@@ -78,91 +79,81 @@ export function refreshCache() {
     if (typeof window !== "undefined") {
         localStorage.removeItem("lastUpdated");
         localStorage.removeItem("articles");
-        getArticles();
+        localStorage.removeItem("articles-etag");
+        localStorage.removeItem("articles-future-etag");
+        console.log("refreshCache done");
+        route("/all", true);
     }
 }
 
 export function getArticles() {
-    if (typeof window !== "undefined") {
-        let shouldFetch = false;
-        let articleString = localStorage.getItem("articles");
-        let lastUpdatedString = localStorage.getItem("lastUpdated");
-        let lastUpdated = new Date(lastUpdatedString);
-
-        if (articleString === null) {
-            shouldFetch = true;
-        } else if (lastUpdated === null) {
-            shouldFetch = true;
-        } else if (new Date - lastUpdated > DURATION_1_HOUR) {
-            shouldFetch = true;
-        } else if (articleString === "undefined") {
-            shouldFetch = true;
-            localStorage.removeItem("articles");
-            localStorage.removeItem("lastUpdated");
-        }
-
-        if (shouldFetch) {
-            console.log("fetching data.json")
-
-            // TODO check etag in the request
-
-            fetch("https://api.spokewiki.com/data.json").then((response) => {
-                // validate response
-                if (!response.ok) {
-                    throw new Error("Failed to fetch data.json");
-                }
-                // get etag from response
-                let etag = response.headers.get("etag");
-                localStorage.setItem("articles-future-etag", etag);
-                // "1687a-673ec65e-199bbfabbee2054a;br" hostinger has weird etags....
-
-                return response.json();
-
-            }).then((data) => {
-
-                if (data !== undefined) {
-
-                    let newEtag = localStorage.getItem("articles-future-etag");
-                    let lastEtag = localStorage.getItem("articles-etag");
-                    localStorage.setItem("lastUpdated", new Date()); // update whenever we check
-
-                    if (newEtag !== lastEtag) {
-                        console.log("etag has changed, updating data.json")
-                        articleString = JSON.stringify(data);
-                        localStorage.setItem("articles", articleString);
-                        localStorage.setItem("articles-etag", newEtag);
-                        localStorage.removeItem("articles-future-etag");
-                    } else {
-                        console.log("etag has not changed, not updating data.json")
-                    }
-                }
-
-            }).catch((error) => {
-                console.error("Failed to fetch updated data", error);
-                if (articleString !== null) {
-                    return JSON.parse(articleString);
-                }
-                return data.articles; // fallback to local data
-            });
-        } else {
-            console.log("not fetching data.json, time not expired", new Date - lastUpdated, "< 3600000")
-        }
-
-        if (articleString !== undefined) {
-            console.log("Using cached data.json")
-            let articleJson = JSON.parse(articleString);
-            if (articleJson == null) {
-                console.log("articleJson is null")
-                return
-            }
-            if (Array.isArray(articleJson)) {
-                return articleJson;
-            } else if (typeof articleJson.articles !== undefined) {
-                return articleJson.articles;
-            }
-        }
+    if (typeof window === "undefined") {
+        return data.articles
     }
 
+    let articleString = localStorage.getItem("articles");
+    let lastUpdated = new Date(localStorage.getItem("lastUpdated"));
+
+    let shouldFetch = false;
+    if (articleString === null) {
+        console.log("articleString is null -- fetching")
+        shouldFetch = true;
+    } else if (lastUpdated === null) {
+        console.log("lastUpdated is null -- fetching")
+        shouldFetch = true;
+    } else if (new Date - lastUpdated > DURATION_1_HOUR) {
+        console.log("lastUpdated is older than 1h -- fetching")
+        shouldFetch = true;
+    }
+
+    if (shouldFetch) {
+        console.log("downloading data.json")
+        let now = Date.now();
+        fetch(`https://api.spokewiki.com/data.json#${now}`).then((response) => {
+            if (!response.ok) {
+                throw new Error("Failed to fetch data.json");
+            }
+            return response.json();
+
+        }).then((data) => {
+            let shouldReload = false;
+            if (articleString === null) {
+                console.log("cold start, should reload app")
+                shouldReload = true
+            }
+            if (data !== undefined) {
+                localStorage.setItem("lastUpdated", new Date()); // update whenever we check
+                articleString = JSON.stringify(data);
+                localStorage.setItem("articles", articleString);
+            } else {
+                console.log("data.json response is undefined")
+            }
+            if (shouldReload) {
+                window.location.reload();
+            }
+
+        }).catch((error) => {
+            console.error("Failed to fetch updated data", error);
+            if (articleString !== null) {
+                return JSON.parse(articleString);
+            }
+            return data.articles; // fallback to local data
+        });
+    }
+
+    if (articleString !== null) {
+        let articleJson = JSON.parse(articleString);
+        if (articleJson === null) {
+            console.log("unable to parse JSON from localstorage string - using builtin data")
+            return data.articles
+        }
+        if (Array.isArray(articleJson)) {
+            return articleJson;
+        } else if (typeof articleJson.articles !== undefined) {
+            return articleJson.articles;
+        }
+    }
+    console.log("fallthrough to builtin data.articles")
     return data.articles;
 
 }

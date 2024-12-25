@@ -17,19 +17,20 @@ import {createInstance, MatomoProvider} from "@datapunt/matomo-tracker-react";
 
 
 function loadLightDarkMode() {
-    if (typeof window !== "undefined") {
-        let autoMode = getValue("autoMode", "false");
-        if (autoMode === "true") {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                console.log("auto mode enabled, setting to dark");
-                setDark();
-            } else {
-                console.log("auto mode enabled, setting to light");
-                setLight();
-            }
-        }
-        loadColors();
+    if (typeof window === "undefined") {
+        return;
     }
+    let autoMode = getValue("autoMode", "false");
+    if (autoMode === "true") {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            console.log("auto mode enabled, setting to dark");
+            setDark();
+        } else {
+            console.log("auto mode enabled, setting to light");
+            setLight();
+        }
+    }
+    loadColors();
 }
 
 function setupMatomoAnalytics() {

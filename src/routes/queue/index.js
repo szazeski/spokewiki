@@ -31,7 +31,7 @@ const Queue = ({onPlaying, onQueue}) => {
 
     function getCachedFiles() {
         if (typeof caches == "undefined") {
-            showError("Cache API is not supported");
+            showError("Cache API is not available");
             return;
         }
         caches.open(CACHE_NAME).then((cache) => {

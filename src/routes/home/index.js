@@ -19,6 +19,22 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
         />
     );
 
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
+    }
+
+    function scrollToBottom() {
+        window.scrollTo({
+            top: 1000000,
+            left: 0,
+            behavior: "smooth",
+        });
+    }
+
     function getUniqueTags() {
         const allTags = getArticles().flatMap((item) => {
             return item.tags.map(i => i);
@@ -49,6 +65,11 @@ const Home = ({onPlaying, onQueue, showOnlyNew}) => {
             <div class={style.articles}>
                 <div className={style.spacer} />
                 {listOfArticles}
+            </div>
+
+            <div class={style.updown}>
+                <div class={style.up} onClick={scrollToTop}>⟰</div>
+                <div class={style.down} onClick={scrollToBottom}>⟱</div>
             </div>
 
         </div>

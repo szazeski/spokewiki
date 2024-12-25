@@ -10,11 +10,16 @@ import {filterArticlesByTag} from "../toolbox";
 const SpokeArticle = ({data, onPlaying, onQueue, showNewOnly}) => {
 
     let listened = false;
-    if (typeof window !== "undefined") {
-        let status = localStorage.getItem(data.urlAudio)
-        if (status != null) {
-            listened = true;
-        }
+    if (typeof window === "undefined") {
+        return
+    }
+    if (typeof data === "undefined") {
+        return
+    }
+
+    let status = localStorage.getItem(data.urlAudio)
+    if (status != null) {
+        listened = true;
     }
 
     if (showNewOnly && listened) {

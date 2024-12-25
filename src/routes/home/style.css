@@ -21,13 +21,36 @@
     display: none;
 }
 
+.updown {
+    position: fixed;
+    height: 110px;
+    width: 50px;
+    bottom: 200px;
+    right: 0;
+    display: none;
+}
+
+.updown div {
+    opacity: .8;
+    font-size: 3rem;
+    color: white;
+    padding: 10px;
+}
+
+.updown div:hover {
+    background-color: rgba(255, 255, 255, .1);
+    opacity: 1;
+}
+
 .leftSidebar ul {
     position: fixed;
     overflow-y: auto;
     margin: 0;
-    padding: 0;
-    height: 100%;
+    padding: 1px;
+    height: 60%;
     list-style: none;
+    scrollbar-color: var(--primary) var(--primary-inverse);
+    scrollbar-width: thin;
 }
 
 .leftSidebar ul li {
@@ -48,5 +71,9 @@
     .leftSidebar {
         width: 300px;
         display: inherit;
+    }
+
+    .updown {
+        display: block;
     }
 }
