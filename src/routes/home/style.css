@@ -40,17 +40,20 @@
 .updown div:hover {
     background-color: rgba(255, 255, 255, .1);
     opacity: 1;
+    cursor: pointer;
 }
 
 .leftSidebar ul {
     position: fixed;
     overflow-y: auto;
     margin: 0;
-    padding: 1px;
-    height: 60%;
+    padding: 2px;
+    height: calc(100vh - var(--header-height) - 130px);
     list-style: none;
     scrollbar-color: var(--primary) var(--primary-inverse);
     scrollbar-width: thin;
+    border-right: 1px solid var(--primary-inverse);
+    color: var(--white-50);
 }
 
 .leftSidebar ul li {
@@ -65,6 +68,7 @@
 .leftSidebar ul li:hover {
     background: rgba(255, 255, 255, .3);
     border-left: solid 2px var(--primary);
+    color: white;
 }
 
 @media only screen and (min-width: 700px) {

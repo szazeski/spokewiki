@@ -137,6 +137,12 @@ const Settings = (props) => {
                 coming soon
             </div>
 
+            <div className={style.category}>Hide Tag/Topic</div>
+
+            <div className={style.lightdark}>
+                coming soon
+            </div>
+
             <div className={style.category}>Speech Speed</div>
             <div className={style.speed}>
                 <button onClick={decreaseSpeed}>-</button>
